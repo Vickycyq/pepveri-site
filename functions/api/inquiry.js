@@ -16,11 +16,17 @@ function esc(s) {
 
 // 诊断用：浏览器直接打开 /api/inquiry 可查看配置状态（不泄露密钥）
 export async function onRequestGet({ env }) {
+  // 只暴露变量名，不暴露值；用于排查命名拼写错误
+  const names = Object.keys(env).filter(k => /resend|from_email|to_email/i.test(k)).sort();
   return json({
     ok: true,
     endpoint: "/api/inquiry",
+    build: "v3",
+    commit: env.CF_PAGES_COMMIT_SHA || null,
+    branch: env.CF_PAGES_BRANCH || null,
     resend_key_configured: Boolean(env.RESEND_API_KEY),
     resend_key_prefix: env.RESEND_API_KEY ? String(env.RESEND_API_KEY).slice(0, 3) : null,
+    matching_env_names: names,
     from_email: env.FROM_EMAIL || "onboarding@resend.dev (default)",
     to_email: env.TO_EMAIL || "business@pepveri.com (default)",
   });
