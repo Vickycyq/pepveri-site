@@ -44,11 +44,6 @@
         <h3>Wholesale Sourcing Request</h3>
         <div class="sub">Tell us your target product, batch quantity and purity requirement — HPLC reports, SDS and bulk volume discounts are available on request.</div>
         <form id="inquiry-form">
-          <!-- FormSubmit.co：提交后自动转发到公司邮箱；首次提交需到邮箱点击激活 -->
-          <input type="hidden" name="_subject" value="New Wholesale Inquiry — PepVeri Website">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="_honey" style="display:none">
           <div class="field-row">
             <div class="field"><label>Name <i>*</i></label><input type="text" name="name" required placeholder="Your full name"></div>
             <div class="field"><label>Email Address <i>*</i></label><input type="email" name="email" required placeholder="name@company.com"></div>
@@ -150,7 +145,7 @@
   const pre = params.get("product");
   if (pre) document.getElementById("product-input").value = pre;
 
-  // 表单提交：通过 FormSubmit.co AJAX 接口转发到 business@pepveri.com
+  // 表单提交：POST 到本站 /api/inquiry（Cloudflare Pages Function）→ Resend 发信到公司邮箱
   const form = document.getElementById("inquiry-form");
   const submitBtn = document.getElementById("submit-btn");
 
@@ -160,22 +155,22 @@
     submitBtn.textContent = "Sending…";
 
     const data = {};
-    new FormData(form).forEach((v, k) => { if (!k.startsWith("_")) data[k] = v; });
+    new FormData(form).forEach((v, k) => { data[k] = v; });
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/business@pepveri.com", {
+      const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(data)
       });
       const json = await res.json();
-      if (json.success === "true" || json.success === true) {
+      if (res.ok && json.ok) {
         document.getElementById("form-ok").style.display = "block";
         document.getElementById("form-err").style.display = "none";
         form.querySelectorAll("input, textarea").forEach(el => { if (el.type !== "hidden") el.value = ""; });
         window.scrollTo({ top: document.getElementById("form-ok").offsetTop - 120, behavior: "smooth" });
       } else {
-        throw new Error(json.message || "send failed");
+        throw new Error(json.error || "send failed");
       }
     } catch (err) {
       document.getElementById("form-err").style.display = "block";
