@@ -105,7 +105,12 @@ export async function onRequestPost({ request, env }) {
 
   if (!res.ok) {
     const detail = await res.text().catch(() => "");
-    return json({ ok: false, error: `Email provider error (${res.status})`, detail: detail.slice(0, 300) }, 502);
+    const hint =
+      res.status === 401 ? "RESEND_API_KEY is invalid or revoked — create a new key at resend.com/api-keys." :
+      res.status === 403 ? "Resend rejected the sender. Verify the domain pepveri.com in Resend, or set FROM_EMAIL to an address on a verified domain." :
+      res.status === 422 ? "Resend validation failed — usually the 'from' address is not on a verified domain." :
+      "";
+    return json({ ok: false, error: `Email provider error (${res.status})`, hint, detail: detail.slice(0, 300) }, 502);
   }
 
   return json({ ok: true });
