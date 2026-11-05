@@ -14,6 +14,18 @@ function esc(s) {
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+// 诊断用：浏览器直接打开 /api/inquiry 可查看配置状态（不泄露密钥）
+export async function onRequestGet({ env }) {
+  return json({
+    ok: true,
+    endpoint: "/api/inquiry",
+    resend_key_configured: Boolean(env.RESEND_API_KEY),
+    resend_key_prefix: env.RESEND_API_KEY ? String(env.RESEND_API_KEY).slice(0, 3) : null,
+    from_email: env.FROM_EMAIL || "onboarding@resend.dev (default)",
+    to_email: env.TO_EMAIL || "business@pepveri.com (default)",
+  });
+}
+
 export async function onRequestPost({ request, env }) {
   const apiKey = env.RESEND_API_KEY;
   if (!apiKey) {

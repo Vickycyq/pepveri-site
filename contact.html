@@ -170,11 +170,16 @@
         form.querySelectorAll("input, textarea").forEach(el => { if (el.type !== "hidden") el.value = ""; });
         window.scrollTo({ top: document.getElementById("form-ok").offsetTop - 120, behavior: "smooth" });
       } else {
-        throw new Error(json.error || "send failed");
+        throw new Error((json.error || "send failed") + (json.detail ? " — " + json.detail : ""));
       }
     } catch (err) {
-      document.getElementById("form-err").style.display = "block";
-      window.scrollTo({ top: document.getElementById("form-err").offsetTop - 120, behavior: "smooth" });
+      const box = document.getElementById("form-err");
+      box.dataset.base = box.dataset.base || box.innerHTML;
+      box.innerHTML = box.dataset.base +
+        '<br><small style="font-weight:400;opacity:.85">Error: ' +
+        String(err && err.message ? err.message : err).replace(/</g, "&lt;") + "</small>";
+      box.style.display = "block";
+      window.scrollTo({ top: box.offsetTop - 120, behavior: "smooth" });
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = "Submit Inquiry";
