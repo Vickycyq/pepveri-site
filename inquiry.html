@@ -160,6 +160,10 @@
             <input type="text" id="fCountry" required placeholder="Destination country">
           </div>
         </div>
+        <div class="field">
+          <label>Phone / WhatsApp <span class="req">*</span></label>
+          <input type="text" id="fPhone" required placeholder="e.g. +1 234 567 8900 (WhatsApp preferred)">
+        </div>
         <div class="field-row">
           <div class="field">
             <label>Product of Interest</label>
@@ -285,13 +289,57 @@ document.getElementById("footerProducts").innerHTML =
   '<li><a href="product.html?id=bpc-157">BPC-157</a></li>' +
   '<li><a href="products.html">View all products →</a></li>';
 
-// Form submit: static site — show success panel (hook up to your backend/email service later)
-document.getElementById("inquiryForm").addEventListener("submit", function (e) {
+// Form submit: POST to Cloudflare Pages Function /api/inquiry (Resend -> business@pepveri.com)
+document.getElementById("inquiryForm").addEventListener("submit", async function (e) {
   e.preventDefault();
   const form = this;
   if (!form.checkValidity()) { form.reportValidity(); return; }
-  form.style.display = "none";
-  document.getElementById("successPanel").classList.add("show");
+
+  const btn = form.querySelector(".submit-btn");
+  const val = id => (document.getElementById(id).value || "").trim();
+  const msgParts = [];
+  if (val("fCountry")) msgParts.push("Country/Region: " + val("fCountry"));
+  if (val("fUse")) msgParts.push("Intended business use: " + val("fUse"));
+  if (val("fMsg")) msgParts.push(val("fMsg"));
+
+  const payload = {
+    name: val("fName"),
+    email: val("fEmail"),
+    phone: val("fPhone"),
+    company: val("fCompany"),
+    product: val("fProduct"),
+    quantity: val("fQty"),
+    message: msgParts.join("\n"),
+  };
+
+  btn.disabled = true;
+  btn.textContent = "Submitting...";
+
+  try {
+    const res = await fetch("/api/inquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.ok) {
+      const detail = data.hint ? " — " + data.hint : (data.error ? " — " + data.error : "");
+      throw new Error(detail);
+    }
+    form.style.display = "none";
+    document.getElementById("successPanel").classList.add("show");
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = "Submit Inquiry";
+    let box = document.getElementById("formError");
+    if (!box) {
+      box = document.createElement("div");
+      box.id = "formError";
+      box.style.cssText = "margin-top:12px;padding:10px 14px;border-radius:8px;background:#fdecec;color:#b42318;font-size:13.5px;";
+      form.appendChild(box);
+    }
+    box.textContent = "Submission failed" + ((err && err.message && err.message.trim() && err.message.trim() !== "undefined") ? err.message : "") + ". Please try again, or email us directly at business@pepveri.com.";
+  }
 });
 </script>
 </body>
