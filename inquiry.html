@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Product Inquiry | Pepveri</title>
+<style>
+  :root {
+    --primary: #081F5C;
+    --primary-dark: #05163f;
+    --primary-light: #143577;
+    --accent: #3D6DEB;
+    --text: #1a2333;
+    --text-muted: #5b6474;
+    --bg-light: #f5f7fb;
+    --border: #e3e8f2;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: inherit; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { background: var(--primary-dark); color: #cbd6f2; font-size: 13px; padding: 8px 0; }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #cbd6f2; }
+  .topbar-links { display: flex; gap: 20px; }
+
+  header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-img { height: 42px; width: auto; display: block; }
+  .logo-mark { width: 42px; height: 42px; border-radius: 10px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; }
+  .logo-text .name { font-weight: 700; font-size: 18px; color: var(--primary); line-height: 1.2; }
+  .logo-text .tag { font-size: 10.5px; color: var(--text-muted); letter-spacing: 2.2px; text-transform: uppercase; }
+  nav ul { display: flex; list-style: none; gap: 26px; }
+  nav a { font-size: 14.5px; font-weight: 500; color: var(--text); padding: 6px 0; border-bottom: 2px solid transparent; transition: .2s; }
+  nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+  .btn { display: inline-block; padding: 11px 24px; border-radius: 8px; font-size: 14.5px; font-weight: 600; transition: .2s; cursor: pointer; border: none; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-light); }
+
+  .hero { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #0b2a75 100%); color: #fff; padding: 56px 0; }
+  .hero-eyebrow { display: inline-block; font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: #a9c0f5; border: 1px solid rgba(169,192,245,.4); border-radius: 999px; padding: 6px 16px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(28px, 3.6vw, 42px); font-weight: 700; margin-bottom: 14px; }
+  .hero p { font-size: 16.5px; color: #c8d4ef; max-width: 720px; }
+
+  section { padding: 64px 0; }
+  .inquiry-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 36px; align-items: start; }
+
+  .form-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
+  .form-card h2 { font-size: 22px; color: var(--primary); margin-bottom: 6px; }
+  .form-card .sub { font-size: 14px; color: var(--text-muted); margin-bottom: 26px; }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 13.5px; font-weight: 600; color: var(--primary); margin-bottom: 7px; }
+  .field label .req { color: #d64545; }
+  .field input, .field select, .field textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 9px;
+    font-size: 14.5px; font-family: inherit; color: var(--text); background: #fff; transition: .2s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(61,109,235,.12); }
+  .field textarea { min-height: 110px; resize: vertical; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .submit-btn { width: 100%; padding: 14px; font-size: 15.5px; margin-top: 8px; }
+  .form-note { font-size: 12.5px; color: var(--text-muted); text-align: center; margin-top: 12px; }
+
+  .success-panel { display: none; text-align: center; padding: 30px 10px; }
+  .success-panel.show { display: block; }
+  .success-panel .tick { width: 64px; height: 64px; border-radius: 50%; background: #e7f6ec; color: #2e9e5b; font-size: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+  .success-panel h2 { color: var(--primary); margin-bottom: 10px; }
+  .success-panel p { color: var(--text-muted); font-size: 14.5px; margin-bottom: 22px; }
+
+  .side-card { background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; margin-bottom: 18px; }
+  .side-card h3 { font-size: 16px; color: var(--primary); margin-bottom: 12px; }
+  .side-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--text-muted); }
+  .side-card li { display: flex; gap: 10px; }
+  .side-card .ic { flex: none; color: var(--accent); }
+
+  footer { background: var(--primary-dark); color: #aebde4; padding: 56px 0 0; margin-top: 40px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 44px; }
+  .footer-grid h4 { color: #fff; font-size: 15px; margin-bottom: 18px; }
+  .footer-grid ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-grid a { font-size: 14px; color: #aebde4; }
+  .footer-grid a:hover { color: #fff; }
+  .footer-about p { font-size: 14px; margin: 14px 0 18px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #8fa2cf; }
+
+  @media (max-width: 900px) {
+    .inquiry-layout { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    nav ul { display: none; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    section { padding: 50px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>Wholesale peptide &amp; bulk supply from China</span>
+    <div class="topbar-links">
+      <a href="products.html">Products</a>
+      <a href="inquiry.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img class="logo-img" src="assets/img/pepveri-logo.png" alt="Pepveri">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-item-mega"><a href="products.html">Products</a><div class="mega"></div></li>
+        <li><a href="index.html#quality">Quality</a></li>
+        <li><a href="index.html#custom">Custom Synthesis</a></li>
+        <li><a href="index.html#insights">Insights</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary header-cta" href="products.html">Browse Products</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">B2B Inquiry</span>
+    <h1>Submit a Product Inquiry</h1>
+    <p>Tell us your product, quantity, specification and destination requirements. Our B2B project team will reply with specifications, documentation and a quotation — within half an hour during working hours.</p>
+  </div>
+</section>
+
+<section style="padding-top:56px;">
+  <div class="container inquiry-layout">
+    <div class="form-card">
+      <form id="inquiryForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" id="fName" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label>Company <span class="req">*</span></label>
+            <input type="text" id="fCompany" required placeholder="Company name">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Business Email <span class="req">*</span></label>
+            <input type="email" id="fEmail" required placeholder="name@company.com">
+          </div>
+          <div class="field">
+            <label>Country / Region <span class="req">*</span></label>
+            <input type="text" id="fCountry" required placeholder="Destination country">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Product of Interest</label>
+            <input type="text" id="fProduct" placeholder="e.g. Retatrutide, Semaglutide, BPC-157...">
+          </div>
+          <div class="field">
+            <label>Quantity &amp; Specification</label>
+            <input type="text" id="fQty" placeholder="e.g. 100 g raw material / 5 kits of 10 mg vials">
+          </div>
+        </div>
+        <div class="field">
+          <label>Intended Business Use</label>
+          <select id="fUse">
+            <option value="">— Select —</option>
+            <option>Pharmaceutical company</option>
+            <option>CRO / CDMO</option>
+            <option>Research institution</option>
+            <option>Distributor / reseller</option>
+            <option>Other B2B use</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea id="fMsg" placeholder="Additional requirements: purity, packaging format, documents needed (COA / HPLC / LC-MS), delivery destination, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Submit Inquiry</button>
+        <div class="form-note">We reply within 1–2 business days. All inquiries are kept strictly confidential.</div>
+      </form>
+
+      <div class="success-panel" id="successPanel">
+        <div class="tick">✓</div>
+        <h2>Inquiry Submitted</h2>
+        <p>Thank you — your inquiry has been recorded. Our B2B project team will reply to your email within 1–2 business days with specifications, documentation and a quotation.</p>
+        <a class="btn btn-primary" href="index.html">Back to homepage</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="side-card">
+        <h3>What to include</h3>
+        <ul>
+          <li><span class="ic">✓</span>Product name and CAS number</li>
+          <li><span class="ic">✓</span>Quantity (raw material or vials)</li>
+          <li><span class="ic">✓</span>Specification and purity requirements</li>
+          <li><span class="ic">✓</span>Destination country and business use</li>
+          <li><span class="ic">✓</span>Documents needed (COA / HPLC / LC-MS)</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>Response process</h3>
+        <ul>
+          <li><span class="ic">1</span>Confirm available specifications &amp; packaging</li>
+          <li><span class="ic">2</span>Provide quotation and batch documentation</li>
+          <li><span class="ic">3</span>Arrange sample confirmation if needed</li>
+          <li><span class="ic">4</span>Coordinate packaging and shipment</li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>Working hours</h3>
+        <ul>
+          <li><span class="ic">🕘</span>Mon–Sat, replies within half an hour during working hours</li>
+          <li><span class="ic">🌐</span>Coordinating supply for North America, Europe, Asia, Latin America, Middle East and Africa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="assets/img/pepveri-logo-white.png" alt="Pepveri">
+        </a>
+        <p>Pepveri supplies peptide raw materials and vialed products from China for qualified B2B buyers worldwide.</p>
+        <a class="btn btn-primary" href="products.html">Browse Products</a>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#quality">Quality</a></li>
+          <li><a href="index.html#custom">Custom Synthesis</a></li>
+          <li><a href="index.html#insights">Insights</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul id="footerProducts"></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Guangdong, China</li>
+          <li>✉️ <a href="mailto:business@pepveri.com">business@pepveri.com</a></li>
+          <li>📱 <a href="https://wa.me/85298744510" target="_blank" rel="noopener">WhatsApp: +852 98744510</a></li>
+          <li>🕘 Response within 1–2 business days</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pepveri. All rights reserved.</span>
+      <span>Wholesale Peptide Supplier | Bulk &amp; Vials</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/mega-menu.js"></script>
+<script>
+// Prefill product from ?product= or ?cas=
+const params = new URLSearchParams(location.search);
+const input = document.getElementById("fProduct");
+const preset = params.get("product") || params.get("cas") || "";
+if (preset) input.value = preset;
+
+document.getElementById("footerProducts").innerHTML =
+  '<li><a href="product.html?id=retatrutide">Retatrutide</a></li>' +
+  '<li><a href="product.html?id=tirzepatide">Tirzepatide</a></li>' +
+  '<li><a href="product.html?id=semaglutide">Semaglutide</a></li>' +
+  '<li><a href="product.html?id=bpc-157">BPC-157</a></li>' +
+  '<li><a href="products.html">View all products →</a></li>';
+
+// Form submit: static site — show success panel (hook up to your backend/email service later)
+document.getElementById("inquiryForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const form = this;
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  form.style.display = "none";
+  document.getElementById("successPanel").classList.add("show");
+});
+</script>
+</body>
+</html>

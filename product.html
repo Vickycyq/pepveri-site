@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product | Pepveri</title>
+<style>
+  :root {
+    --primary: #081F5C;
+    --primary-dark: #05163f;
+    --primary-light: #143577;
+    --accent: #3D6DEB;
+    --text: #1a2333;
+    --text-muted: #5b6474;
+    --bg-light: #f5f7fb;
+    --white: #ffffff;
+    --border: #e3e8f2;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { background: var(--primary-dark); color: #cbd6f2; font-size: 13px; padding: 8px 0; }
+  .topbar .container { display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: #cbd6f2; }
+  .topbar-links { display: flex; gap: 20px; }
+
+  header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+  .logo-img { height: 42px; width: auto; display: block; }
+  .logo-mark { width: 42px; height: 42px; border-radius: 10px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; letter-spacing: .5px; }
+  .logo-text .name { font-weight: 700; font-size: 18px; color: var(--primary); letter-spacing: .3px; line-height: 1.2; }
+  .logo-text .tag { font-size: 10.5px; color: var(--text-muted); letter-spacing: 2.2px; text-transform: uppercase; }
+  nav ul { display: flex; list-style: none; gap: 26px; }
+  nav a { font-size: 14.5px; font-weight: 500; color: var(--text); padding: 6px 0; border-bottom: 2px solid transparent; transition: .2s; }
+  nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
+  nav a.active { color: var(--primary); border-bottom-color: var(--primary); }
+  .btn { display: inline-block; padding: 11px 24px; border-radius: 8px; font-size: 14.5px; font-weight: 600; transition: .2s; cursor: pointer; border: none; }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-light); }
+  .btn-light { background: #fff; color: var(--primary); }
+  .btn-light:hover { background: #e6ecfa; }
+
+  .breadcrumb { background: var(--bg-light); border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-muted); padding: 12px 0; }
+  .breadcrumb a { color: var(--accent); }
+  .breadcrumb a:hover { color: var(--primary); }
+
+  .hero { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #0b2a75 100%); color: #fff; padding: 64px 0 58px; }
+  .hero-eyebrow { display: inline-block; font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: #a9c0f5; border: 1px solid rgba(169,192,245,.4); border-radius: 999px; padding: 6px 16px; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.2; font-weight: 700; max-width: 760px; margin-bottom: 16px; }
+  .hero p.lead { font-size: 16.5px; color: #c8d4ef; max-width: 740px; margin-bottom: 28px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  .hero-layout { display: flex; gap: 40px; align-items: flex-start; }
+  .hero-text { flex: 1; }
+  .hero-img-box { flex: 0 0 300px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: var(--radius); padding: 26px; display: flex; align-items: center; justify-content: center; min-height: 240px; }
+  .hero-img-box img { max-height: 190px; object-fit: contain; }
+
+  section { padding: 70px 0; }
+  .section-light { background: var(--bg-light); }
+  .section-head { max-width: 780px; margin-bottom: 36px; }
+  .section-kicker { font-size: 12.5px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .section-head h2 { font-size: clamp(24px, 2.8vw, 32px); color: var(--primary); line-height: 1.25; margin-bottom: 12px; }
+  .section-head p { color: var(--text-muted); font-size: 15.5px; }
+
+  /* Tech table */
+  .tech-table { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .tech-table .row { display: flex; border-bottom: 1px solid var(--border); }
+  .tech-table .row:last-child { border-bottom: none; }
+  .tech-table .k { flex: 0 0 260px; background: #f0f4fb; padding: 15px 22px; font-size: 14px; font-weight: 600; color: var(--primary); border-right: 1px solid var(--border); }
+  .tech-table .v { padding: 15px 22px; font-size: 14.5px; color: var(--text); word-break: break-all; }
+
+  /* Docs table */
+  .docs-table { width: 100%; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; border-collapse: collapse; }
+  .docs-table th { background: var(--primary); color: #fff; text-align: left; font-size: 13.5px; padding: 14px 22px; }
+  .docs-table td { padding: 14px 22px; font-size: 14px; border-top: 1px solid var(--border); color: var(--text); }
+  .docs-table .doc-type { font-weight: 700; color: var(--primary); }
+  .docs-table .on-request { color: var(--text-muted); font-style: italic; }
+
+  /* FAQ */
+  .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 900px; }
+  details { background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  details[open] { border-color: var(--primary-light); }
+  summary { cursor: pointer; padding: 18px 22px; font-weight: 600; font-size: 15.5px; color: var(--primary); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 20px; color: var(--accent); flex: none; }
+  details[open] summary::after { content: "−"; }
+  details .faq-body { padding: 0 22px 18px; font-size: 14.5px; color: var(--text-muted); }
+
+  /* Related products */
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card { display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; transition: .25s; }
+  .related-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(8,31,92,.12); }
+  .related-card img { width: 72px; height: 72px; object-fit: contain; background: #f0f4fb; border-radius: 10px; padding: 8px; }
+  .related-card h3 { font-size: 15px; color: var(--primary); margin-bottom: 4px; }
+  .related-card .cas { font-size: 12.5px; font-weight: 600; color: var(--accent); }
+
+  .cta-strip { border-radius: var(--radius); padding: 48px 44px; display: flex; align-items: center; justify-content: space-between; gap: 28px; background: linear-gradient(120deg, var(--primary-dark), var(--primary) 55%, #16408f); color: #fff; flex-wrap: wrap; }
+  .cta-strip h2 { font-size: clamp(22px, 2.6vw, 30px); margin-bottom: 12px; max-width: 640px; }
+  .cta-strip p { color: #c4d1ef; max-width: 640px; font-size: 15.5px; }
+
+  footer { background: var(--primary-dark); color: #aebde4; padding: 56px 0 0; margin-top: 40px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 44px; }
+  .footer-grid h4 { color: #fff; font-size: 15px; margin-bottom: 18px; }
+  .footer-grid ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-grid a { font-size: 14px; color: #aebde4; }
+  .footer-grid a:hover { color: #fff; }
+  .footer-about p { font-size: 14px; margin: 14px 0 18px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #8fa2cf; }
+
+  .disclaimer { background: #fff4ec; border: 1px solid #f5d5b8; border-radius: 12px; padding: 16px 20px; font-size: 13.5px; color: #8a5a2b; max-width: 900px; margin-top: 28px; }
+
+  @media (max-width: 1024px) {
+    .hero-layout { flex-direction: column; }
+    .hero-img-box { flex: none; width: 100%; max-width: 420px; }
+    .related-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .tech-table .k { flex-basis: 180px; }
+  }
+  @media (max-width: 640px) {
+    nav ul { display: none; }
+    .related-grid, .footer-grid { grid-template-columns: 1fr; }
+    .tech-table .row { flex-direction: column; }
+    .tech-table .k { border-right: none; border-bottom: 1px dashed var(--border); padding-bottom: 6px; }
+    section { padding: 54px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>Wholesale peptide &amp; bulk supply from China</span>
+    <div class="topbar-links">
+      <a href="inquiry.html">Submit Inquiry</a>
+      <a href="inquiry.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container header-inner">
+    <a class="logo" href="index.html">
+      <img class="logo-img" src="assets/img/pepveri-logo.png" alt="Pepveri">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-item-mega"><a href="products.html">Products</a><div class="mega"></div></li>
+        <li><a href="index.html#quality">Quality</a></li>
+        <li><a href="index.html#custom">Custom Synthesis</a></li>
+        <li><a href="index.html#insights">Insights</a></li>
+        <li><a href="index.html#about">About</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary header-cta" href="inquiry.html">Submit Inquiry</a>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="products.html">Products</a> &nbsp;/&nbsp; <span id="crumbName">Product</span>
+  </div>
+</div>
+
+<section class="hero" style="padding:56px 0;">
+  <div class="container hero-layout">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Peptide APIs</span>
+      <h1 id="heroTitle">Product Wholesale and Bulk Supply</h1>
+      <p class="lead" id="heroLead"></p>
+      <div class="hero-actions">
+        <a class="btn btn-light" id="ctaInquiry" href="inquiry.html">Request a quotation</a>
+        <a class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff;" href="#docs">Quality documents</a>
+      </div>
+    </div>
+    <div class="hero-img-box"><img id="heroImg" src="" alt=""></div>
+  </div>
+</section>
+
+<section style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Technical Information</div>
+      <h2 id="techTitle">Product API Technical Information</h2>
+    </div>
+    <div class="tech-table" id="techTable"></div>
+    <div class="disclaimer">Disclaimer: This product is supplied only as a chemical reagent for in-vitro laboratory research and qualified B2B procurement. It is not for human or veterinary use, personal use or direct consumer sale.</div>
+  </div>
+</section>
+
+<section id="docs" class="section-light">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Quality Documentation</div>
+      <h2>Product Quality Documents</h2>
+      <p>Batch-specific quality documents are provided for qualified B2B review. Request current batch documents together with your quotation.</p>
+    </div>
+    <table class="docs-table">
+      <thead>
+        <tr><th>Document</th><th>Description</th><th>Language</th><th>Availability</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="doc-type">COA</td><td>Certificate of analysis for the supplied batch</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
+        <tr><td class="doc-type">HPLC</td><td>HPLC purity analysis report</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
+        <tr><td class="doc-type">LC-MS</td><td>Mass spectrometry identity confirmation</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
+        <tr><td class="doc-type">Impurities</td><td>Impurity profile summary</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
+        <tr><td class="doc-type">MSDS</td><td>Material safety data sheet</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="cta-strip">
+      <div>
+        <h2>Request a <span id="ctaName">product</span> quotation</h2>
+        <p>Submit your quantity, specification and destination requirements, and our B2B project team will reply with specifications, documentation and pricing.</p>
+      </div>
+      <a class="btn btn-light" id="ctaInquiry2" href="inquiry.html">Submit a product inquiry</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" style="padding-bottom:70px;">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Product List</div>
+      <h2>Related Products</h2>
+    </div>
+    <div class="related-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="assets/img/pepveri-logo-white.png" alt="Pepveri">
+        </a>
+        <p>Pepveri supplies peptide raw materials and vialed products from China for qualified B2B buyers worldwide.</p>
+        <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="index.html#quality">Quality</a></li>
+          <li><a href="index.html#custom">Custom Synthesis</a></li>
+          <li><a href="index.html#insights">Insights</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul id="footerProducts"></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Guangdong, China</li>
+          <li>✉️ <a href="mailto:business@pepveri.com">business@pepveri.com</a></li>
+          <li>📱 <a href="https://wa.me/85298744510" target="_blank" rel="noopener">WhatsApp: +852 98744510</a></li>
+          <li>🕘 Response within 1–2 business days</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pepveri. All rights reserved.</span>
+      <span>Wholesale Peptide Supplier | Bulk &amp; Vials</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/mega-menu.js"></script>
+<script>
+const products = PRODUCTS_ALL; /*
+const products = [
+  { num:"01", name:"Retatrutide", cas:"2381089-83-2", formula:"C221H342N46O68", purity:">99%", img:"https://asset.a-peptide.com/b2b-products/2026/07/a2a9ea79d10a480887f2e0a866de5878.png" },
+  { num:"02", name:"Tirzepatide", cas:"2023788-19-2", formula:"C225H348N48O68", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/045d8cade3fc4244bfca8c15864bd27e.png" },
+  { num:"03", name:"Semaglutide", cas:"910463-68-2", formula:"C187H291N45O59", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/ca8db7f9397240e4b405c73bffd7c1dd.png" },
+  { num:"04", name:"BPC-157", cas:"137525-51-0", formula:"C62H98N16O22", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/5326877c0f604ac18fd97f38742a4993.png" },
+  { num:"05", name:"KPV", cas:"67727-97-3", formula:"C16H30N4O4", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/1184c1fa99c241809a99c19f5ce9a576.png" },
+  { num:"06", name:"Epitalon", cas:"307297-39-8", formula:"C14H22N4O9", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/83023fe438df492b9c1fa58f1223609d.png" },
+  { num:"07", name:"Thymosin Beta-4 (TB-500)", cas:"77591-33-4", formula:"C212H350N56O78S", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/10/06a02dd853f140ca86aad8d81f90bcf2.png" },
+  { num:"08", name:"TESAMORELIN", cas:"901758-09-6", formula:"C221H366N72O67S · x(C2H4O2)", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/7c24983d1447482e9b97e79442bd377a.png" },
+  { num:"09", name:"TB-500 Fragment (17-23)", cas:"885340-08-9", formula:"C38H68N10O14", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/b65096eb5ddb40b49234d6183b1ab9de.png" },
+  { num:"10", name:"Melanotan II", cas:"121062-08-6", formula:"C50H69N15O9", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/996ba51024fa4d72bb57cf0f9c6c0f08.png" },
+  { num:"11", name:"GHK Cu", cas:"89030-95-5", formula:"C14H23CuN6O4+", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/71e01b37b52e48ff85fbf20970d6a764.png" },
+  { num:"12", name:"SEMAX", cas:"80714-61-0", formula:"C37H51N9O10S", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/bdcc473ab46b4fe0b7a4ea82e0dff916.png" },
+  { num:"13", name:"SELANK", cas:"129954-34-3", formula:"C33H57N11O9", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/3ec94ede77544fb58ca5caf70c2dd35e.png" },
+  { num:"14", name:"Eloralintide", cas:"2883634-40-8", formula:"C201H319N49O65S2", purity:">99%", img:"https://asset.peptideapisupply.com/b2b-products/2026/10/d8b79f542e8f4bd882f4ca418d47a3ea.png" },
+  { num:"15", name:"SS-31", cas:"736992-21-5", formula:"C32H49N9O5", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/0e425e09bb56483996a639dc611e60c3.png" },
+  { num:"16", name:"MOTs-C", cas:"1627580-64-6", formula:"C101H152N28O22S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/74aa901c362f4a2da6a27060c438835c.png" },
+  { num:"17", name:"Ipamorelin", cas:"170851-70-4", formula:"C38H49N9O5", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/b39f84327c3d459982ca3d221e3ab34e.png" },
+  { num:"18", name:"AOD-9604", cas:"221231-10-3", formula:"C78H123N23O23S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/79cb6c95c7dc46f6b706eb3deb98111b.png" },
+  { num:"19", name:"CJC-1295 No DAC", cas:"863288-34-0", formula:"C152H252N44O42", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/4f50ecc7f32d4d278e9163796a6d5ff6.png" },
+  { num:"20", name:"5-AMINO-1MQ", cas:"42464-96-0", formula:"C10H11IN2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/3904394589334d928b1f73c83c919de4.png" },
+  { num:"21", name:"SLU-PP-332", cas:"303760-60-3", formula:"C18H14N2O2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/981b97ddad9b408fab91388d1b0272d4.png" },
+  { num:"22", name:"SLU-PP-915", cas:"2285432-92-8", formula:"C17H13BFNO3S", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/7b44759f29a04b81ac95ed29628c8f63.png" },
+  { num:"23", name:"NAD+", cas:"53-84-9", formula:"C21H27N7O14P2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/661d7a88c7bd488bbc2408463de92421.png" },
+  { num:"24", name:"PT-141", cas:"189691-06-3", formula:"C50H68N14O10", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/40d64dbb85aa4909b4e59a401b0d88e9.png" },
+  { num:"25", name:"ARA-290", cas:"1208243-50-8", formula:"C51H84N16O21", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/d717021b1b634a9d952248e8d32f6db6.png" },
+  { num:"26", name:"Kisspeptin-10", cas:"374675-21-5", formula:"C63H83N17O14", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/5917d21575ca4946b9cdb51a04802b27.png" },
+  { num:"27", name:"Cagrilintide", cas:"1415456-99-3", formula:"C194H312N54O59S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/026cee7a7c9e49049907b3bd50484b77.png" },
+  { num:"28", name:"Liraglutide", cas:"204656-20-2", formula:"C172H265N43O51", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/08/ceaeac5390f049609a729af34d0c5c04.png" }
+*/
+
+// Molecular weight estimation for simple formulas (falls back to hidden row)
+const ATOMIC = { C:12.011, H:1.008, N:14.007, O:15.999, S:32.06, P:30.974, Cu:63.546, I:126.904, B:10.81, F:18.998 };
+function molWeight(formula) {
+  if (!/^(?:[A-Z][a-z]?\d*)+$/.test(formula)) return null;
+  let total = 0;
+  formula.replace(/([A-Z][a-z]?)(\d*)/g, (_, el, n) => {
+    if (!(el in ATOMIC)) { total = null; return _; }
+    total += ATOMIC[el] * (n === "" ? 1 : parseInt(n, 10));
+    return _;
+  });
+  return total;
+}
+
+const params = new URLSearchParams(location.search);
+const idParam = params.get("id") || "";
+const casParam = params.get("cas") || "";
+const p = (idParam && products.find(x => x.id === idParam)) || (casParam && products.find(x => x.cas === casParam)) || products[0];
+const shortName = p.name.length > 26 ? p.name.slice(0, 26) + "…" : p.name;
+
+document.title = shortName + " Supplier | Bulk & Wholesale Supply | Pepveri";
+document.getElementById("crumbName").textContent = p.name;
+document.getElementById("heroTitle").textContent = p.name + " Wholesale and Bulk Supply";
+document.getElementById("heroLead").textContent = "Pepveri supplies " + p.name + " in gram and kilogram quantities, with custom milligram vial aliquoting available. Contact us for bulk and wholesale supply, packaging options and a product quotation.";
+document.getElementById("techTitle").textContent = p.name + " API Technical Information";
+document.getElementById("ctaName").textContent = p.name;
+document.getElementById("heroImg").src = p.img;
+document.getElementById("heroImg").alt = p.name;
+const inquiryHref = "inquiry.html?product=" + encodeURIComponent(p.name);
+document.getElementById("ctaInquiry").href = inquiryHref;
+document.getElementById("ctaInquiry2").href = inquiryHref;
+
+const mw = p.mw ? null : molWeight(p.formula.replace(/[^A-Za-z0-9]/g, ""));
+const techRows = [
+  ["CAS Number", p.cas],
+  ["Molecular Formula", p.formula],
+  ...(p.mw ? [["Molecular Weight", p.mw]] : (mw ? [["Molecular Weight", mw.toFixed(1) + " g/mol"]] : [])),
+  ["Purity", p.purity],
+  ["Supply Forms", "Bulk raw material / vials"],
+  ["Vial Specifications", "10 mg / 20 mg / 30 mg / 50 mg / 60 mg"],
+  ["Packaging", "Raw material: 10–1000 g/bag; vials: 10 vials/kit"],
+  ["Minimum Order Quantity", "Raw material: 10 g; vials: 1 kit"],
+  ["Storage", "Store at -20°C (lyophilized) or 2-8°C (reconstituted)"],
+  ["Testing", "Third-party laboratory testing supported"],
+  ["Quality Docs", p.docs || "HPLC · MS · COA"],
+  ["MOQ", p.moq || "Raw material: 10 g; vials: 1 kit"],
+  ["Category", p.category]
+];
+document.getElementById("techTable").innerHTML = techRows.map(([k, v]) =>
+  '<div class="row"><div class="k">' + k + '</div><div class="v">' + v + '</div></div>'
+).join("");
+
+const faqs = [
+  ["What is " + p.name + "?", p.name + " is a synthetic peptide supplied as an API for research and development, quality evaluation, and import/distribution preparation, with molecular formula " + p.formula + ". Supply is intended for qualified pharmaceutical companies, research institutions, CDMOs, and other B2B organizations, with available documentation including COA, HPLC, LC-MS, peptide content, batch information, packaging, and storage details. " + p.name + " is not for personal use or direct consumer sale."],
+  ["In which supply forms can I order " + p.name + "?", p.name + " is available as bulk raw material and vial-packed research material. Specify the required supply form when requesting a quotation."],
+  ["Which raw material and vial specifications are available for " + p.name + "?", "Raw " + p.name + " is supplied in quantities from 10 g to 1000 g. Available research vial specifications: 10 mg / 20 mg / 30 mg / 50 mg / 60 mg. Each kit contains 10 vials."],
+  ["What is the minimum order quantity for " + p.name + "?", "The minimum order for raw " + p.name + " is 10 g. For vial-packed " + p.name + ", the minimum order is 10 vials, equal to one kit."],
+  ["In what physical form is " + p.name + " supplied and how is it packaged?", "Raw " + p.name + " is supplied as lyophilized powder in fluorinated bottles, then vacuum packed in aluminum foil bags. Vial-packed research " + p.name + " is supplied as lyophilized powder in sealed pharmaceutical glass vials, with 10 vials per kit."],
+  ["Is " + p.name + " in stock and what is the delivery time?", "We keep kilogram-scale stocks of raw " + p.name + ", normally dispatching within 7 days. If stock cannot cover your order, we arrange production, usually taking 7 days, with delivery in 7–15 days."],
+  ["How are bulk " + p.name + " orders quoted and which wholesale discounts apply?", "Raw " + p.name + " is quoted at gram and kilogram scales. Bulk research-vial orders qualify for wholesale discounts when they reach the applicable order amount. Every first order receives wholesale pricing regardless of its amount, reducing first-order evaluation costs."],
+  ["Why choose Pepveri as your " + p.name + " supplier?", "Pepveri manufactures " + p.name + " raw material in-house and independently controls quality for consistent supply. Product purity: " + p.purity + ". Batch support includes COA, HPLC and LC-MS reports. Supply ranges from gram-scale raw material to custom milligram research vials for academic research and bulk procurement."],
+  ["Where can I source " + p.name + " and request a bulk quotation?", "Source " + p.name + " from China-based supplier Pepveri. Request current bulk pricing through our website inquiry form. We reply within half an hour during working hours."],
+  ["Is " + p.name + " for human or veterinary use?", "No. " + p.name + " is supplied only as a chemical reagent for in-vitro laboratory research, not for human or veterinary use. Pepveri is not a pharmacy or compounding facility."]
+];
+document.getElementById("faqList").innerHTML = faqs.map(([q, a]) =>
+  "<details><summary>" + q + "</summary><div class='faq-body'>" + a + "</div></details>"
+).join("");
+
+// Related products: same category first, then next in list
+const start = products.indexOf(p);
+const sameCat = products.filter(x => x !== p && x.category === p.category);
+const after = products.filter(x => x !== p && x.category !== p.category);
+const related = sameCat.concat(after).slice(0, 3);
+document.getElementById("relatedGrid").innerHTML = related.map(r =>
+  '<a class="related-card" href="product.html?id=' + encodeURIComponent(r.id) + '">' +
+  '<img src="' + r.img + '" alt="' + r.name + '">' +
+  '<div><h3>' + r.name + '</h3><div class="cas">CAS ' + r.cas + '</div></div></a>'
+).join("");
+
+// Footer product links
+document.getElementById("footerProducts").innerHTML =
+  products.slice(0, 4).map(r =>
+    '<li><a href="product.html?id=' + encodeURIComponent(r.id) + '">' + r.name + '</a></li>'
+  ).join("") + '<li><a href="products.html">View all products →</a></li>';
+</script>
+</body>
+</html>
