@@ -1,0 +1,2852 @@
+{
+ "lines": [
+  {
+   "id": "gmp",
+   "name": "Pharmaceutical & GMP Peptides",
+   "desc": "Pre-GMP and cGMP-grade APIs with full regulatory documentation — from GLP-1 analogs to peptide hormones.",
+   "subs": [
+    {
+     "id": "pre-gmp-cgmp-api-peptides",
+     "name": "Pre-GMP / cGMP API Peptides",
+     "label": "Pre-GMP / cGMP API",
+     "count": 22
+    },
+    {
+     "id": "impurity-reference-peptides",
+     "name": "Impurity Reference Peptides",
+     "label": "Impurity References",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "name": "Catalog Research Peptides",
+   "desc": "The working library: toxins, AMPs, tags, substrates and signalling peptides, in stock for RUO work.",
+   "subs": [
+    {
+     "id": "ion-channel-toxin-peptides",
+     "name": "Ion Channel Toxin Peptides",
+     "label": "Ion Channel Toxins",
+     "count": 30
+    },
+    {
+     "id": "bioactive-research-peptides",
+     "name": "Bioactive Research Peptides",
+     "label": "Bioactive Research",
+     "count": 26
+    },
+    {
+     "id": "antimicrobial-peptides-amp",
+     "name": "Antimicrobial Peptides (AMP)",
+     "label": "Antimicrobial (AMP)",
+     "count": 24
+    },
+    {
+     "id": "amyloid-tau-neurodegeneration-peptides",
+     "name": "Amyloid & Tau / Neurodegeneration Peptides",
+     "label": "Amyloid & Tau",
+     "count": 22
+    },
+    {
+     "id": "tag-epitope-peptides",
+     "name": "Tag & Epitope Peptides",
+     "label": "Tags & Epitopes",
+     "count": 20
+    },
+    {
+     "id": "ubiquitin-ubl-peptides",
+     "name": "Ubiquitin & UBL Peptides",
+     "label": "Ubiquitin & UBL",
+     "count": 18
+    },
+    {
+     "id": "integrin-rgd-cell-adhesion-peptides",
+     "name": "Integrin / RGD & Cell Adhesion Peptides",
+     "label": "Integrin / RGD",
+     "count": 14
+    },
+    {
+     "id": "glp-1-endocrine-metabolic-peptides",
+     "name": "GLP-1 / Endocrine & Metabolic Peptides",
+     "label": "GLP-1 & Metabolic",
+     "count": 14
+    },
+    {
+     "id": "protease-substrate-fluorogenic-substrates",
+     "name": "Protease Substrate / Fluorogenic Substrates",
+     "label": "Protease Substrates",
+     "count": 12
+    },
+    {
+     "id": "cell-penetrating-peptides-cpp",
+     "name": "Cell Penetrating Peptides (CPP)",
+     "label": "Cell-Penetrating (CPP)",
+     "count": 10
+    },
+    {
+     "id": "opioid-dynorphin-pain-peptides",
+     "name": "Opioid / Dynorphin / Pain Peptides",
+     "label": "Opioid & Pain",
+     "count": 10
+    },
+    {
+     "id": "adc-linker-peptides",
+     "name": "ADC Linker Peptides",
+     "label": "ADC Linkers",
+     "count": 7
+    }
+   ]
+  },
+  {
+   "id": "cosmetic",
+   "name": "Cosmetic Peptides",
+   "desc": "INCI-ready signal, neurotransmitter-inhibiting and carrier peptides for skincare formulators.",
+   "subs": [
+    {
+     "id": "signal-peptides-matrixyl-family",
+     "name": "Signal Peptides (Matrixyl Family)",
+     "label": "Matrixyl Family",
+     "count": 11
+    },
+    {
+     "id": "neurotransmitter-inhibiting-peptides",
+     "name": "Neurotransmitter Inhibiting Peptides",
+     "label": "Neurotransmitter Inhibitors",
+     "count": 4
+    },
+    {
+     "id": "melanin-enzyme-inhibitor-repair-peptides",
+     "name": "Melanin / Enzyme Inhibitor & Repair Peptides",
+     "label": "Melanin & Repair",
+     "count": 9
+    },
+    {
+     "id": "carrier-peptides",
+     "name": "Carrier Peptides",
+     "label": "Carrier Peptides",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "id": "nutra",
+   "name": "Oral Nutraceutical Peptides",
+   "desc": "Food- and oral-grade peptides and hydrolysates for supplement manufacturers.",
+   "subs": [
+    {
+     "id": "bioactive-food-peptides",
+     "name": "Bioactive Food Peptides",
+     "label": "Bioactive Food Peptides",
+     "count": 7
+    },
+    {
+     "id": "collagen-oligopeptides",
+     "name": "Collagen Oligopeptides",
+     "label": "Collagen Oligopeptides",
+     "count": 4
+    },
+    {
+     "id": "synthetic-bioactive-oral-peptides",
+     "name": "Synthetic Bioactive Oral Peptides",
+     "label": "Synthetic Oral Peptides",
+     "count": 7
+    }
+   ]
+  },
+  {
+   "id": "vet",
+   "name": "Veterinary & Pet Health",
+   "desc": "Feed-additive antimicrobials and pet skincare actives, supplied by the gram.",
+   "subs": [
+    {
+     "id": "feed-additive-antimicrobial-peptides",
+     "name": "Feed Additive Antimicrobial Peptides",
+     "label": "Feed Additives",
+     "count": 10
+    },
+    {
+     "id": "pet-skincare-wound-care-peptides",
+     "name": "Pet Skincare & Wound Care Peptides",
+     "label": "Pet Skincare & Wound Care",
+     "count": 7
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "name": "Semaglutide (API Grade)",
+   "slug": "semaglutide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-001",
+   "cas": "910463-68-2",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Tirzepatide (API Grade)",
+   "slug": "tirzepatide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-002",
+   "cas": "2023788-19-2",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Exenatide (API Grade)",
+   "slug": "exenatide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-003",
+   "cas": "141732-76-5",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Liraglutide (API Grade)",
+   "slug": "liraglutide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-004",
+   "cas": "204656-20-2",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Dulaglutide fragment (API Grade)",
+   "slug": "dulaglutide-fragment-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-005",
+   "cas": "",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Octreotide (API Grade)",
+   "slug": "octreotide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-006",
+   "cas": "83150-76-9",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Lanreotide (API Grade)",
+   "slug": "lanreotide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-007",
+   "cas": "108736-35-2",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Vapreotide (API Grade)",
+   "slug": "vapreotide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-008",
+   "cas": "103222-11-3",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Buserelin (API Grade)",
+   "slug": "buserelin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-009",
+   "cas": "57982-77-1",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Leuprorelin / Leuprolide (API Grade)",
+   "slug": "leuprorelin-leuprolide-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-010",
+   "cas": "53714-56-0",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Goserelin (API Grade)",
+   "slug": "goserelin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-011",
+   "cas": "65807-02-5",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Triptorelin (API Grade)",
+   "slug": "triptorelin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-012",
+   "cas": "57773-63-4",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Nafarelin (API Grade)",
+   "slug": "nafarelin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-013",
+   "cas": "76932-56-4",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Cetrorelix (API Grade)",
+   "slug": "cetrorelix-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-014",
+   "cas": "120287-85-6",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Ganirelix (API Grade)",
+   "slug": "ganirelix-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-015",
+   "cas": "124904-93-4",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Oxytocin (API Grade)",
+   "slug": "oxytocin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-016",
+   "cas": "50-56-6",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Vasopressin (AVP, API Grade)",
+   "slug": "vasopressin-avp-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-017",
+   "cas": "113-79-1",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Desmopressin (API Grade)",
+   "slug": "desmopressin-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-018",
+   "cas": "16679-58-6",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Calcitonin (Salmon, API Grade)",
+   "slug": "calcitonin-salmon-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-019",
+   "cas": "47931-85-1",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Teriparatide (PTH 1-34, API Grade)",
+   "slug": "teriparatide-pth-1-34-api-grade",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-020",
+   "cas": "52232-67-4",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Romosozumab fragment",
+   "slug": "romosozumab-fragment",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-021",
+   "cas": "",
+   "purity": "≥99%"
+  },
+  {
+   "name": "Ziconotide (API Grade, ω-Conotoxin MVIIA)",
+   "slug": "ziconotide-api-grade-omega-conotoxin-mviia",
+   "sub": "Pre-GMP / cGMP API Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-022",
+   "cas": "107452-89-1",
+   "purity": "≥99%"
+  },
+  {
+   "name": "API Truncated Fragment Impurities",
+   "slug": "api-truncated-fragment-impurities",
+   "sub": "Impurity Reference Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-023",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Oxidized Peptide Impurity (Met Sulfoxide)",
+   "slug": "oxidized-peptide-impurity-met-sulfoxide",
+   "sub": "Impurity Reference Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-024",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "D-amino Acid Epimer Impurity",
+   "slug": "d-amino-acid-epimer-impurity",
+   "sub": "Impurity Reference Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-025",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Deamidated Impurity (Asn/Gln)",
+   "slug": "deamidated-impurity-asn-gln",
+   "sub": "Impurity Reference Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-026",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Aggregation / Dimer Reference Peptide",
+   "slug": "aggregation-dimer-reference-peptide",
+   "sub": "Impurity Reference Peptides",
+   "line": "gmp",
+   "ref": "PV-GM-027",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "ProTx-II",
+   "slug": "protx-ii",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-001",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "ω-Conotoxin GVIA",
+   "slug": "omega-conotoxin-gvia",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-002",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "ω-Conotoxin MVIIA (Ziconotide)",
+   "slug": "omega-conotoxin-mviia-ziconotide",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-003",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "μ-Conotoxin GIIIA",
+   "slug": "mu-conotoxin-giiia",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-004",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Huwentoxin-IV (HwTx-IV)",
+   "slug": "huwentoxin-iv-hwtx-iv",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-005",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Margatoxin (MgTx)",
+   "slug": "margatoxin-mgtx",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-006",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Charybdotoxin (ChTx)",
+   "slug": "charybdotoxin-chtx",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-007",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Iberiotoxin",
+   "slug": "iberiotoxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-008",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Slotoxin",
+   "slug": "slotoxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-009",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Agitoxin-2",
+   "slug": "agitoxin-2",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-010",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Agitoxin-3",
+   "slug": "agitoxin-3",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-011",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Kaliotoxin",
+   "slug": "kaliotoxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-012",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Noxiustoxin",
+   "slug": "noxiustoxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-013",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Pandinotoxin",
+   "slug": "pandinotoxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-014",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "TsTX-Kα",
+   "slug": "tstx-kalpha",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-015",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "α-Conotoxin GI",
+   "slug": "alpha-conotoxin-gi",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-016",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "α-Conotoxin MI",
+   "slug": "alpha-conotoxin-mi",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-017",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "α-Conotoxin PnIA",
+   "slug": "alpha-conotoxin-pnia",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-018",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "α-Conotoxin PnIB",
+   "slug": "alpha-conotoxin-pnib",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-019",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "α-Conotoxin AuIB",
+   "slug": "alpha-conotoxin-auib",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-020",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "κ-Conotoxin PVIIA",
+   "slug": "kappa-conotoxin-pviia",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-021",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Tityustoxin Kα",
+   "slug": "tityustoxin-kalpha",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-022",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Heteropodatoxin-2",
+   "slug": "heteropodatoxin-2",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-023",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Heteropodatoxin-3",
+   "slug": "heteropodatoxin-3",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-024",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Phrixotoxin-1",
+   "slug": "phrixotoxin-1",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-025",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Phrixotoxin-2",
+   "slug": "phrixotoxin-2",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-026",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "GsMTx-4",
+   "slug": "gsmtx-4",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-027",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Scylla toxin",
+   "slug": "scylla-toxin",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-028",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Crotamine",
+   "slug": "crotamine",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-029",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "Dendrotoxin-I",
+   "slug": "dendrotoxin-i",
+   "sub": "Ion Channel Toxin Peptides",
+   "line": "research",
+   "ref": "PV-RE-030",
+   "cas": "",
+   "purity": "≥95%"
+  },
+  {
+   "name": "BPC-157",
+   "slug": "bpc-157",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-031",
+   "cas": "137525-51-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "TB-500",
+   "slug": "tb-500",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-032",
+   "cas": "77591-33-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GHK",
+   "slug": "ghk",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-033",
+   "cas": "72957-37-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GHK-Cu",
+   "slug": "ghk-cu",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-034",
+   "cas": "89030-95-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "KPV",
+   "slug": "kpv",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-035",
+   "cas": "67727-97-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Epithalon (Epitalon)",
+   "slug": "epithalon-epitalon",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-036",
+   "cas": "307297-39-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Selank",
+   "slug": "selank",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-037",
+   "cas": "129954-34-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Semax",
+   "slug": "semax",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-038",
+   "cas": "80714-61-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "MOTS-c",
+   "slug": "mots-c",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-039",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Thymopentin (TP5)",
+   "slug": "thymopentin-tp5",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-040",
+   "cas": "69558-55-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Thymosin α1",
+   "slug": "thymosin-alpha1",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-041",
+   "cas": "62304-98-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Thymosin β4",
+   "slug": "thymosin-beta4",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-042",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "DSIP (Delta Sleep Inducing Peptide)",
+   "slug": "dsip-delta-sleep-inducing-peptide",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-043",
+   "cas": "62568-57-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Melanotan II",
+   "slug": "melanotan-ii",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-044",
+   "cas": "121062-08-6",
+   "purity": "≥98%"
+  },
+  {
+   "name": "α-MSH",
+   "slug": "alpha-msh",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-045",
+   "cas": "581-05-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "γ-MSH",
+   "slug": "gamma-msh",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-046",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-MSH",
+   "slug": "beta-msh",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-047",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Orexin A",
+   "slug": "orexin-a",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-048",
+   "cas": "205640-90-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Orexin B",
+   "slug": "orexin-b",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-049",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ghrelin",
+   "slug": "ghrelin",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-050",
+   "cas": "258279-04-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ipamorelin",
+   "slug": "ipamorelin",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-051",
+   "cas": "170851-70-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GHRP-2",
+   "slug": "ghrp-2",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-052",
+   "cas": "158861-67-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GHRP-6",
+   "slug": "ghrp-6",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-053",
+   "cas": "87616-84-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Hexarelin",
+   "slug": "hexarelin",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-054",
+   "cas": "140703-51-1",
+   "purity": "≥98%"
+  },
+  {
+   "name": "CJC-1295 (without DAC)",
+   "slug": "cjc-1295-without-dac",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-055",
+   "cas": "863288-34-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "AOD9604",
+   "slug": "aod9604",
+   "sub": "Bioactive Research Peptides",
+   "line": "research",
+   "ref": "PV-RE-056",
+   "cas": "221231-10-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "LL-37 Human",
+   "slug": "ll-37-human",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-057",
+   "cas": "154947-66-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "LL-37 Scrambled",
+   "slug": "ll-37-scrambled",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-058",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Magainin 1",
+   "slug": "magainin-1",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-059",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Magainin 2",
+   "slug": "magainin-2",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-060",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Melittin",
+   "slug": "melittin",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-061",
+   "cas": "20449-79-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Mastoparan",
+   "slug": "mastoparan",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-062",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Mastoparan-7",
+   "slug": "mastoparan-7",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-063",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tachyplesin I",
+   "slug": "tachyplesin-i",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-064",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tachyplesin III",
+   "slug": "tachyplesin-iii",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-065",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Lactoferricin B (17-41)",
+   "slug": "lactoferricin-b-17-41",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-066",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Indolicidin",
+   "slug": "indolicidin",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-067",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ovispirin-1",
+   "slug": "ovispirin-1",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-068",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Temporin L",
+   "slug": "temporin-l",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-069",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Dermaseptin S4",
+   "slug": "dermaseptin-s4",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-070",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Aurein 1.2",
+   "slug": "aurein-1-2",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-071",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Citropin 1.1",
+   "slug": "citropin-1-1",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-072",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Protegrin-1",
+   "slug": "protegrin-1",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-073",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Gramicidin A",
+   "slug": "gramicidin-a",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-074",
+   "cas": "1405-97-6",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Gramicidin S",
+   "slug": "gramicidin-s",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-075",
+   "cas": "113-73-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Bombinin H2",
+   "slug": "bombinin-h2",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-076",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Maximin 1",
+   "slug": "maximin-1",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-077",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Pexiganan",
+   "slug": "pexiganan",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-078",
+   "cas": "147664-63-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "KLK peptide (KLK5)",
+   "slug": "klk-peptide-klk5",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-079",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Histatin 5",
+   "slug": "histatin-5",
+   "sub": "Antimicrobial Peptides (AMP)",
+   "line": "research",
+   "ref": "PV-RE-080",
+   "cas": "115966-23-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (1-40) Human",
+   "slug": "beta-amyloid-1-40-human",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-081",
+   "cas": "131438-79-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (1-42) Human",
+   "slug": "beta-amyloid-1-42-human",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-082",
+   "cas": "107761-42-2",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (1-42) Scrambled",
+   "slug": "beta-amyloid-1-42-scrambled",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-083",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (1-16)",
+   "slug": "beta-amyloid-1-16",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-084",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (25-35)",
+   "slug": "beta-amyloid-25-35",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-085",
+   "cas": "131602-53-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Amyloid (17-21)",
+   "slug": "beta-amyloid-17-21",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-086",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Aβ (pE3-42)",
+   "slug": "abeta-pe3-42",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-087",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tau (1-20)",
+   "slug": "tau-1-20",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-088",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tau (273-284)",
+   "slug": "tau-273-284",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-089",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tau (306-311) PHF6",
+   "slug": "tau-306-311-phf6",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-090",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tau (332-342) PHF6*",
+   "slug": "tau-332-342-phf6",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-091",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "α-Synuclein (1-40)",
+   "slug": "alpha-synuclein-1-40",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-092",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "α-Synuclein (61-95)",
+   "slug": "alpha-synuclein-61-95",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-093",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PrP (106-126)",
+   "slug": "prp-106-126",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-094",
+   "cas": "148439-49-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PrP (118-135)",
+   "slug": "prp-118-135",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-095",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "VIP",
+   "slug": "vip",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-096",
+   "cas": "37221-79-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PACAP-27",
+   "slug": "pacap-27",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-097",
+   "cas": "127317-03-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PACAP-38",
+   "slug": "pacap-38",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-098",
+   "cas": "137061-48-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Somatostatin-14",
+   "slug": "somatostatin-14",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-099",
+   "cas": "38916-34-6",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Somatostatin-28",
+   "slug": "somatostatin-28",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-100",
+   "cas": "73032-94-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Galanin",
+   "slug": "galanin",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-101",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Galanin (1-15)",
+   "slug": "galanin-1-15",
+   "sub": "Amyloid & Tau / Neurodegeneration Peptides",
+   "line": "research",
+   "ref": "PV-RE-102",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "FLAG Peptide (DYKDDDDK)",
+   "slug": "flag-peptide-dykddddk",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-103",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "3×FLAG Peptide",
+   "slug": "3xflag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-104",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "HA Tag Peptide",
+   "slug": "ha-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-105",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Myc Tag Peptide",
+   "slug": "myc-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-106",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "6×His Tag Peptide",
+   "slug": "6xhis-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-107",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "V5 Tag Peptide",
+   "slug": "v5-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-108",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "T7 Tag Peptide",
+   "slug": "t7-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-109",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GST Epitope Peptide",
+   "slug": "gst-epitope-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-110",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "MBP Epitope Peptide",
+   "slug": "mbp-epitope-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-111",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "S Tag Peptide",
+   "slug": "s-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-112",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Strep-tag II",
+   "slug": "strep-tag-ii",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-113",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "AU1 Epitope",
+   "slug": "au1-epitope",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-114",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "AU5 Epitope",
+   "slug": "au5-epitope",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-115",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "E Tag Peptide",
+   "slug": "e-tag-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-116",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "HSV Tag",
+   "slug": "hsv-tag",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-117",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "KT3 Epitope",
+   "slug": "kt3-epitope",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-118",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PK Epitope",
+   "slug": "pk-epitope",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-119",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "OmpA signal peptide",
+   "slug": "ompa-signal-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-120",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "NLS Peptide (SV40)",
+   "slug": "nls-peptide-sv40",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-121",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "NES Peptide",
+   "slug": "nes-peptide",
+   "sub": "Tag & Epitope Peptides",
+   "line": "research",
+   "ref": "PV-RE-122",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin (1-76) fragment peptide",
+   "slug": "ubiquitin-1-76-fragment-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-123",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ub C-terminal Gly-Gly peptide",
+   "slug": "ub-c-terminal-gly-gly-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-124",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin (42-72)",
+   "slug": "ubiquitin-42-72",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-125",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "SUMO-1 C-terminal peptide",
+   "slug": "sumo-1-c-terminal-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-126",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "SUMO-2 C-terminal peptide",
+   "slug": "sumo-2-c-terminal-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-127",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "SUMO-3 C-terminal peptide",
+   "slug": "sumo-3-c-terminal-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-128",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "NEDD8 C-terminal peptide",
+   "slug": "nedd8-c-terminal-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-129",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "ISG15 C-terminal peptide",
+   "slug": "isg15-c-terminal-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-130",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K48 linkage peptide",
+   "slug": "ubiquitin-k48-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-131",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K63 linkage peptide",
+   "slug": "ubiquitin-k63-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-132",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K6 linkage peptide",
+   "slug": "ubiquitin-k6-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-133",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K11 linkage peptide",
+   "slug": "ubiquitin-k11-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-134",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K27 linkage peptide",
+   "slug": "ubiquitin-k27-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-135",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K29 linkage peptide",
+   "slug": "ubiquitin-k29-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-136",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K33 linkage peptide",
+   "slug": "ubiquitin-k33-linkage-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-137",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ubiquitin K0 control peptide",
+   "slug": "ubiquitin-k0-control-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-138",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "UCHL1 substrate peptide",
+   "slug": "uchl1-substrate-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-139",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "USP7 substrate peptide",
+   "slug": "usp7-substrate-peptide",
+   "sub": "Ubiquitin & UBL Peptides",
+   "line": "research",
+   "ref": "PV-RE-140",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "RGD",
+   "slug": "rgd",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-141",
+   "cas": "99896-85-2",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Cyclo(-RGDfK-)",
+   "slug": "cyclo-rgdfk",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-142",
+   "cas": "161552-03-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "RAD (negative control of RGD)",
+   "slug": "rad-negative-control-of-rgd",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-143",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GRGDS",
+   "slug": "grgds",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-144",
+   "cas": "96426-21-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GRGDSP",
+   "slug": "grgdsp",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-145",
+   "cas": "91037-65-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "RGES (control)",
+   "slug": "rges-control",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-146",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "IKVAV",
+   "slug": "ikvav",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-147",
+   "cas": "131599-91-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "YIGSR",
+   "slug": "yigsr",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-148",
+   "cas": "110590-25-2",
+   "purity": "≥98%"
+  },
+  {
+   "name": "LDV",
+   "slug": "ldv",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-149",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "REDV",
+   "slug": "redv",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-150",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "DGEA",
+   "slug": "dgea",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-151",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PHSRN",
+   "slug": "phsrn",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-152",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GFOGER",
+   "slug": "gfoger",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-153",
+   "cas": "150347-59-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "HAVDI",
+   "slug": "havdi",
+   "sub": "Integrin / RGD & Cell Adhesion Peptides",
+   "line": "research",
+   "ref": "PV-RE-154",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GLP-1 (7-36) amide Human",
+   "slug": "glp-1-7-36-amide-human",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-155",
+   "cas": "107444-51-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GLP-1 (1-37)",
+   "slug": "glp-1-1-37",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-156",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Exendin-4",
+   "slug": "exendin-4",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-157",
+   "cas": "141732-76-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Exendin (9-39)",
+   "slug": "exendin-9-39",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-158",
+   "cas": "133514-43-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Glucagon",
+   "slug": "glucagon",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-159",
+   "cas": "16941-32-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Glucagon-like peptide-2 GLP-2",
+   "slug": "glucagon-like-peptide-2-glp-2",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-160",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Secretin",
+   "slug": "secretin",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-161",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "GIP",
+   "slug": "gip",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-162",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Cholecystokinin CCK-8",
+   "slug": "cholecystokinin-cck-8",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-163",
+   "cas": "25126-32-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "CCK-4",
+   "slug": "cck-4",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-164",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Neuropeptide Y (NPY)",
+   "slug": "neuropeptide-y-npy",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-165",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "PYY (3-36)",
+   "slug": "pyy-3-36",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-166",
+   "cas": "123583-37-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Kisspeptin-10",
+   "slug": "kisspeptin-10",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-167",
+   "cas": "374675-21-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Kisspeptin-54",
+   "slug": "kisspeptin-54",
+   "sub": "GLP-1 / Endocrine & Metabolic Peptides",
+   "line": "research",
+   "ref": "PV-RE-168",
+   "cas": "374675-21-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Caspase-3 Substrate (DEVD)",
+   "slug": "caspase-3-substrate-devd",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-169",
+   "cas": "169332-61-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Caspase-8 Substrate (IETD)",
+   "slug": "caspase-8-substrate-ietd",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-170",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Caspase-9 Substrate (LEHD)",
+   "slug": "caspase-9-substrate-lehd",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-171",
+   "cas": "189109-90-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Caspase-1 Substrate (YVAD)",
+   "slug": "caspase-1-substrate-yvad",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-172",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Cathepsin B Substrate",
+   "slug": "cathepsin-b-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-173",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Cathepsin D Substrate",
+   "slug": "cathepsin-d-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-174",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Thrombin Substrate",
+   "slug": "thrombin-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-175",
+   "cas": "13123-23-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Trypsin Substrate",
+   "slug": "trypsin-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-176",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Chymotrypsin Substrate",
+   "slug": "chymotrypsin-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-177",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "MMP-2 Substrate",
+   "slug": "mmp-2-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-178",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "MMP-9 Substrate",
+   "slug": "mmp-9-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-179",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Calpain Substrate",
+   "slug": "calpain-substrate",
+   "sub": "Protease Substrate / Fluorogenic Substrates",
+   "line": "research",
+   "ref": "PV-RE-180",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "TAT (48-60) HIV",
+   "slug": "tat-48-60-hiv",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-181",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Penetratin (Antp 43-58)",
+   "slug": "penetratin-antp-43-58",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-182",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Octaarginine R8",
+   "slug": "octaarginine-r8",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-183",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Nonapeptide R9",
+   "slug": "nonapeptide-r9",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-184",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Transportan",
+   "slug": "transportan",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-185",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Transportan 10",
+   "slug": "transportan-10",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-186",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "TP10",
+   "slug": "tp10",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-187",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "MAP peptide",
+   "slug": "map-peptide",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-188",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "pVEC",
+   "slug": "pvec",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-189",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "CADY peptide",
+   "slug": "cady-peptide",
+   "sub": "Cell Penetrating Peptides (CPP)",
+   "line": "research",
+   "ref": "PV-RE-190",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Dynorphin A (1-13)",
+   "slug": "dynorphin-a-1-13",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-191",
+   "cas": "72957-38-1",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Dynorphin A (1-17)",
+   "slug": "dynorphin-a-1-17",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-192",
+   "cas": "80448-90-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Leu-Enkephalin",
+   "slug": "leu-enkephalin",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-193",
+   "cas": "58822-25-6",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Met-Enkephalin",
+   "slug": "met-enkephalin",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-194",
+   "cas": "58569-55-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Endorphin",
+   "slug": "beta-endorphin",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-195",
+   "cas": "60617-12-1",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Endomorphin-1",
+   "slug": "endomorphin-1",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-196",
+   "cas": "189388-22-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Endomorphin-2",
+   "slug": "endomorphin-2",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-197",
+   "cas": "141801-26-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Dermorphin",
+   "slug": "dermorphin",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-198",
+   "cas": "77614-16-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Deltorphin I",
+   "slug": "deltorphin-i",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-199",
+   "cas": "122752-15-2",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Deltorphin II",
+   "slug": "deltorphin-ii",
+   "sub": "Opioid / Dynorphin / Pain Peptides",
+   "line": "research",
+   "ref": "PV-RE-200",
+   "cas": "122752-16-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Val-Cit (VC) Linker Peptide",
+   "slug": "val-cit-vc-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-201",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Val-Ala (VA) Linker Peptide",
+   "slug": "val-ala-va-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-202",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Phe-Lys (FK) Linker Peptide",
+   "slug": "phe-lys-fk-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-203",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Ala-Ala-Asn (AAN) Linker Peptide",
+   "slug": "ala-ala-asn-aan-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-204",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Gly-Gly-Phe-Leu (GGFL) Linker Peptide",
+   "slug": "gly-gly-phe-leu-ggfl-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-205",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Lys-Val-Cit Linker Peptide",
+   "slug": "lys-val-cit-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-206",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "β-Ala-Val-Cit Linker Peptide",
+   "slug": "beta-ala-val-cit-linker-peptide",
+   "sub": "ADC Linker Peptides",
+   "line": "research",
+   "ref": "PV-RE-207",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Palmitoyl Pentapeptide-4 (Matrixyl)",
+   "slug": "palmitoyl-pentapeptide-4-matrixyl",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-001",
+   "cas": "214047-00-4",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Palmitoyl Tripeptide-1 (Pal-GHK)",
+   "slug": "palmitoyl-tripeptide-1-pal-ghk",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-002",
+   "cas": "147732-56-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Palmitoyl Tetrapeptide-7",
+   "slug": "palmitoyl-tetrapeptide-7",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-003",
+   "cas": "221227-05-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Matrixyl 3000 (Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7)",
+   "slug": "matrixyl-3000-palmitoyl-tripeptide-1-palmitoyl-tetrapeptide-7",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-004",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Palmitoyl Tripeptide-38 (Matrixyl Synthe'6)",
+   "slug": "palmitoyl-tripeptide-38-matrixyl-synthe6",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-005",
+   "cas": "1447824-23-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Palmitoyl Hexapeptide-14",
+   "slug": "palmitoyl-hexapeptide-14",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-006",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Hexapeptide-9 (Collaxyl)",
+   "slug": "hexapeptide-9-collaxyl",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-007",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tripeptide-10 Citrulline (Decorinyl)",
+   "slug": "tripeptide-10-citrulline-decorinyl",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-008",
+   "cas": "1190271-42-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Syn-Coll (Palmitoyl Tripeptide-5)",
+   "slug": "syn-coll-palmitoyl-tripeptide-5",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-009",
+   "cas": "623172-56-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Syn-Tacks (Palmitoyl Dipeptide-5 Complex)",
+   "slug": "syn-tacks-palmitoyl-dipeptide-5-complex",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-010",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Myristoyl Pentapeptide-17",
+   "slug": "myristoyl-pentapeptide-17",
+   "sub": "Signal Peptides (Matrixyl Family)",
+   "line": "cosmetic",
+   "ref": "PV-CO-011",
+   "cas": "959610-30-1",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Acetyl Hexapeptide-8 (Argireline)",
+   "slug": "acetyl-hexapeptide-8-argireline",
+   "sub": "Neurotransmitter Inhibiting Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-012",
+   "cas": "616204-22-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Acetyl Octapeptide-3 (SNAP-8)",
+   "slug": "acetyl-octapeptide-3-snap-8",
+   "sub": "Neurotransmitter Inhibiting Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-013",
+   "cas": "868844-74-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Pentapeptide-18 (Leuphasyl)",
+   "slug": "pentapeptide-18-leuphasyl",
+   "sub": "Neurotransmitter Inhibiting Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-014",
+   "cas": "64963-01-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Dipeptide Diaminobutyroyl Benzylamide Diacetate (Syn-Ake)",
+   "slug": "dipeptide-diaminobutyroyl-benzylamide-diacetate-syn-ake",
+   "sub": "Neurotransmitter Inhibiting Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-015",
+   "cas": "823202-99-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Nonapeptide-1 (Melanostatine-5)",
+   "slug": "nonapeptide-1-melanostatine-5",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-016",
+   "cas": "158563-45-2",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tetrapeptide-30",
+   "slug": "tetrapeptide-30",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-017",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Acetyl Tetrapeptide-5 (Eyeseryl)",
+   "slug": "acetyl-tetrapeptide-5-eyeseryl",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-018",
+   "cas": "820959-17-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tripeptide-29 (Gly-Pro-Hyp)",
+   "slug": "tripeptide-29-gly-pro-hyp",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-019",
+   "cas": "2239-67-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Oligopeptide-1",
+   "slug": "oligopeptide-1",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-020",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Oligopeptide-2",
+   "slug": "oligopeptide-2",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-021",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Oligopeptide-34",
+   "slug": "oligopeptide-34",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-022",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Carnosine",
+   "slug": "carnosine",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-023",
+   "cas": "305-84-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Glutathione",
+   "slug": "glutathione",
+   "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-024",
+   "cas": "70-18-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Copper Tripeptide-1 / GHK-Cu (Cosmetic Grade)",
+   "slug": "copper-tripeptide-1-ghk-cu-cosmetic-grade",
+   "sub": "Carrier Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-025",
+   "cas": "89030-95-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tripeptide-1 (GHK, Cosmetic Grade)",
+   "slug": "tripeptide-1-ghk-cosmetic-grade",
+   "sub": "Carrier Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-026",
+   "cas": "72957-37-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Manganese Tripeptide-1 (Mn-GHK)",
+   "slug": "manganese-tripeptide-1-mn-ghk",
+   "sub": "Carrier Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-027",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "AHK-Cu (Ala-His-Lys, Copper Peptide)",
+   "slug": "ahk-cu-ala-his-lys-copper-peptide",
+   "sub": "Carrier Peptides",
+   "line": "cosmetic",
+   "ref": "PV-CO-028",
+   "cas": "1076208-21-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Whey Protein Hydrolysate Peptides",
+   "slug": "whey-protein-hydrolysate-peptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-001",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Casein Phosphopeptides (CPP)",
+   "slug": "casein-phosphopeptides-cpp",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-002",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Soy Oligopeptides",
+   "slug": "soy-oligopeptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-003",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Oyster Peptides",
+   "slug": "oyster-peptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-004",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Rice Peptides",
+   "slug": "rice-peptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-005",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Squid Skin Peptides",
+   "slug": "squid-skin-peptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-006",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Sesame Peptides",
+   "slug": "sesame-peptides",
+   "sub": "Bioactive Food Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-007",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Marine Collagen Oligopeptides",
+   "slug": "marine-collagen-oligopeptides",
+   "sub": "Collagen Oligopeptides",
+   "line": "nutra",
+   "ref": "PV-NU-008",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Bovine Collagen Oligopeptides",
+   "slug": "bovine-collagen-oligopeptides",
+   "sub": "Collagen Oligopeptides",
+   "line": "nutra",
+   "ref": "PV-NU-009",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Chicken Sternum Collagen Type II Peptides",
+   "slug": "chicken-sternum-collagen-type-ii-peptides",
+   "sub": "Collagen Oligopeptides",
+   "line": "nutra",
+   "ref": "PV-NU-010",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "Collagen Tripeptide (Gly-Pro-Hyp)",
+   "slug": "collagen-tripeptide-gly-pro-hyp",
+   "sub": "Collagen Oligopeptides",
+   "line": "nutra",
+   "ref": "PV-NU-011",
+   "cas": "",
+   "purity": "≥90%"
+  },
+  {
+   "name": "L-Carnosine (Oral Grade)",
+   "slug": "l-carnosine-oral-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-012",
+   "cas": "305-84-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Reduced Glutathione (GSH, Food Grade)",
+   "slug": "reduced-glutathione-gsh-food-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-013",
+   "cas": "70-18-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "S-Acetyl Glutathione (SAG)",
+   "slug": "s-acetyl-glutathione-sag",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-014",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tripeptide-1 (GHK, Oral Grade)",
+   "slug": "tripeptide-1-ghk-oral-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-015",
+   "cas": "72957-37-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Thymopentin (TP5, Oral Grade)",
+   "slug": "thymopentin-tp5-oral-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-016",
+   "cas": "69558-55-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Epitalon (Epithalon, Oral Grade)",
+   "slug": "epitalon-epithalon-oral-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-017",
+   "cas": "307297-39-8",
+   "purity": "≥98%"
+  },
+  {
+   "name": "KPV (Oral Grade)",
+   "slug": "kpv-oral-grade",
+   "sub": "Synthetic Bioactive Oral Peptides",
+   "line": "nutra",
+   "ref": "PV-NU-018",
+   "cas": "67727-97-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Pexiganan (Feed Grade)",
+   "slug": "pexiganan-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-001",
+   "cas": "147664-63-9",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Protegrin-1 (Feed Grade)",
+   "slug": "protegrin-1-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-002",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tachyplesin I (Feed Grade)",
+   "slug": "tachyplesin-i-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-003",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tachyplesin III (Feed Grade)",
+   "slug": "tachyplesin-iii-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-004",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Magainin 2 (Feed Grade)",
+   "slug": "magainin-2-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-005",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Aurein 1.2 (Feed Grade)",
+   "slug": "aurein-1-2-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-006",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Citropin 1.1 (Feed Grade)",
+   "slug": "citropin-1-1-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-007",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Lactoferricin B (Feed Grade)",
+   "slug": "lactoferricin-b-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-008",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Melittin (Feed Grade)",
+   "slug": "melittin-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-009",
+   "cas": "20449-79-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Mastoparan (Feed Grade)",
+   "slug": "mastoparan-feed-grade",
+   "sub": "Feed Additive Antimicrobial Peptides",
+   "line": "vet",
+   "ref": "PV-VE-010",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Copper Tripeptide-1 / GHK-Cu (Pet Grade)",
+   "slug": "copper-tripeptide-1-ghk-cu-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-011",
+   "cas": "89030-95-5",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Tripeptide-1 (GHK, Pet Grade)",
+   "slug": "tripeptide-1-ghk-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-012",
+   "cas": "72957-37-0",
+   "purity": "≥98%"
+  },
+  {
+   "name": "KPV (Pet Grade)",
+   "slug": "kpv-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-013",
+   "cas": "67727-97-3",
+   "purity": "≥98%"
+  },
+  {
+   "name": "LL-37 (Pet Grade)",
+   "slug": "ll-37-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-014",
+   "cas": "154947-66-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Indolicidin (Pet Grade)",
+   "slug": "indolicidin-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-015",
+   "cas": "",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Histatin 5 (Pet Grade)",
+   "slug": "histatin-5-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-016",
+   "cas": "115966-23-7",
+   "purity": "≥98%"
+  },
+  {
+   "name": "Carnosine (Pet Grade)",
+   "slug": "carnosine-pet-grade",
+   "sub": "Pet Skincare & Wound Care Peptides",
+   "line": "vet",
+   "ref": "PV-VE-017",
+   "cas": "305-84-0",
+   "purity": "≥98%"
+  }
+ ]
+}

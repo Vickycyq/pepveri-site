@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="PepVeri peptide laboratory illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2440"/>
+      <stop offset="0.55" stop-color="#15375A"/>
+      <stop offset="1" stop-color="#0D6DA8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.16" r="0.6">
+      <stop offset="0" stop-color="#2BBFA5" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#2BBFA5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0v60" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="liquid" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E8A78"/>
+      <stop offset="1" stop-color="#2BBFA5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <rect width="800" height="600" fill="url(#glow)"/>
+
+  <!-- molecular network -->
+  <g stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.4" fill="none">
+    <path d="M470 120 545 78 620 120 620 206 545 248 470 206z"/>
+    <path d="M545 78v-52M620 120l56-32M620 206l58 34M545 248v54M470 206l-58 34"/>
+    <path d="M150 300 205 268 260 300 260 364 205 396 150 364z"/>
+    <path d="M260 300l58-34M205 396v52"/>
+  </g>
+  <g fill="#2BBFA5" fill-opacity="0.55">
+    <circle cx="545" cy="78" r="6"/><circle cx="620" cy="120" r="5"/><circle cx="620" cy="206" r="5"/>
+    <circle cx="545" cy="248" r="5"/><circle cx="470" cy="206" r="5"/><circle cx="470" cy="120" r="5"/>
+    <circle cx="205" cy="268" r="5"/><circle cx="260" cy="364" r="4"/><circle cx="150" cy="300" r="4"/>
+  </g>
+
+  <!-- bench -->
+  <path d="M60 470h680" stroke="#ffffff" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 486h680" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- conical flask -->
+  <g stroke="#ffffff" stroke-opacity="0.82" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M196 300h56"/>
+    <path d="M210 300v54l-46 96a16 16 0 0 0 14 24h92a16 16 0 0 0 14-24l-46-96v-54"/>
+    <path d="M176 420h96"/>
+  </g>
+  <path d="M201 404h46l20 58a9 9 0 0 1-8 10H189a9 9 0 0 1-8-10z" fill="url(#liquid)" fill-opacity="0.65"/>
+  <g fill="#ffffff" fill-opacity="0.5">
+    <circle cx="228" cy="384" r="5"/><circle cx="248" cy="356" r="4"/><circle cx="216" cy="334" r="3"/>
+  </g>
+
+  <!-- vials -->
+  <g stroke="#ffffff" stroke-opacity="0.8" stroke-width="3" fill="none" stroke-linejoin="round">
+    <rect x="352" y="352" width="46" height="118" rx="10"/>
+    <rect x="420" y="326" width="46" height="144" rx="10"/>
+    <rect x="488" y="368" width="46" height="102" rx="10"/>
+  </g>
+  <g fill="url(#liquid)" fill-opacity="0.7">
+    <rect x="355" y="404" width="40" height="63" rx="7"/>
+    <rect x="423" y="382" width="40" height="85" rx="7"/>
+    <rect x="491" y="416" width="40" height="51" rx="7"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round">
+    <path d="M364 340h22M432 314h22M500 356h22"/>
+  </g>
+
+  <!-- sample rack -->
+  <g stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M600 470v-56h108v56"/>
+    <path d="M600 414h108M618 414v-22M648 414v-30M678 414v-18"/>
+  </g>
+
+  <!-- chromatogram card -->
+  <g transform="translate(96 96)">
+    <rect x="0" y="0" width="230" height="128" rx="12" fill="#0B1B30" fill-opacity="0.55" stroke="#ffffff" stroke-opacity="0.18"/>
+    <path d="M20 100h190" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+    <path d="M20 100h24l10-8 8-34 8 52 10-24 12-2h18l12-52 10 70 10-18h42"
+          fill="none" stroke="#2BBFA5" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="132" cy="20" r="4" fill="#2BBFA5"/>
+    <circle cx="174" cy="86" r="4" fill="#2BBFA5"/>
+  </g>
+</svg>

@@ -1,6 +1,7 @@
 // PepVeri — 询价表单收信接口（Cloudflare Pages Function）
 // POST /api/inquiry  →  通过 Resend 转发到 business@pepveri.com
 // 需要 Pages 环境变量：RESEND_API_KEY（可选 FROM_EMAIL、TO_EMAIL）
+// 字段与本站 inquiry.html 的 RFQ 表单对应：name / org / email / country / message / nda
 
 const JSON_HEADERS = { "Content-Type": "application/json" };
 
@@ -47,14 +48,13 @@ export async function onRequestPost({ request, env }) {
 
   const name = (data.name || "").trim();
   const email = (data.email || "").trim();
-  const phone = (data.phone || "").trim();
-  const company = (data.company || "").trim();
-  const product = (data.product || "").trim();
-  const quantity = (data.quantity || "").trim();
+  const org = (data.org || data.company || "").trim();
+  const country = (data.country || "").trim();
   const message = (data.message || "").trim();
+  const nda = Boolean(data.nda);
 
-  if (!name || !email || !phone) {
-    return json({ ok: false, error: "Name, email and phone are required" }, 400);
+  if (!name || !email || !message) {
+    return json({ ok: false, error: "Name, email and message are required" }, 400);
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json({ ok: false, error: "Invalid email address" }, 400);
@@ -63,10 +63,9 @@ export async function onRequestPost({ request, env }) {
   const rows = [
     ["Name", name],
     ["Email", email],
-    ["Phone / WhatsApp", phone],
-    ["Company", company || "—"],
-    ["Target Ingredient", product || "—"],
-    ["Required Quantity", quantity || "—"],
+    ["Organisation / Lab", org || "—"],
+    ["Country", country || "—"],
+    ["NDA requested", nda ? "Yes — send NDA before discussing details" : "No"],
     ["Message", message || "—"],
   ].map(([k, v]) => `
     <tr>
@@ -77,8 +76,8 @@ export async function onRequestPost({ request, env }) {
   const html = `
     <div style="font-family:Helvetica,Arial,sans-serif;max-width:640px;margin:0 auto;border:1px solid #dfe6f2;border-radius:12px;overflow:hidden">
       <div style="background:#1f3b73;color:#fff;padding:18px 24px">
-        <div style="font-size:18px;font-weight:800">New Wholesale Inquiry — PepVeri Website</div>
-        <div style="font-size:13px;opacity:.85;margin-top:4px">Submitted via www.pepveri.com contact form</div>
+        <div style="font-size:18px;font-weight:800">New Peptide Inquiry — PepVeri Website</div>
+        <div style="font-size:13px;opacity:.85;margin-top:4px">Submitted via the www.pepveri.com inquiry form (RUO peptides)</div>
       </div>
       <table style="border-collapse:collapse;width:100%;font-size:14px">${rows}</table>
       <div style="background:#f2f5fb;padding:12px 24px;font-size:12px;color:#4a5a76">
@@ -101,7 +100,7 @@ export async function onRequestPost({ request, env }) {
         from,
         to: [to],
         reply_to: email,
-        subject: `New Wholesale Inquiry — ${name}${company ? " / " + company : ""}`,
+        subject: `New Peptide Inquiry — ${name}${org ? " / " + org : ""}`,
         html,
       }),
     });

@@ -3,410 +3,879 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product | Pepveri</title>
+<title>Product Details | PepVeri Catalog Peptides</title>
 <style>
-  :root {
-    --primary: #081F5C;
-    --primary-dark: #05163f;
-    --primary-light: #143577;
-    --accent: #3D6DEB;
-    --text: #1a2333;
-    --text-muted: #5b6474;
-    --bg-light: #f5f7fb;
-    --white: #ffffff;
-    --border: #e3e8f2;
-    --radius: 14px;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  a { text-decoration: none; color: inherit; }
-  img { max-width: 100%; display: block; }
-  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
-  .topbar { background: var(--primary-dark); color: #cbd6f2; font-size: 13px; padding: 8px 0; }
-  .topbar .container { display: flex; justify-content: space-between; align-items: center; }
-  .topbar a { color: #cbd6f2; }
-  .topbar-links { display: flex; gap: 20px; }
 
-  header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-  .logo { display: flex; align-items: center; gap: 12px; }
-  .logo-img { height: 42px; width: auto; display: block; }
-  .logo-mark { width: 42px; height: 42px; border-radius: 10px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; letter-spacing: .5px; }
-  .logo-text .name { font-weight: 700; font-size: 18px; color: var(--primary); letter-spacing: .3px; line-height: 1.2; }
-  .logo-text .tag { font-size: 10.5px; color: var(--text-muted); letter-spacing: 2.2px; text-transform: uppercase; }
-  nav ul { display: flex; list-style: none; gap: 26px; }
-  nav a { font-size: 14.5px; font-weight: 500; color: var(--text); padding: 6px 0; border-bottom: 2px solid transparent; transition: .2s; }
-  nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
-  nav a.active { color: var(--primary); border-bottom-color: var(--primary); }
-  .btn { display: inline-block; padding: 11px 24px; border-radius: 8px; font-size: 14.5px; font-weight: 600; transition: .2s; cursor: pointer; border: none; }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-primary:hover { background: var(--primary-light); }
-  .btn-light { background: #fff; color: var(--primary); }
-  .btn-light:hover { background: #e6ecfa; }
 
-  .breadcrumb { background: var(--bg-light); border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-muted); padding: 12px 0; }
-  .breadcrumb a { color: var(--accent); }
-  .breadcrumb a:hover { color: var(--primary); }
 
-  .hero { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #0b2a75 100%); color: #fff; padding: 64px 0 58px; }
-  .hero-eyebrow { display: inline-block; font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: #a9c0f5; border: 1px solid rgba(169,192,245,.4); border-radius: 999px; padding: 6px 16px; margin-bottom: 20px; }
-  .hero h1 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.2; font-weight: 700; max-width: 760px; margin-bottom: 16px; }
-  .hero p.lead { font-size: 16.5px; color: #c8d4ef; max-width: 740px; margin-bottom: 28px; }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-  .hero-layout { display: flex; gap: 40px; align-items: flex-start; }
-  .hero-text { flex: 1; }
-  .hero-img-box { flex: 0 0 300px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: var(--radius); padding: 26px; display: flex; align-items: center; justify-content: center; min-height: 240px; }
-  .hero-img-box img { max-height: 190px; object-fit: contain; }
+:root{
+  --navy:#0F2440; --blue:#0D6DA8; --teal:#2BBFA5;
+  --teal-dark:#0E8A78; --blue-deep:#0A3B5C; --navy-soft:#33475C;
+  --teal-tint:#E3F6F1; --blue-tint:#E6F1F9; --line:#D8E0E8; --bg:#F5F4F2;
+  --grad-primary:linear-gradient(90deg,#2BBFA5 0%,#0D6DA8 100%);
+  --grad-dark:linear-gradient(90deg,#0F2440 0%,#0D6DA8 100%);
+  --grad-hover:linear-gradient(90deg,#0E8A78 0%,#0A5588 100%);
+  --hero-overlay:rgba(15,36,64,0.90);
+  --font:-apple-system,"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--navy-soft);background:#fff;line-height:1.6}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{color:var(--navy);font-weight:600;line-height:1.25}
+.section{padding:72px 0}
+.section.alt{background:var(--bg)}
+.kicker{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:12px}
+.section h2{font-size:32px;margin-bottom:14px}
+.section .lead{max-width:760px;font-size:17px;color:var(--navy-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap}
+.btn-primary{background:var(--grad-primary);color:#fff}
+.btn-primary:hover{background:var(--grad-hover);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn-outline:hover{background:var(--teal-tint)}
+.btn-dark{background:var(--grad-dark);color:#fff}
+.btn-dark:hover{background:var(--grad-hover)}
 
-  section { padding: 70px 0; }
-  .section-light { background: var(--bg-light); }
-  .section-head { max-width: 780px; margin-bottom: 36px; }
-  .section-kicker { font-size: 12.5px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-  .section-head h2 { font-size: clamp(24px, 2.8vw, 32px); color: var(--primary); line-height: 1.25; margin-bottom: 12px; }
-  .section-head p { color: var(--text-muted); font-size: 15.5px; }
+/* ===== announcement ===== */
+.announce{background:var(--navy);color:#C3D2DE;font-size:13px}
+.announce .wrap{display:flex;align-items:center;justify-content:space-between;height:38px}
+.announce .btn-contact{background:var(--grad-primary);color:#fff;padding:5px 16px;border-radius:99px;font-size:12px;font-weight:600}
+.announce .btn-contact:hover{background:var(--grad-hover)}
 
-  /* Tech table */
-  .tech-table { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-  .tech-table .row { display: flex; border-bottom: 1px solid var(--border); }
-  .tech-table .row:last-child { border-bottom: none; }
-  .tech-table .k { flex: 0 0 260px; background: #f0f4fb; padding: 15px 22px; font-size: 14px; font-weight: 600; color: var(--primary); border-right: 1px solid var(--border); }
-  .tech-table .v { padding: 15px 22px; font-size: 14.5px; color: var(--text); word-break: break-all; }
+/* ===== header / nav ===== */
+.header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;height:64px;gap:28px}
+.logo img{height:42px;display:block}
+.menu{display:flex;gap:26px;flex:1}
+.menu>li{position:relative}
+.menu>li>a{display:flex;align-items:center;gap:5px;padding:20px 0;font-size:14.5px;font-weight:500;color:var(--navy-soft);border-bottom:2px solid transparent}
+.menu>li>a:hover{color:var(--blue)}
+.menu>li>a .caret{font-size:10px;color:#98A6B3}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang{position:relative}
+.lang>button{display:flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;font-family:var(--font)}
+.lang-drop{display:none;position:absolute;top:110%;right:0;background:#fff;border:1px solid var(--line);border-radius:8px;min-width:150px;box-shadow:0 8px 24px rgba(15,36,64,.12);overflow:hidden}
+.lang.open .lang-drop{display:block}
+.lang-drop a{display:block;padding:10px 14px;font-size:13px}
+.lang-drop a:hover{background:var(--teal-tint)}
+.btn-nav{padding:10px 18px;font-size:13.5px}
 
-  /* Docs table */
-  .docs-table { width: 100%; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; border-collapse: collapse; }
-  .docs-table th { background: var(--primary); color: #fff; text-align: left; font-size: 13.5px; padding: 14px 22px; }
-  .docs-table td { padding: 14px 22px; font-size: 14px; border-top: 1px solid var(--border); color: var(--text); }
-  .docs-table .doc-type { font-weight: 700; color: var(--primary); }
-  .docs-table .on-request { color: var(--text-muted); font-style: italic; }
+/* ===== dropdowns (mega v2) ===== */
+.nav{position:relative}
+.menu>li{position:static}
+.drop{position:absolute;top:100%;left:0;right:0;transform:none;background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 16px 16px;box-shadow:0 32px 64px -20px rgba(15,36,64,.28);display:none;overflow:hidden}
+.menu>li:hover .drop{display:block}
+.drop::before{content:"";display:block;height:3px;background:var(--grad-primary)}
+.drop-body{display:flex;align-items:stretch;padding:26px 26px 20px}
+.dgroup{flex:1 1 0;min-width:0;padding-right:22px;display:flex;flex-direction:column}
+.dgroup+.dgroup{border-left:1px solid var(--line);padding-left:22px}
+.dgroup h4{display:flex;align-items:flex-start;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin:0 0 10px;line-height:1.35;min-height:40px}
+.gi{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;flex:none;background:var(--grad-primary)}
+.gi.blue{background:linear-gradient(135deg,#0D6DA8,#0A3B5C)}
+.gi.teal{background:linear-gradient(135deg,#2BBFA5,#0E8A78)}
+.gi.navy{background:linear-gradient(135deg,#33475C,#0F2440)}
+.gi svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block}
+.subcols{display:grid;grid-template-columns:1fr 1fr;column-gap:20px}
+.drop ul{min-width:0}
+.drop ul li a{display:block;font-size:13px;line-height:1.4;padding:5px 0;color:#5A6B7C;transition:color .15s}
+.drop ul li a:hover{color:var(--blue)}
+.gmore{align-self:flex-start;margin-top:auto;padding-top:10px;font-size:12px;font-weight:600;color:var(--teal-dark);white-space:nowrap}
+.gmore:hover{color:var(--teal)}
+.drop-foot{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(100deg,#0F2440 0%,#0A3B5C 70%,#0D6DA8 160%);color:#fff;padding:16px 24px}
+.drop-foot b{display:block;font-size:13.5px;color:#fff;font-weight:600}
+.drop-foot span{display:block;font-size:12px;color:#AFC4D4;margin-top:2px;max-width:660px}
+.drop-foot .df-acts{display:flex;align-items:center;gap:16px;flex:none}
+.drop-foot .btn{padding:9px 18px;font-size:12.5px}
+.drop-foot .ghost{font-size:12.5px;font-weight:600;color:#7FD6C6;white-space:nowrap}
+.drop-foot .ghost:hover{color:#fff}
+.menu>li>a .caret{transition:transform .2s}
+.menu>li:hover>a .caret{transform:rotate(180deg)}
+.menu>li>a.cur{color:var(--blue);border-bottom:2px solid var(--teal)}
+.hamburger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:18px;cursor:pointer;color:var(--navy)}
 
-  /* FAQ */
-  .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 900px; }
-  details { background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-  details[open] { border-color: var(--primary-light); }
-  summary { cursor: pointer; padding: 18px 22px; font-weight: 600; font-size: 15.5px; color: var(--primary); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; font-size: 20px; color: var(--accent); flex: none; }
-  details[open] summary::after { content: "−"; }
-  details .faq-body { padding: 0 22px 18px; font-size: 14.5px; color: var(--text-muted); }
+/* ===== hero ===== */
+.hero{position:relative;color:#fff;background:linear-gradient(120deg,#41586B 0%,#5B6E7E 40%,#3C4F60 70%,#586C7B 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 600px 300px at 80% 20%,rgba(255,255,255,.10),transparent 60%),
+  radial-gradient(ellipse 500px 400px at 15% 90%,rgba(255,255,255,.06),transparent 60%)}
+.hero-overlay{position:absolute;inset:0;background:var(--hero-overlay)}
+.hero .wrap{position:relative;padding:82px 24px 74px;max-width:1180px}
+.hero h1{font-size:46px;color:#fff;max-width:640px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.sub{margin:22px 0 34px;font-size:17px;color:#C9D6E0;max-width:620px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta .btn{padding:15px 32px;font-size:16px}
+.hero-card{position:absolute;right:24px;top:90px;background:rgba(10,59,92,.92);border:1px solid rgba(43,191,165,.25);border-radius:14px;padding:26px;width:320px}
+.hero-card h3{color:var(--teal);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.hero-card li{font-size:14px;color:#E4EDF3;padding:6px 0 6px 22px;position:relative}
+.hero-card li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:2px;background:var(--teal)}
 
-  /* Related products */
-  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .related-card { display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; transition: .25s; }
-  .related-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(8,31,92,.12); }
-  .related-card img { width: 72px; height: 72px; object-fit: contain; background: #f0f4fb; border-radius: 10px; padding: 8px; }
-  .related-card h3 { font-size: 15px; color: var(--primary); margin-bottom: 4px; }
-  .related-card .cas { font-size: 12.5px; font-weight: 600; color: var(--accent); }
+/* ===== trust strip ===== */
+.strip{background:var(--navy);padding:26px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.strip .item{color:#fff;font-size:14.5px;display:flex;align-items:center;gap:10px}
+.strip .item b{color:var(--teal)}
+.strip .dot{width:9px;height:9px;border-radius:3px;background:var(--teal)}
 
-  .cta-strip { border-radius: var(--radius); padding: 48px 44px; display: flex; align-items: center; justify-content: space-between; gap: 28px; background: linear-gradient(120deg, var(--primary-dark), var(--primary) 55%, #16408f); color: #fff; flex-wrap: wrap; }
-  .cta-strip h2 { font-size: clamp(22px, 2.6vw, 30px); margin-bottom: 12px; max-width: 640px; }
-  .cta-strip p { color: #c4d1ef; max-width: 640px; font-size: 15.5px; }
+/* ===== pathways ===== */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.path{border:1px solid var(--line);border-radius:16px;padding:34px;position:relative;transition:all .2s}
+.path:hover{border-color:var(--teal);box-shadow:0 12px 32px rgba(15,36,64,.08)}
+.path .tag{position:absolute;top:-13px;left:30px;background:var(--grad-primary);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 14px;border-radius:99px}
+.path h3{font-size:22px;margin-bottom:10px}
+.path p{font-size:14.5px;margin-bottom:18px}
+.path ul{margin-bottom:24px}
+.path ul li{font-size:14px;padding:5px 0 5px 24px;position:relative}
+.path ul li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.path .btn{width:100%}
 
-  footer { background: var(--primary-dark); color: #aebde4; padding: 56px 0 0; margin-top: 40px; }
-  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 44px; }
-  .footer-grid h4 { color: #fff; font-size: 15px; margin-bottom: 18px; }
-  .footer-grid ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .footer-grid a { font-size: 14px; color: #aebde4; }
-  .footer-grid a:hover { color: #fff; }
-  .footer-about p { font-size: 14px; margin: 14px 0 18px; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #8fa2cf; }
+.process-block{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.process-title{font-size:24px;margin-bottom:8px}
+.process-sub{font-size:15px;color:var(--navy-soft);max-width:720px;margin-bottom:6px}
 
-  .disclaimer { background: #fff4ec; border: 1px solid #f5d5b8; border-radius: 12px; padding: 16px 20px; font-size: 13.5px; color: #8a5a2b; max-width: 900px; margin-top: 28px; }
+/* custom synthesis stepper */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.step{position:relative}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--grad-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;margin-bottom:18px;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:22px;left:56px;right:-12px;height:2px;background:repeating-linear-gradient(90deg,#C9D6E0 0 6px,transparent 6px 12px)}
+.step h3{font-size:15px;margin-bottom:7px}
+.step p{font-size:13px;color:#68788A}
+.steps-cta{display:flex;align-items:center;gap:16px;margin-top:44px;flex-wrap:wrap}
 
-  @media (max-width: 1024px) {
-    .hero-layout { flex-direction: column; }
-    .hero-img-box { flex: none; width: 100%; max-width: 420px; }
-    .related-grid { grid-template-columns: 1fr 1fr; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
-    .tech-table .k { flex-basis: 180px; }
-  }
-  @media (max-width: 640px) {
-    nav ul { display: none; }
-    .related-grid, .footer-grid { grid-template-columns: 1fr; }
-    .tech-table .row { flex-direction: column; }
-    .tech-table .k { border-right: none; border-bottom: 1px dashed var(--border); padding-bottom: 6px; }
-    section { padding: 54px 0; }
-  }
+/* parallax band: fixed background, content scrolls */
+.parallax{
+  background:linear-gradient(rgba(15,36,64,.82),rgba(15,36,64,.82)),url("data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice"%3E%0A  %3Cdefs%3E%0A    %3ClinearGradient id="bg" x1="0" y1="0" x2="1" y2="1"%3E%0A      %3Cstop offset="0" stop-color="%230F2440"/%3E%0A      %3Cstop offset="0.55" stop-color="%23123a5e"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8"/%3E%0A    %3C/linearGradient%3E%0A    %3CradialGradient id="glow" cx="0.72" cy="0.3" r="0.6"%3E%0A      %3Cstop offset="0" stop-color="%232BBFA5" stop-opacity="0.35"/%3E%0A      %3Cstop offset="1" stop-color="%232BBFA5" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3CradialGradient id="glow2" cx="0.2" cy="0.8" r="0.55"%3E%0A      %3Cstop offset="0" stop-color="%230D6DA8" stop-opacity="0.5"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3Cpattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"%3E%0A      %3Cpath d="M80 0H0v80" fill="none" stroke="%237FA8C9" stroke-opacity="0.12" stroke-width="1"/%3E%0A    %3C/pattern%3E%0A  %3C/defs%3E%0A  %3Crect width="1920" height="1080" fill="url(%23bg)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23grid)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow2)"/%3E%0A  %3C!-- molecular network --%3E%0A  %3Cg stroke="%237FD6C6" stroke-opacity="0.35" stroke-width="2" fill="none"%3E%0A    %3Cpath d="M1560 220 L1700 320 L1840 260"/%3E%0A    %3Cpath d="M1700 320 L1760 470"/%3E%0A    %3Cpath d="M300 840 L440 760 L560 850 L700 770"/%3E%0A    %3Cpath d="M440 760 L420 620"/%3E%0A    %3Cpath d="M1240 900 L1380 830 L1500 910"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%232BBFA5" fill-opacity="0.8"%3E%0A    %3Ccircle cx="1560" cy="220" r="9"/%3E%0A    %3Ccircle cx="1700" cy="320" r="13"/%3E%0A    %3Ccircle cx="1840" cy="260" r="7"/%3E%0A    %3Ccircle cx="1760" cy="470" r="9"/%3E%0A    %3Ccircle cx="300" cy="840" r="9"/%3E%0A    %3Ccircle cx="440" cy="760" r="13"/%3E%0A    %3Ccircle cx="560" cy="850" r="8"/%3E%0A    %3Ccircle cx="700" cy="770" r="10"/%3E%0A    %3Ccircle cx="420" cy="620" r="7"/%3E%0A    %3Ccircle cx="1240" cy="900" r="9"/%3E%0A    %3Ccircle cx="1380" cy="830" r="12"/%3E%0A    %3Ccircle cx="1500" cy="910" r="7"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%23FFFFFF" fill-opacity="0.14"%3E%0A    %3Ccircle cx="900" cy="180" r="5"/%3E%0A    %3Ccircle cx="1120" cy="260" r="4"/%3E%0A    %3Ccircle cx="760" cy="420" r="4"/%3E%0A    %3Ccircle cx="1020" cy="560" r="5"/%3E%0A    %3Ccircle cx="620" cy="300" r="3"/%3E%0A    %3Ccircle cx="1300" cy="520" r="4"/%3E%0A    %3Ccircle cx="860" cy="720" r="4"/%3E%0A    %3Ccircle cx="1620" cy="640" r="5"/%3E%0A  %3C/g%3E%0A%3C/svg%3E%0A") center/cover no-repeat;
+  background-attachment:fixed;
+}
+.parallax .kicker{color:var(--teal)}
+.parallax h2{color:#fff}
+.parallax .lead{color:#C3D2DE}
+.parallax .pillar{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.parallax .pillar h3{color:#fff}
+.parallax .pillar p{color:#C3D2DE}
+
+/* supply chain visual cards */
+.flow4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 22px;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.fcard:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.fcard .fig{background:linear-gradient(160deg,#F7FAFC 0%,#EAF3F7 100%);border-radius:10px;height:130px;overflow:hidden}
+.fcard .fig svg{width:100%;height:100%}
+.fcard h3{font-size:15.5px}
+.fcard p{font-size:12.5px;color:#68788A;flex:1}
+.flow-arrow{display:none}
+
+/* ===== grids ===== */
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.pcard{border-radius:14px;padding:0;overflow:hidden;background:var(--grad-primary);color:#fff;transition:all .2s;display:flex;flex-direction:column}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(13,109,168,.32)}
+.pcard-img{display:flex;align-items:center;justify-content:center;font-size:44px;height:120px;background:rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.18)}
+.pcard h3{font-size:16px;color:#fff;padding:18px 18px 6px}
+.pcard p{font-size:13px;color:rgba(255,255,255,.88);padding:0 18px;flex:1}
+.pcard .count{align-self:flex-start;margin:14px 18px 18px;font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:4px 12px}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--teal-tint);transform:translateY(-1px)}
+.grid-types{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.tcard{border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff;transition:all .2s;display:flex;flex-direction:column;gap:8px}
+.tcard:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.tcard .ic{width:38px;height:38px;border-radius:10px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;font-size:17px}
+.tcard h3{font-size:15px}
+.tcard p{font-size:12.5px;color:#68788A;flex:1}
+.tcard .link{font-size:13px;font-weight:600;color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.chip{border:1px solid var(--line);border-radius:99px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--navy-soft);background:#fff;transition:all .2s}
+.chip:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--teal-tint)}
+
+/* ===== why / pillars ===== */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px}
+.pillar .num{font-size:13px;font-weight:700;color:var(--teal);margin-bottom:10px}
+.pillar h3{font-size:19px;margin-bottom:10px}
+.pillar p{font-size:14px}
+
+/* ===== QC ===== */
+.qc{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.qc-visual{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.qc-visual .chart{height:210px;border-radius:8px;background:linear-gradient(180deg,#FDFEFE,#F2F6F8);position:relative;overflow:hidden}
+.qc-visual .chart svg{position:absolute;inset:0;width:100%;height:100%}
+.qc-visual .cap{display:flex;justify-content:space-between;font-size:11.5px;color:#8895A1;margin-top:10px}
+.qc ul li{padding:9px 0 9px 30px;position:relative;font-size:15px}
+.qc ul li::before{content:"✓";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:var(--teal-tint);color:var(--teal-dark);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ===== FAQ ===== */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+.faq summary{padding:18px 22px;font-weight:600;color:var(--navy);cursor:pointer;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"+";font-size:20px;color:var(--teal);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 22px 18px;font-size:14.5px}
+
+/* ===== CTA band ===== */
+.cta-band{background:linear-gradient(100deg,var(--navy) 0%,var(--blue) 130%);color:#fff;padding:72px 0}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-band h2{color:#fff;font-size:30px;max-width:560px}
+.cta-band h2 em{font-style:normal;color:var(--teal)}
+.cta-band p{color:#C9D6E0;margin-top:10px;max-width:520px}
+
+/* ===== footer ===== */
+footer{background:var(--navy);color:#9FB2C4;font-size:13.5px;padding:56px 0 90px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.foot-grid img{height:46px;margin-bottom:16px}
+.foot-grid h4{color:#fff;font-size:13.5px;margin-bottom:14px}
+.foot-grid li{margin-bottom:8px}
+.foot-grid a:hover{color:var(--teal)}
+.ruo{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12px;color:#6B8199}
+
+/* mobile sticky */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);z-index:99}
+.sticky-cta .btn{width:100%}
+
+/* ===== responsive ===== */
+@media(max-width:1020px){
+  .menu{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(15,36,64,.12);max-height:calc(100vh - 64px);overflow:auto}
+  .menu.open{display:flex}
+  .menu>li{border-bottom:1px solid var(--line)}
+  .menu>li:last-child{border-bottom:none}
+  .menu>li>a{padding:15px 0;width:100%}
+  .drop{position:static;transform:none;display:none!important;box-shadow:none;border:none;padding:0 0 14px;min-width:0;flex-direction:column}
+  .menu>li.acc-open .drop{display:flex!important}
+  .menu>li.has-acc>a::after{content:"▾";margin-left:auto;font-size:12px;color:#98A6B3}
+  .drop::before{display:none}
+  .drop-body{flex-direction:column;padding:12px 4px 4px}
+  .dgroup{padding:0}
+  .dgroup+.dgroup{border-left:none;border-top:1px solid var(--line);margin-top:14px;padding-top:14px;padding-left:0}
+  .dgroup h4{font-size:12px;min-height:0;margin-bottom:10px}
+  .drop ul li a{font-size:13.5px;padding:6px 0}
+  .subcols{grid-template-columns:1fr;column-gap:0}
+  .drop-foot{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin:10px 0 8px;border-radius:12px}
+  .drop-foot .df-acts{flex-wrap:wrap}
+  .hamburger{display:block}
+  .nav{gap:12px}
+  .btn-nav{display:none}
+  .grid-5,.grid-types{grid-template-columns:repeat(2,1fr)}
+  .flow4{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{padding:0 0 26px 66px}
+  .step .n{position:absolute;left:0;top:0;margin-bottom:0}
+  .step:not(:last-child)::after{top:50px;left:23px;right:auto;bottom:-4px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#C9D6E0 0 6px,transparent 6px 12px)}
+  .pillars{grid-template-columns:1fr}
+  .paths{grid-template-columns:1fr}
+  .qc{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .hero h1{font-size:34px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .sticky-cta{display:block}
+  footer{padding-bottom:120px}
+  .announce .txt{font-size:11px}
+}
+@media(max-width:560px){
+  .grid-5,.grid-types{grid-template-columns:1fr}
+  .flow4{grid-template-columns:1fr}
+  .hero .wrap{padding:64px 24px 80px}
+  .hero h1{font-size:29px}
+  .foot-grid{grid-template-columns:1fr}
+}
+/* iOS Safari doesn't support fixed attachment — fall back to scrolling bg */
+@media(max-width:1020px){
+  .parallax{background-attachment:scroll}
+}
+
+
+
+
+
+
+/* ===== service page ===== */
+.mtable{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(15,36,64,.06);margin-top:44px;font-size:14px}
+.mtable thead{background:var(--navy);color:#fff;text-align:left}
+.mtable th{padding:14px 18px;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.mtable td{padding:13px 18px;border-top:1px solid var(--line);color:var(--navy-soft);vertical-align:top}
+.mtable td:first-child{font-weight:600;color:var(--navy)}
+.table-wrap{overflow-x:auto}
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.tier{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:all .2s}
+.tier:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.tier.featured{border:2px solid var(--teal);background:linear-gradient(180deg,#fff, var(--teal-tint))}
+.tname{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:6px}
+.tpct{display:block;font-size:26px;font-weight:800;color:var(--navy);margin-bottom:10px}
+.tier p{font-size:13px;color:#68788A}
+
+/* rich pathway cards */
+.paths{grid-template-columns:1fr 1fr;gap:24px}
+.path{padding:32px;display:flex;flex-direction:column}
+.path h3{font-size:21px;margin-bottom:8px}
+.path p{font-size:13.8px;color:#5A6B7C;line-height:1.7;margin-bottom:0}
+.path h4{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--teal-dark);margin:20px 0 8px}
+.path ul.feat li{font-size:13.2px;padding:6px 0 6px 24px;position:relative;line-height:1.6;color:var(--navy-soft)}
+.path ul.feat li::before{content:"\2713";position:absolute;left:0;top:7px;color:var(--teal);font-weight:700;font-size:12px}
+.path .apps{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 22px}
+.path .apps span{font-size:11.4px;background:#F3F7F9;border:1px solid var(--line);border-radius:6px;padding:4px 9px;color:#5A6B7C;line-height:1.4}
+.path .btn{margin-top:auto;align-self:flex-start}
+.path .tag{position:static;display:inline-block;align-self:flex-start;margin-bottom:14px}
+
+/* certifications */
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.cert{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;transition:all .2s}
+.cert:hover{border-color:var(--teal);box-shadow:0 10px 26px rgba(15,36,64,.07)}
+.cert .ico{width:34px;height:34px;border-radius:9px;background:var(--teal-tint);color:var(--teal-dark);margin-bottom:14px}
+.cert .ico svg{width:18px;height:18px}
+.cert h3{font-size:14.5px;margin-bottom:6px}
+.cert p{font-size:12.6px;color:#68788A;line-height:1.6}
+
+/* guarantee */
+.guarantee{background:linear-gradient(135deg,#0F2440 0%,#0A3B5C 70%,#0D6DA8 170%);border-radius:18px;padding:36px;display:grid;grid-template-columns:1.45fr 1fr;gap:32px;align-items:center;margin-top:44px}
+.guarantee h3{color:#fff;font-size:22px;margin-bottom:10px}
+.guarantee p{color:#B9CBD9;font-size:13.6px;line-height:1.8}
+.g-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 16px}
+.g-stat b{display:block;color:#fff;font-size:18px;font-weight:700}
+.g-stat span{display:block;color:#9FB8C9;font-size:11.3px;margin-top:3px;line-height:1.4}
+
+@media(max-width:1020px){
+  .paths{grid-template-columns:1fr}
+  .tiers,.cert-grid{grid-template-columns:repeat(2,1fr)}
+  .guarantee{grid-template-columns:1fr;padding:30px}
+}
+@media(max-width:560px){
+  .tiers,.cert-grid{grid-template-columns:1fr}
+  .path{padding:26px}
+  .path h3{font-size:19px}
+}
+/* ===== polish pass ===== */
+.ico{display:flex;align-items:center;justify-content:center}
+.ico svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block}
+.btn{border-radius:10px}
+/* hero: add depth + technical grid so the dark area is not flat */
+.hero{background:linear-gradient(120deg,#132E4E 0%,#183D61 45%,#0F2440 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:
+  radial-gradient(circle at 86% 2%,rgba(43,191,165,.13),transparent 52%),
+  linear-gradient(rgba(255,255,255,.032) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px);
+  background-size:auto,96px 96px,96px 96px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.95),rgba(0,0,0,.30))}
+.hero .wrap{z-index:2}
+.hero h1{letter-spacing:-.012em}
+/* pathway cards: pill inside the card, buttons no longer full width */
+.path .tag{position:static;display:inline-block;margin-bottom:14px}
+.path .btn{width:auto;align-self:flex-start;padding:12px 26px;font-size:14px}
+/* parallax: solid navy fallback so text survives if the image fails */
+.parallax{background-color:var(--navy)}
+.parallax .lead{color:#D9E4ED}
+.parallax .pillar p{color:#CFDBE5}
+/* tables: closed border + radius */
+.table-wrap{border:1px solid var(--line);border-radius:14px;background:#fff;overflow-x:auto;box-shadow:0 2px 10px rgba(15,36,64,.05)}
+.mtable{border-radius:0;box-shadow:none;margin-top:0}
+.mtable tbody tr:last-child td{border-bottom:none}
+/* faq centered, blog cards equal height */
+.faq{margin-left:auto;margin-right:auto}
+.post{display:flex;flex-direction:column}
+.post .meta{margin-top:auto;padding-top:8px}
+
+/* ===== mobile polish ===== */
+.announce .btn-contact{white-space:nowrap}
+@media(max-width:560px){
+  .announce .wrap{height:auto;min-height:34px;padding:7px 16px;gap:10px}
+  .announce .txt{font-size:10px;line-height:1.4;flex:1;min-width:0}
+  .announce .btn-contact{flex:0 0 auto;padding:5px 12px;font-size:11px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{width:100%}
+  .pcard-img{height:86px}
+  .pcard h3{min-height:0;padding:16px 16px 4px}
+  .pcard .count{margin:10px 16px 16px}
+  .section{padding:56px 0}
+  .section h2{font-size:26px}
+  .section .lead{font-size:15.5px}
+  .hero h1.h-page{font-size:26px}
+}
+@media(max-width:1020px){
+  .hero h1.h-page{font-size:31px}
+}
+
+
+
+
+
+
+/* ===== product detail ===== */
+.crumb{background:#F7FAFC;border-bottom:1px solid var(--line);font-size:12.5px;color:#7A8896;padding:12px 0}
+.crumb .wrap{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.crumb a{color:#5A6B7C}
+.crumb a:hover{color:var(--blue)}
+.crumb svg{width:12px;height:12px;stroke:#B3BEC9;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.crumb .here{color:var(--navy);font-weight:600}
+
+.pd{padding:44px 0 72px}
+.pd-grid{display:grid;grid-template-columns:minmax(0,1fr) 348px;gap:52px;align-items:start}
+
+.pd-head{margin-bottom:26px}
+.pd-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.pd-tag{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);background:var(--teal-tint);border-radius:99px;padding:5px 12px}
+.pd-tag.line{color:var(--blue-deep);background:var(--blue-tint)}
+.pd-head h1{font-size:32px;line-height:1.22;margin-bottom:12px}
+.pd-lead{font-size:15.5px;color:var(--navy-soft);max-width:680px}
+.pd-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:#68788A}
+.pd-meta b{display:block;font-size:14.5px;color:var(--navy);font-weight:600;margin-top:2px}
+
+.pd-sec{margin-top:34px}
+.pd-sec h2{font-size:16px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line);letter-spacing:.01em}
+.spec{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.spec div{padding:12px 16px;border-bottom:1px solid #EDF1F5;font-size:13.2px;display:flex;gap:12px;align-items:baseline}
+.spec div:nth-child(odd){background:#FAFCFD;border-right:1px solid #EDF1F5}
+.spec dt{flex:0 0 116px;color:#7A8896;font-size:12.3px}
+.spec dd{margin:0;color:var(--navy);font-weight:500;flex:1}
+.pd-note{font-size:12.3px;color:#8895A1;margin-top:10px;line-height:1.6}
+
+.doc-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.doc{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;transition:all .15s}
+.doc:hover{border-color:var(--teal);background:var(--teal-tint)}
+.doc .di{width:34px;height:34px;border-radius:9px;background:var(--blue-tint);color:var(--blue-deep);display:flex;align-items:center;justify-content:center;flex:none}
+.doc .di svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.doc b{display:block;font-size:13.2px;color:var(--navy);margin-bottom:2px}
+.doc span{font-size:11.8px;color:#7A8896;line-height:1.45}
+
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.rel a{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:13px;color:var(--navy);font-weight:500;background:#fff;transition:all .15s}
+.rel a:hover{border-color:var(--teal);background:var(--teal-tint);color:var(--teal-dark)}
+.rel a svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;opacity:.5}
+
+/* side */
+.pd-side{position:sticky;top:96px;display:flex;flex-direction:column;gap:16px}
+.scard{border:1px solid var(--line);border-radius:16px;padding:24px 22px;background:#fff;box-shadow:0 1px 3px rgba(15,36,64,.05)}
+.scard.dark{background:linear-gradient(160deg,#0F2440,#123C5E);border-color:transparent;color:#C3D2DE}
+.scard .slab{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal-dark)}
+.scard.dark .slab{color:var(--teal)}
+.scard .big{display:block;font-size:21px;font-weight:700;color:var(--navy);margin:8px 0 6px;line-height:1.3}
+.scard.dark .big{color:#fff}
+.scard p{font-size:13px;line-height:1.6;color:#68788A;margin-bottom:16px}
+.scard.dark p{color:#A9BCCC}
+.scard .btn{width:100%;justify-content:center;margin-bottom:9px;font-size:13.5px;padding:12px 18px}
+.scard.dark .btn-primary{background:var(--grad-primary)}
+.scard.dark .btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+.scard.dark .btn-outline:hover{background:rgba(255,255,255,.12)}
+.sfacts{list-style:none;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:9px}
+.sfacts li{display:flex;gap:9px;font-size:12.5px;color:#C3D2DE;line-height:1.45}
+.sfacts svg{width:15px;height:15px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;margin-top:1px}
+.packs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.pack{font-size:12px;font-weight:600;color:var(--navy-soft);border:1px solid var(--line);background:#FAFCFD;border-radius:8px;padding:5px 11px}
+.help{font-size:12.5px;color:#7A8896;line-height:1.6;margin-bottom:12px}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+.contact-list li{display:flex;align-items:center;gap:9px;font-size:13px}
+.contact-list svg{width:16px;height:16px;stroke:var(--blue);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.contact-list a{color:var(--navy);font-weight:500}
+.contact-list a:hover{color:var(--blue)}
+.help a{color:var(--blue);font-weight:600}
+
+.pd-load{padding:90px 0;text-align:center;color:#8895A1;font-size:14px}
+.pd-missing{padding:90px 0 110px;text-align:center}
+.pd-missing h1{font-size:26px;margin-bottom:10px}
+.pd-missing p{color:#68788A;margin-bottom:22px}
+
+@media(max-width:1020px){
+  .pd-grid{grid-template-columns:1fr;gap:34px}
+  .pd-side{position:static;flex-direction:row;flex-wrap:wrap}
+  .pd-side .scard{flex:1 1 300px}
+}
+@media(max-width:720px){
+  .pd{padding:30px 0 52px}
+  .pd-head h1{font-size:24px}
+  .pd-lead{font-size:14.5px}
+  .spec{grid-template-columns:1fr}
+  .spec div:nth-child(odd){background:#FAFCFD;border-right:none}
+  .doc-list,.rel{grid-template-columns:1fr}
+  .pd-side{flex-direction:column}
+  .pd-meta{gap:14px 20px;font-size:12.5px}
+}
 </style>
+<meta name="description" content="Specification, documentation and ordering details for PepVeri catalog peptides — CAS number, typical purity, pack sizes, CoA with HPLC &amp; MS, cold-chain delivery worldwide.">
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container">
-    <span>Wholesale peptide &amp; bulk supply from China</span>
-    <div class="topbar-links">
-      <a href="inquiry.html">Submit Inquiry</a>
-      <a href="inquiry.html">Contact</a>
-    </div>
+<!-- announcement bar -->
+<div class="announce">
+  <div class="wrap">
+    <span class="txt">For research use only · Not for human therapeutic use · NDA available on request</span>
+    <a class="btn-contact" href="inquiry.html">Contact us</a>
   </div>
 </div>
 
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="index.html">
-      <img class="logo-img" src="assets/img/pepveri-logo.png" alt="Pepveri">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="nav-item-mega"><a href="products.html">Products</a><div class="mega"></div></li>
-        <li><a href="index.html#quality">Quality</a></li>
-        <li><a href="index.html#custom">Custom Synthesis</a></li>
-        <li><a href="index.html#insights">Insights</a></li>
-        <li><a href="index.html#about">About</a></li>
-      </ul>
-    </nav>
-    <a class="btn btn-primary header-cta" href="inquiry.html">Submit Inquiry</a>
+<!-- header -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="PepVeri — China Peptide Supply"></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-acc">
+        <a href="custom-synthesis.html">Custom Synthesis <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H12l-4.6 3.6v-3.6H4z"/><path d="M8.6 11.2l2.4 2.4 4.5-4.6"/></svg></span>Custom Peptide Types</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Linear Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Disulfide-Bridged Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Head-to-Tail Cyclic Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Sidechain-Cyclized Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">TBMB Bicyclic Peptides</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Stapled-Helix Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Branched / MAP Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Retro-Inverso Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Glycopeptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Lipidated / PEGylated Peptides</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Other type? Ask our chemists →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><path d="M9.3 3h5.4M10.4 3v6L5.7 17.6A2.4 2.4 0 0 0 7.8 21h8.4a2.4 2.4 0 0 0 2.1-3.4L13.6 9V3"/><path d="M8 15.4h8"/></svg></span>Modifications &amp; Labels</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">N-Terminal Acetylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">C-Terminal Amidation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Phosphorylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Biotin Labeling</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">Fluorophore Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Isotope Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Fluorogenic Substrates</a></li>
+                  <li><a href="custom-synthesis.html#mods">Carrier Protein Conjugation</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Custom modifications welcome →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>Have a sequence ready?</b>
+              <span>Feasibility review and a firm quote within 1 business day — NDA available before you share anything sensitive.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+              <a class="ghost" href="custom-synthesis.html#process">How ordering works →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="has-acc">
+        <a href="products.html" class="cur">Products <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="2.6" y="8.6" width="18.8" height="6.8" rx="3.4"/><path d="M12 8.6v6.8"/></g></svg></span>Pharmaceutical &amp; GMP</h4>
+              <ul>
+                <li><a href="products.html?sub=pre-gmp-cgmp-api-peptides#gmp">Pre-GMP / cGMP API Peptides</a></li>
+                <li><a href="products.html?sub=adc-linker-peptides#research">ADC Linker Peptides</a></li>
+                <li><a href="products.html?sub=glp-1-endocrine-metabolic-peptides#research">GLP-1 / Metabolic Peptides</a></li>
+                <li><a href="products.html?sub=impurity-reference-peptides#gmp">Impurity Reference Standards</a></li>
+              </ul>
+              <a class="gmore" href="products.html#gmp">View line · ~40 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><circle cx="5.6" cy="6.4" r="2.6"/><circle cx="18.4" cy="6.4" r="2.6"/><circle cx="12" cy="18" r="2.6"/><path d="M8.1 7.4 10.7 15.8M15.9 7.4 13.3 15.8M8.2 6.4h7.6"/></svg></span>Catalog Research Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=ion-channel-toxin-peptides#research">Ion Channel Toxin Peptides</a></li>
+                <li><a href="products.html?sub=bioactive-research-peptides#research">Bioactive Research Peptides</a></li>
+                <li><a href="products.html?sub=antimicrobial-peptides-amp#research">Antimicrobial Peptides (AMP)</a></li>
+                <li><a href="products.html?sub=amyloid-tau-neurodegeneration-peptides#research">Amyloid &amp; Tau Peptides</a></li>
+                <li><a href="products.html?sub=tag-epitope-peptides#research">Tag &amp; Epitope Peptides</a></li>
+              </ul>
+              <a class="gmore" href="products.html#research">All 10 families →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><path d="M12 3.2c3.4 4 5.9 7.1 5.9 9.9a5.9 5.9 0 1 1-11.8 0c0-2.8 2.5-5.9 5.9-9.9z"/><path d="M9.7 13.7a2.6 2.6 0 0 0 2.3 2.5"/></svg></span>Cosmetic Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=signal-peptides-matrixyl-family#cosmetic">Signal Peptides (Matrixyl family)</a></li>
+                <li><a href="products.html?sub=melanin-enzyme-inhibitor-repair-peptides#cosmetic">Enzyme-Inhibitor &amp; Repair</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Carrier Peptides</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Copper Peptide (GHK-Cu)</a></li>
+              </ul>
+              <a class="gmore" href="products.html#cosmetic">View line · ~20 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi navy"><svg viewBox="0 0 24 24"><path d="M20 4C11 4.4 4.6 9 4.6 15.4A4.6 4.6 0 0 0 9.2 20C15.4 20 20 13.4 20 4z"/><path d="M5.2 19.8c2.6-4.6 6-7.6 10.4-9.6"/></svg></span>Oral Nutraceutical</h4>
+              <ul>
+                <li><a href="products.html?sub=bioactive-food-peptides#nutra">Bioactive Food Peptides</a></li>
+                <li><a href="products.html?sub=collagen-oligopeptides#nutra">Collagen Oligopeptides</a></li>
+                <li><a href="products.html?sub=synthetic-bioactive-oral-peptides#nutra">Synthetic Oral Bioactives</a></li>
+              </ul>
+              <a class="gmore" href="products.html#nutra">View line · ~15 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><circle cx="6.8" cy="9.2" r="2"/><circle cx="12" cy="7.2" r="2"/><circle cx="17.2" cy="9.2" r="2"/><path d="M12 11.8c-2.9 0-4.9 2.2-4.9 4.5A3.4 3.4 0 0 0 10.5 19.7h3a3.4 3.4 0 0 0 3.4-3.4c0-2.3-2-4.5-4.9-4.5z"/></svg></span>Veterinary &amp; Pet Health</h4>
+              <ul>
+                <li><a href="products.html?sub=feed-additive-antimicrobial-peptides#vet">Feed-Additive AMPs</a></li>
+                <li><a href="products.html?sub=pet-skincare-wound-care-peptides#vet">Pet Skincare &amp; Wound Care</a></li>
+                <li><a href="products.html#vet">Pet Joint &amp; Mobility</a></li>
+              </ul>
+              <a class="gmore" href="products.html#vet">View line · ~15 SKUs →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>300+ SKUs across five product lines</b>
+              <span>Every catalog item ships with HPLC &amp; MS data and a batch CoA — RUO compliant, export-screened, cold-chain delivered.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="products.html">View All Products</a>
+              <a class="ghost" href="inquiry.html">Request bulk pricing →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" id="lang">
+        <button id="langBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:15px;height:15px;flex:none"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6"/><path d="M12 3c2.5 2.4 3.9 5.6 3.9 9s-1.4 6.6-3.9 9c-2.5-2.4-3.9-5.6-3.9-9s1.4-6.6 3.9-9z"/></svg> EN <span style="font-size:9px;color:#98A6B3">▾</span></button>
+        <div class="lang-drop">
+          <a href="#" style="color:var(--teal-dark);font-weight:600">English</a>
+          <a href="#" style="color:#98A6B3;cursor:default">中文（coming soon）</a>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-nav" href="inquiry.html">Submit Inquiry</a>
+    </div>
   </div>
 </header>
 
-<div class="breadcrumb">
-  <div class="container">
-    <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="products.html">Products</a> &nbsp;/&nbsp; <span id="crumbName">Product</span>
+
+
+
+
+
+<div class="crumb">
+  <div class="wrap" id="crumb">
+    <a href="index.html">Home</a>
+    <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+    <a href="products.html">Products</a>
+    <span id="crumbRest"></span>
   </div>
 </div>
 
-<section class="hero" style="padding:56px 0;">
-  <div class="container hero-layout">
-    <div class="hero-text">
-      <span class="hero-eyebrow">Peptide APIs</span>
-      <h1 id="heroTitle">Product Wholesale and Bulk Supply</h1>
-      <p class="lead" id="heroLead"></p>
-      <div class="hero-actions">
-        <a class="btn btn-light" id="ctaInquiry" href="inquiry.html">Request a quotation</a>
-        <a class="btn btn-outline" style="border-color:rgba(255,255,255,.5);color:#fff;" href="#docs">Quality documents</a>
-      </div>
+<main class="pd">
+  <div class="wrap">
+    <div id="pdRoot" class="pd-load">Loading product…</div>
+  </div>
+</main>
+
+<!-- CTA band -->
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Not the peptide you need? <em>Send us the sequence.</em></h2>
+      <p>Every catalog item can be re-qualified to a higher purity or a larger scale — and anything not in the catalog we synthesize from scratch.</p>
     </div>
-    <div class="hero-img-box"><img id="heroImg" src="" alt=""></div>
+    <a class="btn btn-primary" href="inquiry.html" style="padding:17px 40px;font-size:17px">Submit Inquiry</a>
   </div>
 </section>
-
-<section style="padding-top:56px;">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">Technical Information</div>
-      <h2 id="techTitle">Product API Technical Information</h2>
-    </div>
-    <div class="tech-table" id="techTable"></div>
-    <div class="disclaimer">Disclaimer: This product is supplied only as a chemical reagent for in-vitro laboratory research and qualified B2B procurement. It is not for human or veterinary use, personal use or direct consumer sale.</div>
-  </div>
-</section>
-
-<section id="docs" class="section-light">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">Quality Documentation</div>
-      <h2>Product Quality Documents</h2>
-      <p>Batch-specific quality documents are provided for qualified B2B review. Request current batch documents together with your quotation.</p>
-    </div>
-    <table class="docs-table">
-      <thead>
-        <tr><th>Document</th><th>Description</th><th>Language</th><th>Availability</th></tr>
-      </thead>
-      <tbody>
-        <tr><td class="doc-type">COA</td><td>Certificate of analysis for the supplied batch</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
-        <tr><td class="doc-type">HPLC</td><td>HPLC purity analysis report</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
-        <tr><td class="doc-type">LC-MS</td><td>Mass spectrometry identity confirmation</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
-        <tr><td class="doc-type">Impurities</td><td>Impurity profile summary</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
-        <tr><td class="doc-type">MSDS</td><td>Material safety data sheet</td><td>en-US</td><td class="on-request">Available upon request</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">FAQ</div>
-      <h2>Frequently Asked Questions</h2>
-    </div>
-    <div class="faq-list" id="faqList"></div>
-  </div>
-</section>
-
-<section style="padding-top:0;">
-  <div class="container">
-    <div class="cta-strip">
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
       <div>
-        <h2>Request a <span id="ctaName">product</span> quotation</h2>
-        <p>Submit your quantity, specification and destination requirements, and our B2B project team will reply with specifications, documentation and pricing.</p>
-      </div>
-      <a class="btn btn-light" id="ctaInquiry2" href="inquiry.html">Submit a product inquiry</a>
-    </div>
-  </div>
-</section>
-
-<section class="section-light" style="padding-bottom:70px;">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-kicker">Product List</div>
-      <h2>Related Products</h2>
-    </div>
-    <div class="related-grid" id="relatedGrid"></div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-about">
-        <a class="logo" href="index.html">
-          <img class="logo-img" src="assets/img/pepveri-logo-white.png" alt="Pepveri">
-        </a>
-        <p>Pepveri supplies peptide raw materials and vialed products from China for qualified B2B buyers worldwide.</p>
-        <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+        <img src="assets/logo-white.png" alt="PepVeri">
+        <p>Complex custom peptide synthesis and catalog research peptide supply from China — documented QC, default confidentiality, compliant RUO export.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Custom Synthesis</h4>
         <ul>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="index.html#quality">Quality</a></li>
-          <li><a href="index.html#custom">Custom Synthesis</a></li>
-          <li><a href="index.html#insights">Insights</a></li>
-          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="custom-synthesis.html#types">Peptide Types</a></li>
+          <li><a href="custom-synthesis.html#mods">Modifications &amp; Labels</a></li>
+          <li><a href="custom-synthesis.html#process">How to Order</a></li>
         </ul>
       </div>
       <div>
         <h4>Products</h4>
-        <ul id="footerProducts"></ul>
+        <ul>
+          <li><a href="products.html#gmp">Pharmaceutical &amp; GMP</a></li>
+          <li><a href="products.html#research">Catalog Peptides</a></li>
+          <li><a href="products.html#cosmetic">Cosmetic Peptides</a></li>
+          <li><a href="products.html#nutra">Oral Nutraceutical</a></li>
+          <li><a href="products.html#vet">Veterinary &amp; Pet</a></li>
+        </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Company</h4>
         <ul>
-          <li>📍 Guangdong, China</li>
-          <li>✉️ <a href="mailto:business@pepveri.com">business@pepveri.com</a></li>
-          <li>📱 <a href="https://wa.me/85298744510" target="_blank" rel="noopener">WhatsApp: +852 98744510</a></li>
-          <li>🕘 Response within 1–2 business days</li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html#faq">FAQ</a></li>
+          <li><a href="inquiry.html">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Pepveri. All rights reserved.</span>
-      <span>Wholesale Peptide Supplier | Bulk &amp; Vials</span>
-    </div>
+    <div class="ruo">All products are sold for research use only (RUO) and are not intended for human therapeutic or diagnostic use. © 2026 PepVeri. All rights reserved.</div>
   </div>
 </footer>
 
-<script src="js/products-data.js"></script>
-<script src="js/mega-menu.js"></script>
+<!-- mobile sticky CTA -->
+<div class="sticky-cta"><a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a></div>
+
 <script>
-const products = PRODUCTS_ALL; /*
-const products = [
-  { num:"01", name:"Retatrutide", cas:"2381089-83-2", formula:"C221H342N46O68", purity:">99%", img:"https://asset.a-peptide.com/b2b-products/2026/07/a2a9ea79d10a480887f2e0a866de5878.png" },
-  { num:"02", name:"Tirzepatide", cas:"2023788-19-2", formula:"C225H348N48O68", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/045d8cade3fc4244bfca8c15864bd27e.png" },
-  { num:"03", name:"Semaglutide", cas:"910463-68-2", formula:"C187H291N45O59", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/ca8db7f9397240e4b405c73bffd7c1dd.png" },
-  { num:"04", name:"BPC-157", cas:"137525-51-0", formula:"C62H98N16O22", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/5326877c0f604ac18fd97f38742a4993.png" },
-  { num:"05", name:"KPV", cas:"67727-97-3", formula:"C16H30N4O4", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/1184c1fa99c241809a99c19f5ce9a576.png" },
-  { num:"06", name:"Epitalon", cas:"307297-39-8", formula:"C14H22N4O9", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/83023fe438df492b9c1fa58f1223609d.png" },
-  { num:"07", name:"Thymosin Beta-4 (TB-500)", cas:"77591-33-4", formula:"C212H350N56O78S", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/10/06a02dd853f140ca86aad8d81f90bcf2.png" },
-  { num:"08", name:"TESAMORELIN", cas:"901758-09-6", formula:"C221H366N72O67S · x(C2H4O2)", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/7c24983d1447482e9b97e79442bd377a.png" },
-  { num:"09", name:"TB-500 Fragment (17-23)", cas:"885340-08-9", formula:"C38H68N10O14", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/b65096eb5ddb40b49234d6183b1ab9de.png" },
-  { num:"10", name:"Melanotan II", cas:"121062-08-6", formula:"C50H69N15O9", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/996ba51024fa4d72bb57cf0f9c6c0f08.png" },
-  { num:"11", name:"GHK Cu", cas:"89030-95-5", formula:"C14H23CuN6O4+", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/71e01b37b52e48ff85fbf20970d6a764.png" },
-  { num:"12", name:"SEMAX", cas:"80714-61-0", formula:"C37H51N9O10S", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/bdcc473ab46b4fe0b7a4ea82e0dff916.png" },
-  { num:"13", name:"SELANK", cas:"129954-34-3", formula:"C33H57N11O9", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/3ec94ede77544fb58ca5caf70c2dd35e.png" },
-  { num:"14", name:"Eloralintide", cas:"2883634-40-8", formula:"C201H319N49O65S2", purity:">99%", img:"https://asset.peptideapisupply.com/b2b-products/2026/10/d8b79f542e8f4bd882f4ca418d47a3ea.png" },
-  { num:"15", name:"SS-31", cas:"736992-21-5", formula:"C32H49N9O5", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/07/0e425e09bb56483996a639dc611e60c3.png" },
-  { num:"16", name:"MOTs-C", cas:"1627580-64-6", formula:"C101H152N28O22S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/74aa901c362f4a2da6a27060c438835c.png" },
-  { num:"17", name:"Ipamorelin", cas:"170851-70-4", formula:"C38H49N9O5", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/b39f84327c3d459982ca3d221e3ab34e.png" },
-  { num:"18", name:"AOD-9604", cas:"221231-10-3", formula:"C78H123N23O23S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/79cb6c95c7dc46f6b706eb3deb98111b.png" },
-  { num:"19", name:"CJC-1295 No DAC", cas:"863288-34-0", formula:"C152H252N44O42", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/4f50ecc7f32d4d278e9163796a6d5ff6.png" },
-  { num:"20", name:"5-AMINO-1MQ", cas:"42464-96-0", formula:"C10H11IN2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/3904394589334d928b1f73c83c919de4.png" },
-  { num:"21", name:"SLU-PP-332", cas:"303760-60-3", formula:"C18H14N2O2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/981b97ddad9b408fab91388d1b0272d4.png" },
-  { num:"22", name:"SLU-PP-915", cas:"2285432-92-8", formula:"C17H13BFNO3S", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/7b44759f29a04b81ac95ed29628c8f63.png" },
-  { num:"23", name:"NAD+", cas:"53-84-9", formula:"C21H27N7O14P2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/661d7a88c7bd488bbc2408463de92421.png" },
-  { num:"24", name:"PT-141", cas:"189691-06-3", formula:"C50H68N14O10", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/40d64dbb85aa4909b4e59a401b0d88e9.png" },
-  { num:"25", name:"ARA-290", cas:"1208243-50-8", formula:"C51H84N16O21", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/08/d717021b1b634a9d952248e8d32f6db6.png" },
-  { num:"26", name:"Kisspeptin-10", cas:"374675-21-5", formula:"C63H83N17O14", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/5917d21575ca4946b9cdb51a04802b27.png" },
-  { num:"27", name:"Cagrilintide", cas:"1415456-99-3", formula:"C194H312N54O59S2", purity:">99% (HPLC)", img:"https://asset.peptideapisupply.com/b2b-products/2026/09/026cee7a7c9e49049907b3bd50484b77.png" },
-  { num:"28", name:"Liraglutide", cas:"204656-20-2", formula:"C172H265N43O51", purity:">99% (HPLC)", img:"https://asset.a-peptide.com/b2b-products/2026/08/ceaeac5390f049609a729af34d0c5c04.png" }
-*/
-
-// Molecular weight estimation for simple formulas (falls back to hidden row)
-const ATOMIC = { C:12.011, H:1.008, N:14.007, O:15.999, S:32.06, P:30.974, Cu:63.546, I:126.904, B:10.81, F:18.998 };
-function molWeight(formula) {
-  if (!/^(?:[A-Z][a-z]?\d*)+$/.test(formula)) return null;
-  let total = 0;
-  formula.replace(/([A-Z][a-z]?)(\d*)/g, (_, el, n) => {
-    if (!(el in ATOMIC)) { total = null; return _; }
-    total += ATOMIC[el] * (n === "" ? 1 : parseInt(n, 10));
-    return _;
+const langBtn=document.getElementById('langBtn'),lang=document.getElementById('lang');
+langBtn.addEventListener('click',e=>{e.stopPropagation();lang.classList.toggle('open')});
+document.addEventListener('click',()=>lang.classList.remove('open'));
+const ham=document.getElementById('hamburger'),menu=document.getElementById('menu');
+ham.addEventListener('click',()=>menu.classList.toggle('open'));
+document.querySelectorAll('.menu>li.has-acc>a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    if(window.innerWidth<=1020){e.preventDefault();const li=a.parentElement;li.classList.toggle('acc-open');}
   });
-  return total;
-}
+});
+</script>
 
-const params = new URLSearchParams(location.search);
-const idParam = params.get("id") || "";
-const casParam = params.get("cas") || "";
-const p = (idParam && products.find(x => x.id === idParam)) || (casParam && products.find(x => x.cas === casParam)) || products[0];
-const shortName = p.name.length > 26 ? p.name.slice(0, 26) + "…" : p.name;
+<script src="assets/catalog.js"></script>
+<script>
+(function(){
+  var DOC = '<svg viewBox="0 0 24 24"><path d="M13.5 3.5H7A1.5 1.5 0 0 0 5.5 5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8.5z"/><path d="M13.5 3.5v5h5"/></svg>';
+  var CHECK = '<svg viewBox="0 0 24 24"><path d="m5 12.6 4.6 4.6L19 7.4"/></svg>';
+  var PACKS = {
+    gmp:      ['1 g','5 g','10 g','25 g','Bulk'],
+    research: ['1 mg','5 mg','10 mg','25 mg','100 mg'],
+    cosmetic: ['10 mg','100 mg','1 g','Bulk'],
+    nutra:    ['100 g','1 kg','25 kg'],
+    vet:      ['10 mg','100 mg','1 g','Bulk']
+  };
+  var STORE = {
+    gmp:      '-20 °C, protect from light',
+    research: '-20 °C, protect from light',
+    cosmetic: '2–8 °C, protect from light',
+    nutra:    'Cool, dry, sealed',
+    vet:      '2–8 °C, protect from light'
+  };
+  var HANDLE = {
+    gmp: 'Reconstitute in sterile water or buffer; aliquot to avoid freeze–thaw cycles.',
+    research: 'Reconstitute in sterile water or buffer; aliquot to avoid freeze–thaw cycles.',
+    cosmetic: 'Soluble in glycol/water systems — request the formulation note with your quote.',
+    nutra: 'Ready for blending or encapsulation; keep sealed until use.',
+    vet: 'Reconstitute per protocol; keep reconstituted solution at 2–8 °C.'
+  };
 
-document.title = shortName + " Supplier | Bulk & Wholesale Supply | Pepveri";
-document.getElementById("crumbName").textContent = p.name;
-document.getElementById("heroTitle").textContent = p.name + " Wholesale and Bulk Supply";
-document.getElementById("heroLead").textContent = "Pepveri supplies " + p.name + " in gram and kilogram quantities, with custom milligram vial aliquoting available. Contact us for bulk and wholesale supply, packaging options and a product quotation.";
-document.getElementById("techTitle").textContent = p.name + " API Technical Information";
-document.getElementById("ctaName").textContent = p.name;
-document.getElementById("heroImg").src = p.img;
-document.getElementById("heroImg").alt = p.name;
-const inquiryHref = "inquiry.html?product=" + encodeURIComponent(p.name);
-document.getElementById("ctaInquiry").href = inquiryHref;
-document.getElementById("ctaInquiry2").href = inquiryHref;
+  var qs = new URLSearchParams(location.search);
+  var slug = qs.get('p');
+  var root = document.getElementById('pdRoot');
+  var data = window.CATALOG || {products:[], lines:[]};
+  var p = (data.products || []).filter(function(x){ return x.slug === slug; })[0];
 
-const mw = p.mw ? null : molWeight(p.formula.replace(/[^A-Za-z0-9]/g, ""));
-const techRows = [
-  ["CAS Number", p.cas],
-  ["Molecular Formula", p.formula],
-  ...(p.mw ? [["Molecular Weight", p.mw]] : (mw ? [["Molecular Weight", mw.toFixed(1) + " g/mol"]] : [])),
-  ["Purity", p.purity],
-  ["Supply Forms", "Bulk raw material / vials"],
-  ["Vial Specifications", "10 mg / 20 mg / 30 mg / 50 mg / 60 mg"],
-  ["Packaging", "Raw material: 10–1000 g/bag; vials: 10 vials/kit"],
-  ["Minimum Order Quantity", "Raw material: 10 g; vials: 1 kit"],
-  ["Storage", "Store at -20°C (lyophilized) or 2-8°C (reconstituted)"],
-  ["Testing", "Third-party laboratory testing supported"],
-  ["Quality Docs", p.docs || "HPLC · MS · COA"],
-  ["MOQ", p.moq || "Raw material: 10 g; vials: 1 kit"],
-  ["Category", p.category]
-];
-document.getElementById("techTable").innerHTML = techRows.map(([k, v]) =>
-  '<div class="row"><div class="k">' + k + '</div><div class="v">' + v + '</div></div>'
-).join("");
+  if (!p) {
+    document.title = 'Product not found | PepVeri';
+    root.className = 'pd-missing';
+    root.innerHTML = '<h1>That catalog item moved</h1>'
+      + '<p>The product reference in this link is not in the current catalog. Browse the full list or send us the sequence.</p>'
+      + '<a class="btn btn-primary" href="products.html">Back to the catalog</a>';
+    return;
+  }
 
-const faqs = [
-  ["What is " + p.name + "?", p.name + " is a synthetic peptide supplied as an API for research and development, quality evaluation, and import/distribution preparation, with molecular formula " + p.formula + ". Supply is intended for qualified pharmaceutical companies, research institutions, CDMOs, and other B2B organizations, with available documentation including COA, HPLC, LC-MS, peptide content, batch information, packaging, and storage details. " + p.name + " is not for personal use or direct consumer sale."],
-  ["In which supply forms can I order " + p.name + "?", p.name + " is available as bulk raw material and vial-packed research material. Specify the required supply form when requesting a quotation."],
-  ["Which raw material and vial specifications are available for " + p.name + "?", "Raw " + p.name + " is supplied in quantities from 10 g to 1000 g. Available research vial specifications: 10 mg / 20 mg / 30 mg / 50 mg / 60 mg. Each kit contains 10 vials."],
-  ["What is the minimum order quantity for " + p.name + "?", "The minimum order for raw " + p.name + " is 10 g. For vial-packed " + p.name + ", the minimum order is 10 vials, equal to one kit."],
-  ["In what physical form is " + p.name + " supplied and how is it packaged?", "Raw " + p.name + " is supplied as lyophilized powder in fluorinated bottles, then vacuum packed in aluminum foil bags. Vial-packed research " + p.name + " is supplied as lyophilized powder in sealed pharmaceutical glass vials, with 10 vials per kit."],
-  ["Is " + p.name + " in stock and what is the delivery time?", "We keep kilogram-scale stocks of raw " + p.name + ", normally dispatching within 7 days. If stock cannot cover your order, we arrange production, usually taking 7 days, with delivery in 7–15 days."],
-  ["How are bulk " + p.name + " orders quoted and which wholesale discounts apply?", "Raw " + p.name + " is quoted at gram and kilogram scales. Bulk research-vial orders qualify for wholesale discounts when they reach the applicable order amount. Every first order receives wholesale pricing regardless of its amount, reducing first-order evaluation costs."],
-  ["Why choose Pepveri as your " + p.name + " supplier?", "Pepveri manufactures " + p.name + " raw material in-house and independently controls quality for consistent supply. Product purity: " + p.purity + ". Batch support includes COA, HPLC and LC-MS reports. Supply ranges from gram-scale raw material to custom milligram research vials for academic research and bulk procurement."],
-  ["Where can I source " + p.name + " and request a bulk quotation?", "Source " + p.name + " from China-based supplier Pepveri. Request current bulk pricing through our website inquiry form. We reply within half an hour during working hours."],
-  ["Is " + p.name + " for human or veterinary use?", "No. " + p.name + " is supplied only as a chemical reagent for in-vitro laboratory research, not for human or veterinary use. Pepveri is not a pharmacy or compounding facility."]
-];
-document.getElementById("faqList").innerHTML = faqs.map(([q, a]) =>
-  "<details><summary>" + q + "</summary><div class='faq-body'>" + a + "</div></details>"
-).join("");
+  var line = (data.lines || []).filter(function(l){ return l.id === p.line; })[0] || {name:'Catalog Peptides', subs:[]};
+  var sub = (line.subs || []).filter(function(s){ return s.name === p.sub; })[0] || {label:p.sub, name:p.sub};
+  var packs = PACKS[p.line] || PACKS.research;
+  var casLine = p.cas ? p.cas : 'Not assigned';
+  var quote = 'inquiry.html?n=' + encodeURIComponent(p.name) + '&p=' + encodeURIComponent(p.ref);
 
-// Related products: same category first, then next in list
-const start = products.indexOf(p);
-const sameCat = products.filter(x => x !== p && x.category === p.category);
-const after = products.filter(x => x !== p && x.category !== p.category);
-const related = sameCat.concat(after).slice(0, 3);
-document.getElementById("relatedGrid").innerHTML = related.map(r =>
-  '<a class="related-card" href="product.html?id=' + encodeURIComponent(r.id) + '">' +
-  '<img src="' + r.img + '" alt="' + r.name + '">' +
-  '<div><h3>' + r.name + '</h3><div class="cas">CAS ' + r.cas + '</div></div></a>'
-).join("");
+  /* related: same sub-category, excluding self, max 6 */
+  var rel = data.products.filter(function(x){ return x.sub === p.sub && x.slug !== p.slug; }).slice(0, 6);
 
-// Footer product links
-document.getElementById("footerProducts").innerHTML =
-  products.slice(0, 4).map(r =>
-    '<li><a href="product.html?id=' + encodeURIComponent(r.id) + '">' + r.name + '</a></li>'
-  ).join("") + '<li><a href="products.html">View all products →</a></li>';
+  document.title = p.name + ' | PepVeri Catalog Peptide';
+  document.getElementById('crumbRest').innerHTML =
+    '<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>'
+    + '<a href="products.html#' + p.line + '">' + line.name + '</a>'
+    + '<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>'
+    + '<a href="products.html?sub=' + sub.id + '#' + p.line + '">' + sub.label + '</a>'
+    + '<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>'
+    + '<span class="here">' + p.name + '</span>';
+
+  var related = rel.map(function(x){
+    return '<a href="product.html?p=' + x.slug + '">' + x.name
+      + '<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg></a>';
+  }).join('');
+
+  var catalogUrl = 'products.html#' + p.line;
+
+  root.className = '';
+  root.innerHTML = ''
+  + '<div class="pd-grid">'
+  +   '<div class="pd-main">'
+  +     '<div class="pd-head">'
+  +       '<div class="pd-tags"><span class="pd-tag line">' + line.name + '</span>'
+  +         '<span class="pd-tag">' + sub.label + '</span>'
+  +         '<span class="pd-tag" style="color:#5A6B7C;background:#F1F5F8">' + p.ref + '</span></div>'
+  +       '<h1>' + p.name + '</h1>'
+  +       '<p class="pd-lead">' + p.name + ' is supplied by PepVeri as an off-the-shelf catalog peptide in the '
+  +         sub.label + ' range. Every lot is released against a batch CoA carrying HPLC purity and LC-MS identity data, '
+  +         'so the material can go straight into your assay or formulation trial.</p>'
+  +       '<div class="pd-meta">'
+  +         '<div>Catalog no.<b>' + p.ref + '</b></div>'
+  +         '<div>CAS no.<b>' + casLine + '</b></div>'
+  +         '<div>Typical purity<b>' + p.purity + '</b></div>'
+  +       '</div>'
+  +     '</div>'
+
+  +     '<div class="pd-sec"><h2>Specifications</h2>'
+  +       '<dl class="spec">'
+  +         '<div><dt>Catalog number</dt><dd>' + p.ref + '</dd></div>'
+  +         '<div><dt>CAS number</dt><dd>' + casLine + '</dd></div>'
+  +         '<div><dt>Purity (typical)</dt><dd>' + p.purity + ' by HPLC</dd></div>'
+  +         '<div><dt>Category</dt><dd>' + sub.name + '</dd></div>'
+  +         '<div><dt>Product line</dt><dd>' + line.name + '</dd></div>'
+  +         '<div><dt>Appearance</dt><dd>White to off-white powder</dd></div>'
+  +         '<div><dt>Form</dt><dd>Lyophilised powder</dd></div>'
+  +         '<div><dt>Storage</dt><dd>' + STORE[p.line] + '</dd></div>'
+  +         '<div><dt>Pack sizes</dt><dd>' + packs.join(' · ') + '</dd></div>'
+  +         '<div><dt>Shipping</dt><dd>Ambient or cold pack, worldwide</dd></div>'
+  +         '<div><dt>Documentation</dt><dd>CoA (HPLC, LC-MS) + MSDS</dd></div>'
+  +         '<div><dt>Use</dt><dd>Research use only (RUO)</dd></div>'
+  +       '</dl>'
+  +       '<p class="pd-note">Purity shown is the typical release value — the measured result for your lot is printed on its CoA. '
+  +         'Full sequence, molecular weight and batch-specific data are included in the CoA dossier sent with your quote.</p>'
+  +     '</div>'
+
+  +     '<div class="pd-sec"><h2>Documentation &amp; handling</h2>'
+  +       '<div class="doc-list">'
+  +         '<div class="doc"><span class="di">' + DOC + '</span><div><b>Certificate of analysis</b><span>Batch CoA with HPLC purity, LC-MS identity and appearance — ships with every order.</span></div></div>'
+  +         '<div class="doc"><span class="di">' + DOC + '</span><div><b>HPLC trace</b><span>Full chromatogram at the release wavelength, plus the integration table.</span></div></div>'
+  +         '<div class="doc"><span class="di">' + DOC + '</span><div><b>Mass spectrum</b><span>LC-MS spectrum confirming the observed mass against the theoretical value.</span></div></div>'
+  +         '<div class="doc"><span class="di">' + DOC + '</span><div><b>MSDS &amp; RUO statement</b><span>Safety data sheet and research-use-only declaration for customs and EHS.</span></div></div>'
+  +       '</div>'
+  +       '<p class="pd-note">' + HANDLE[p.line] + ' Avoid repeated freeze–thaw cycles; for long-term storage keep aliquots at the temperature above.</p>'
+  +     '</div>'
+
+  +     (related ? '<div class="pd-sec"><h2>More in ' + sub.label + '</h2><div class="rel">' + related + '</div></div>' : '')
+  +   '</div>'
+
+  +   '<aside class="pd-side">'
+  +     '<div class="scard dark">'
+  +       '<span class="slab">Catalog price</span>'
+  +       '<span class="big">Quoted per batch</span>'
+  +       '<p>Pricing depends on pack size and current stock. Send the reference and we reply with a firm quote within one business day.</p>'
+  +       '<a class="btn btn-primary" href="' + quote + '">Request a Quote</a>'
+  +       '<a class="btn btn-outline" href="' + quote + '&doc=1">Request CoA sample</a>'
+  +       '<ul class="sfacts">'
+  +         '<li>' + CHECK + 'In stock — ships in 2–5 business days</li>'
+  +         '<li>' + CHECK + 'HPLC &amp; MS data on every batch</li>'
+  +         '<li>' + CHECK + 'Cold-chain delivery worldwide</li>'
+  +         '<li>' + CHECK + 'NDA available before you share details</li>'
+  +       '</ul>'
+  +     '</div>'
+  +     '<div class="scard">'
+  +       '<span class="slab">Available packs</span>'
+  +       '<div class="packs">' + packs.map(function(x){ return '<span class="pack">' + x + '</span>'; }).join('') + '</div>'
+  +       '<p class="help">Bulk and custom pack sizes on request. Questions on this item?</p>'
+  +       '<ul class="contact-list">'
+  +         '<li><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 6.6 8.4 6 8.4-6"/></svg>'
+  +           '<a href="mailto:business@pepveri.com">business@pepveri.com</a></li>'
+  +         '<li><svg viewBox="0 0 24 24"><path d="M20.4 11.7a8.4 8.4 0 0 1-12.3 7.4L3.6 20.4l1.3-4.4a8.4 8.4 0 1 1 15.5-4.3z"/><path d="M8.9 9.2c.3-.6.6-.6.9-.6h.6c.2 0 .4 0 .6.5l.7 1.6c.1.3 0 .5-.1.7l-.5.6c-.1.2-.2.3 0 .6a6 6 0 0 0 2.7 2.3c.3.1.4 0 .6-.1l.7-.8c.2-.2.3-.2.6-.1l1.6.8c.2.1.3.2.3.3v.6c0 .7-.6 1.2-1.3 1.3a5.6 5.6 0 0 1-3.6-1 9.6 9.6 0 0 1-3.6-3.6 4.4 4.4 0 0 1-.6-1.9c0-.5.1-1 .5-1.3z"/></svg>'
+  +           '<a href="https://wa.me/85298744510" target="_blank" rel="noopener">WhatsApp +852 98744510</a></li>'
+  +       '</ul>'
+  +       '<a class="btn btn-outline" href="' + catalogUrl + '" style="width:100%;justify-content:center;font-size:13.5px;padding:11px 18px">Back to ' + line.name + '</a>'
+  +     '</div>'
+  +   '</aside>'
+  + '</div>';
+})();
 </script>
 </body>
 </html>

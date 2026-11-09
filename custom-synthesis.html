@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Peptide Synthesis | PepVeri — Complex Sequences, Documented Batches</title>
+<meta name="description" content="Custom peptide synthesis from China: 10 architectures, 8 modification classes, 1 mg to multi-gram scale, synthesised at audited GMP-oriented partner sites with HPLC and LC-MS documentation on every batch.">
+<style>
+
+:root{
+  --navy:#0F2440; --blue:#0D6DA8; --teal:#2BBFA5;
+  --teal-dark:#0E8A78; --blue-deep:#0A3B5C; --navy-soft:#33475C;
+  --teal-tint:#E3F6F1; --blue-tint:#E6F1F9; --line:#D8E0E8; --bg:#F5F4F2;
+  --grad-primary:linear-gradient(90deg,#2BBFA5 0%,#0D6DA8 100%);
+  --grad-dark:linear-gradient(90deg,#0F2440 0%,#0D6DA8 100%);
+  --grad-hover:linear-gradient(90deg,#0E8A78 0%,#0A5588 100%);
+  --hero-overlay:rgba(15,36,64,0.90);
+  --font:-apple-system,"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--navy-soft);background:#fff;line-height:1.6}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{color:var(--navy);font-weight:600;line-height:1.25}
+.section{padding:72px 0}
+.section.alt{background:var(--bg)}
+.kicker{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:12px}
+.section h2{font-size:32px;margin-bottom:14px}
+.section .lead{max-width:760px;font-size:17px;color:var(--navy-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap}
+.btn-primary{background:var(--grad-primary);color:#fff}
+.btn-primary:hover{background:var(--grad-hover);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn-outline:hover{background:var(--teal-tint)}
+.btn-dark{background:var(--grad-dark);color:#fff}
+.btn-dark:hover{background:var(--grad-hover)}
+
+/* ===== announcement ===== */
+.announce{background:var(--navy);color:#C3D2DE;font-size:13px}
+.announce .wrap{display:flex;align-items:center;justify-content:space-between;height:38px}
+.announce .btn-contact{background:var(--grad-primary);color:#fff;padding:5px 16px;border-radius:99px;font-size:12px;font-weight:600}
+.announce .btn-contact:hover{background:var(--grad-hover)}
+
+/* ===== header / nav ===== */
+.header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;height:64px;gap:28px}
+.logo img{height:42px;display:block}
+.menu{display:flex;gap:26px;flex:1}
+.menu>li{position:relative}
+.menu>li>a{display:flex;align-items:center;gap:5px;padding:20px 0;font-size:14.5px;font-weight:500;color:var(--navy-soft);border-bottom:2px solid transparent}
+.menu>li>a:hover{color:var(--blue)}
+.menu>li>a .caret{font-size:10px;color:#98A6B3}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang{position:relative}
+.lang>button{display:flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;font-family:var(--font)}
+.lang-drop{display:none;position:absolute;top:110%;right:0;background:#fff;border:1px solid var(--line);border-radius:8px;min-width:150px;box-shadow:0 8px 24px rgba(15,36,64,.12);overflow:hidden}
+.lang.open .lang-drop{display:block}
+.lang-drop a{display:block;padding:10px 14px;font-size:13px}
+.lang-drop a:hover{background:var(--teal-tint)}
+.btn-nav{padding:10px 18px;font-size:13.5px}
+
+/* ===== dropdowns (mega v2) ===== */
+.nav{position:relative}
+.menu>li{position:static}
+.drop{position:absolute;top:100%;left:0;right:0;transform:none;background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 16px 16px;box-shadow:0 32px 64px -20px rgba(15,36,64,.28);display:none;overflow:hidden}
+.menu>li:hover .drop{display:block}
+.drop::before{content:"";display:block;height:3px;background:var(--grad-primary)}
+.drop-body{display:flex;align-items:stretch;padding:26px 26px 20px}
+.dgroup{flex:1 1 0;min-width:0;padding-right:22px;display:flex;flex-direction:column}
+.dgroup+.dgroup{border-left:1px solid var(--line);padding-left:22px}
+.dgroup h4{display:flex;align-items:flex-start;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin:0 0 10px;line-height:1.35;min-height:40px}
+.gi{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;flex:none;background:var(--grad-primary)}
+.gi.blue{background:linear-gradient(135deg,#0D6DA8,#0A3B5C)}
+.gi.teal{background:linear-gradient(135deg,#2BBFA5,#0E8A78)}
+.gi.navy{background:linear-gradient(135deg,#33475C,#0F2440)}
+.gi svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block}
+.subcols{display:grid;grid-template-columns:1fr 1fr;column-gap:20px}
+.drop ul{min-width:0}
+.drop ul li a{display:block;font-size:13px;line-height:1.4;padding:5px 0;color:#5A6B7C;transition:color .15s}
+.drop ul li a:hover{color:var(--blue)}
+.gmore{align-self:flex-start;margin-top:auto;padding-top:10px;font-size:12px;font-weight:600;color:var(--teal-dark);white-space:nowrap}
+.gmore:hover{color:var(--teal)}
+.drop-foot{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(100deg,#0F2440 0%,#0A3B5C 70%,#0D6DA8 160%);color:#fff;padding:16px 24px}
+.drop-foot b{display:block;font-size:13.5px;color:#fff;font-weight:600}
+.drop-foot span{display:block;font-size:12px;color:#AFC4D4;margin-top:2px;max-width:660px}
+.drop-foot .df-acts{display:flex;align-items:center;gap:16px;flex:none}
+.drop-foot .btn{padding:9px 18px;font-size:12.5px}
+.drop-foot .ghost{font-size:12.5px;font-weight:600;color:#7FD6C6;white-space:nowrap}
+.drop-foot .ghost:hover{color:#fff}
+.menu>li>a .caret{transition:transform .2s}
+.menu>li:hover>a .caret{transform:rotate(180deg)}
+.menu>li>a.cur{color:var(--blue);border-bottom:2px solid var(--teal)}
+.hamburger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:18px;cursor:pointer;color:var(--navy)}
+
+/* ===== hero ===== */
+.hero{position:relative;color:#fff;background:linear-gradient(120deg,#41586B 0%,#5B6E7E 40%,#3C4F60 70%,#586C7B 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 600px 300px at 80% 20%,rgba(255,255,255,.10),transparent 60%),
+  radial-gradient(ellipse 500px 400px at 15% 90%,rgba(255,255,255,.06),transparent 60%)}
+.hero-overlay{position:absolute;inset:0;background:var(--hero-overlay)}
+.hero .wrap{position:relative;padding:82px 24px 74px;max-width:1180px}
+.hero h1{font-size:46px;color:#fff;max-width:640px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.sub{margin:22px 0 34px;font-size:17px;color:#C9D6E0;max-width:620px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta .btn{padding:15px 32px;font-size:16px}
+.hero-card{position:absolute;right:24px;top:90px;background:rgba(10,59,92,.92);border:1px solid rgba(43,191,165,.25);border-radius:14px;padding:26px;width:320px}
+.hero-card h3{color:var(--teal);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.hero-card li{font-size:14px;color:#E4EDF3;padding:6px 0 6px 22px;position:relative}
+.hero-card li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:2px;background:var(--teal)}
+
+/* ===== trust strip ===== */
+.strip{background:var(--navy);padding:26px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.strip .item{color:#fff;font-size:14.5px;display:flex;align-items:center;gap:10px}
+.strip .item b{color:var(--teal)}
+.strip .dot{width:9px;height:9px;border-radius:3px;background:var(--teal)}
+
+/* ===== pathways ===== */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.path{border:1px solid var(--line);border-radius:16px;padding:34px;position:relative;transition:all .2s}
+.path:hover{border-color:var(--teal);box-shadow:0 12px 32px rgba(15,36,64,.08)}
+.path .tag{position:absolute;top:-13px;left:30px;background:var(--grad-primary);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 14px;border-radius:99px}
+.path h3{font-size:22px;margin-bottom:10px}
+.path p{font-size:14.5px;margin-bottom:18px}
+.path ul{margin-bottom:24px}
+.path ul li{font-size:14px;padding:5px 0 5px 24px;position:relative}
+.path ul li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.path .btn{width:100%}
+
+.process-block{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.process-title{font-size:24px;margin-bottom:8px}
+.process-sub{font-size:15px;color:var(--navy-soft);max-width:720px;margin-bottom:6px}
+
+/* custom synthesis stepper */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.step{position:relative}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--grad-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;margin-bottom:18px;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:22px;left:56px;right:-12px;height:2px;background:repeating-linear-gradient(90deg,#C9D6E0 0 6px,transparent 6px 12px)}
+.step h3{font-size:15px;margin-bottom:7px}
+.step p{font-size:13px;color:#68788A}
+.steps-cta{display:flex;align-items:center;gap:16px;margin-top:44px;flex-wrap:wrap}
+
+/* parallax band: fixed background, content scrolls */
+.parallax{
+  background:linear-gradient(rgba(15,36,64,.82),rgba(15,36,64,.82)),url("data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice"%3E%0A  %3Cdefs%3E%0A    %3ClinearGradient id="bg" x1="0" y1="0" x2="1" y2="1"%3E%0A      %3Cstop offset="0" stop-color="%230F2440"/%3E%0A      %3Cstop offset="0.55" stop-color="%23123a5e"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8"/%3E%0A    %3C/linearGradient%3E%0A    %3CradialGradient id="glow" cx="0.72" cy="0.3" r="0.6"%3E%0A      %3Cstop offset="0" stop-color="%232BBFA5" stop-opacity="0.35"/%3E%0A      %3Cstop offset="1" stop-color="%232BBFA5" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3CradialGradient id="glow2" cx="0.2" cy="0.8" r="0.55"%3E%0A      %3Cstop offset="0" stop-color="%230D6DA8" stop-opacity="0.5"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3Cpattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"%3E%0A      %3Cpath d="M80 0H0v80" fill="none" stroke="%237FA8C9" stroke-opacity="0.12" stroke-width="1"/%3E%0A    %3C/pattern%3E%0A  %3C/defs%3E%0A  %3Crect width="1920" height="1080" fill="url(%23bg)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23grid)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow2)"/%3E%0A  %3C!-- molecular network --%3E%0A  %3Cg stroke="%237FD6C6" stroke-opacity="0.35" stroke-width="2" fill="none"%3E%0A    %3Cpath d="M1560 220 L1700 320 L1840 260"/%3E%0A    %3Cpath d="M1700 320 L1760 470"/%3E%0A    %3Cpath d="M300 840 L440 760 L560 850 L700 770"/%3E%0A    %3Cpath d="M440 760 L420 620"/%3E%0A    %3Cpath d="M1240 900 L1380 830 L1500 910"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%232BBFA5" fill-opacity="0.8"%3E%0A    %3Ccircle cx="1560" cy="220" r="9"/%3E%0A    %3Ccircle cx="1700" cy="320" r="13"/%3E%0A    %3Ccircle cx="1840" cy="260" r="7"/%3E%0A    %3Ccircle cx="1760" cy="470" r="9"/%3E%0A    %3Ccircle cx="300" cy="840" r="9"/%3E%0A    %3Ccircle cx="440" cy="760" r="13"/%3E%0A    %3Ccircle cx="560" cy="850" r="8"/%3E%0A    %3Ccircle cx="700" cy="770" r="10"/%3E%0A    %3Ccircle cx="420" cy="620" r="7"/%3E%0A    %3Ccircle cx="1240" cy="900" r="9"/%3E%0A    %3Ccircle cx="1380" cy="830" r="12"/%3E%0A    %3Ccircle cx="1500" cy="910" r="7"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%23FFFFFF" fill-opacity="0.14"%3E%0A    %3Ccircle cx="900" cy="180" r="5"/%3E%0A    %3Ccircle cx="1120" cy="260" r="4"/%3E%0A    %3Ccircle cx="760" cy="420" r="4"/%3E%0A    %3Ccircle cx="1020" cy="560" r="5"/%3E%0A    %3Ccircle cx="620" cy="300" r="3"/%3E%0A    %3Ccircle cx="1300" cy="520" r="4"/%3E%0A    %3Ccircle cx="860" cy="720" r="4"/%3E%0A    %3Ccircle cx="1620" cy="640" r="5"/%3E%0A  %3C/g%3E%0A%3C/svg%3E%0A") center/cover no-repeat;
+  background-attachment:fixed;
+}
+.parallax .kicker{color:var(--teal)}
+.parallax h2{color:#fff}
+.parallax .lead{color:#C3D2DE}
+.parallax .pillar{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.parallax .pillar h3{color:#fff}
+.parallax .pillar p{color:#C3D2DE}
+
+/* supply chain visual cards */
+.flow4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 22px;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.fcard:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.fcard .fig{background:linear-gradient(160deg,#F7FAFC 0%,#EAF3F7 100%);border-radius:10px;height:130px;overflow:hidden}
+.fcard .fig svg{width:100%;height:100%}
+.fcard h3{font-size:15.5px}
+.fcard p{font-size:12.5px;color:#68788A;flex:1}
+.flow-arrow{display:none}
+
+/* ===== grids ===== */
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.pcard{border-radius:14px;padding:0;overflow:hidden;background:var(--grad-primary);color:#fff;transition:all .2s;display:flex;flex-direction:column}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(13,109,168,.32)}
+.pcard-img{display:flex;align-items:center;justify-content:center;font-size:44px;height:120px;background:rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.18)}
+.pcard h3{font-size:16px;color:#fff;padding:18px 18px 6px}
+.pcard p{font-size:13px;color:rgba(255,255,255,.88);padding:0 18px;flex:1}
+.pcard .count{align-self:flex-start;margin:14px 18px 18px;font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:4px 12px}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--teal-tint);transform:translateY(-1px)}
+.grid-types{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.tcard{border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff;transition:all .2s;display:flex;flex-direction:column;gap:8px}
+.tcard:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.tcard .ic{width:38px;height:38px;border-radius:10px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;font-size:17px}
+.tcard h3{font-size:15px}
+.tcard p{font-size:12.5px;color:#68788A;flex:1}
+.tcard .link{font-size:13px;font-weight:600;color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.chip{border:1px solid var(--line);border-radius:99px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--navy-soft);background:#fff;transition:all .2s}
+.chip:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--teal-tint)}
+
+/* ===== why / pillars ===== */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px}
+.pillar .num{font-size:13px;font-weight:700;color:var(--teal);margin-bottom:10px}
+.pillar h3{font-size:19px;margin-bottom:10px}
+.pillar p{font-size:14px}
+
+/* ===== QC ===== */
+.qc{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.qc-visual{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.qc-visual .chart{height:210px;border-radius:8px;background:linear-gradient(180deg,#FDFEFE,#F2F6F8);position:relative;overflow:hidden}
+.qc-visual .chart svg{position:absolute;inset:0;width:100%;height:100%}
+.qc-visual .cap{display:flex;justify-content:space-between;font-size:11.5px;color:#8895A1;margin-top:10px}
+.qc ul li{padding:9px 0 9px 30px;position:relative;font-size:15px}
+.qc ul li::before{content:"✓";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:var(--teal-tint);color:var(--teal-dark);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ===== FAQ ===== */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+.faq summary{padding:18px 22px;font-weight:600;color:var(--navy);cursor:pointer;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"+";font-size:20px;color:var(--teal);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 22px 18px;font-size:14.5px}
+
+/* ===== CTA band ===== */
+.cta-band{background:linear-gradient(100deg,var(--navy) 0%,var(--blue) 130%);color:#fff;padding:72px 0}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-band h2{color:#fff;font-size:30px;max-width:560px}
+.cta-band h2 em{font-style:normal;color:var(--teal)}
+.cta-band p{color:#C9D6E0;margin-top:10px;max-width:520px}
+
+/* ===== footer ===== */
+footer{background:var(--navy);color:#9FB2C4;font-size:13.5px;padding:56px 0 90px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.foot-grid img{height:46px;margin-bottom:16px}
+.foot-grid h4{color:#fff;font-size:13.5px;margin-bottom:14px}
+.foot-grid li{margin-bottom:8px}
+.foot-grid a:hover{color:var(--teal)}
+.ruo{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12px;color:#6B8199}
+
+/* mobile sticky */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);z-index:99}
+.sticky-cta .btn{width:100%}
+
+/* ===== responsive ===== */
+@media(max-width:1020px){
+  .menu{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(15,36,64,.12);max-height:calc(100vh - 64px);overflow:auto}
+  .menu.open{display:flex}
+  .menu>li{border-bottom:1px solid var(--line)}
+  .menu>li:last-child{border-bottom:none}
+  .menu>li>a{padding:15px 0;width:100%}
+  .drop{position:static;transform:none;display:none!important;box-shadow:none;border:none;padding:0 0 14px;min-width:0;flex-direction:column}
+  .menu>li.acc-open .drop{display:flex!important}
+  .menu>li.has-acc>a::after{content:"▾";margin-left:auto;font-size:12px;color:#98A6B3}
+  .drop::before{display:none}
+  .drop-body{flex-direction:column;padding:12px 4px 4px}
+  .dgroup{padding:0}
+  .dgroup+.dgroup{border-left:none;border-top:1px solid var(--line);margin-top:14px;padding-top:14px;padding-left:0}
+  .dgroup h4{font-size:12px;min-height:0;margin-bottom:10px}
+  .drop ul li a{font-size:13.5px;padding:6px 0}
+  .subcols{grid-template-columns:1fr;column-gap:0}
+  .drop-foot{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin:10px 0 8px;border-radius:12px}
+  .drop-foot .df-acts{flex-wrap:wrap}
+  .hamburger{display:block}
+  .nav{gap:12px}
+  .btn-nav{display:none}
+  .grid-5,.grid-types{grid-template-columns:repeat(2,1fr)}
+  .flow4{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{padding:0 0 26px 66px}
+  .step .n{position:absolute;left:0;top:0;margin-bottom:0}
+  .step:not(:last-child)::after{top:50px;left:23px;right:auto;bottom:-4px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#C9D6E0 0 6px,transparent 6px 12px)}
+  .pillars{grid-template-columns:1fr}
+  .paths{grid-template-columns:1fr}
+  .qc{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .hero h1{font-size:34px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .sticky-cta{display:block}
+  footer{padding-bottom:120px}
+  .announce .txt{font-size:11px}
+}
+@media(max-width:560px){
+  .grid-5,.grid-types{grid-template-columns:1fr}
+  .flow4{grid-template-columns:1fr}
+  .hero .wrap{padding:64px 24px 80px}
+  .hero h1{font-size:29px}
+  .foot-grid{grid-template-columns:1fr}
+}
+/* iOS Safari doesn't support fixed attachment — fall back to scrolling bg */
+@media(max-width:1020px){
+  .parallax{background-attachment:scroll}
+}
+
+
+/* process timeline */
+.flow{max-width:900px;margin:46px auto 0;position:relative}
+.flow::before{content:"";position:absolute;left:23px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,var(--teal),var(--blue) 55%,rgba(216,224,232,.25))}
+.fstep{position:relative;padding:0 0 26px 68px}
+.fstep:last-child{padding-bottom:0}
+.fnum{position:absolute;left:0;top:0;width:48px;height:48px;border-radius:14px;background:var(--grad-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;box-shadow:0 6px 16px rgba(13,109,168,.24)}
+.fbody{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px 22px;transition:all .2s}
+.fbody:hover{border-color:var(--teal);box-shadow:0 10px 26px rgba(15,36,64,.07)}
+.fhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:7px}
+.fhead h3{font-size:16.5px;margin:0}
+.fwhen{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);background:var(--teal-tint);border-radius:99px;padding:4px 10px;white-space:nowrap}
+.fbody p{font-size:13.6px;color:#5A6B7C;line-height:1.7}
+.fget{display:flex;gap:8px;align-items:flex-start;margin-top:11px;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--navy-soft)}
+.fget b{color:var(--navy);white-space:nowrap;font-weight:700}
+.flow-note{max-width:900px;margin:28px auto 0;display:flex;gap:14px;align-items:flex-start;background:var(--teal-tint);border:1px solid rgba(43,191,165,.35);border-radius:14px;padding:18px 22px}
+.flow-note .ni{flex:none;width:30px;height:30px;border-radius:9px;background:#fff;color:var(--teal-dark);display:flex;align-items:center;justify-content:center}
+.flow-note .ni svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.flow-note p{font-size:13.5px;color:var(--navy-soft)}
+.flow-note b{color:var(--navy)}
+
+/* architectures + modifications */
+.cap2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.capbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px}
+.capbox h3{font-size:17px;margin-bottom:5px}
+.capbox .hint{font-size:12.8px;color:#8895A1;margin-bottom:16px}
+.arch{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.arch li{font-size:13.4px;padding:7px 0 7px 22px;position:relative;color:var(--navy-soft);min-height:34px}
+.arch li::before{content:"";position:absolute;left:0;top:15px;width:7px;height:7px;border-radius:2px;background:var(--teal)}
+.modtags{display:flex;flex-wrap:wrap;gap:8px}
+.modtags span{font-size:12.4px;color:var(--navy);background:#F3F7F9;border:1px solid var(--line);border-radius:8px;padding:6px 11px}
+.modtags span.more{background:var(--grad-primary);border-color:transparent;color:#fff;font-weight:600}
+
+/* facility gallery */
+/* partner facility frame (shared look with about page) */
+.fac-frame{margin-top:40px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--bg);box-shadow:0 18px 46px rgba(15,36,64,.10)}
+.fac-frame img{display:block;width:100%;height:auto}
+.img-note{margin-top:18px;font-size:12px;color:#8895A1;line-height:1.6}
+
+/* partner audit */
+.audit{display:grid;grid-template-columns:1.35fr 1fr;gap:24px;margin-top:44px;align-items:stretch}
+.audit-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px}
+.audit-box h3{font-size:17px;margin-bottom:12px}
+.audit-box li{font-size:13.6px;color:var(--navy-soft);padding:10px 0 10px 30px;position:relative;border-bottom:1px dashed var(--line);line-height:1.6}
+.audit-box li:last-child{border-bottom:none}
+.audit-box li::before{content:"\2713";position:absolute;left:0;top:11px;width:19px;height:19px;border-radius:50%;background:var(--teal-tint);color:var(--teal-dark);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
+.audit-note{background:linear-gradient(150deg,#0F2440 0%,#0A3B5C 60%,#0D6DA8 160%);border-radius:16px;padding:32px;display:flex;flex-direction:column;justify-content:center}
+.audit-note h3{color:#fff;font-size:18px;margin-bottom:12px}
+.audit-note p{font-size:13.5px;color:#B9CBD9;line-height:1.8}
+.audit-note .btn{align-self:flex-start;margin-top:20px;padding:11px 22px;font-size:13.5px}
+
+@media(max-width:1020px){
+  .cap2,.audit{grid-template-columns:1fr}
+  .flow{max-width:none}
+  .fac-frame{margin-top:30px;border-radius:16px}
+}
+@media(max-width:560px){
+  .fac-frame{margin-top:24px;border-radius:14px}
+  .arch{grid-template-columns:1fr}
+  .flow::before{display:none}
+  .fstep{padding-left:0;padding-bottom:18px}
+  .fnum{position:static;width:40px;height:40px;border-radius:12px;font-size:14px;margin-bottom:12px}
+  .fbody{padding:18px}
+  .fhead h3{font-size:15.5px}
+  .cap-row{font-size:12.8px}
+  .capbox,.audit-box{padding:24px}
+}
+/* ===== polish pass ===== */
+.ico{display:flex;align-items:center;justify-content:center}
+.ico svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block}
+.btn{border-radius:10px}
+/* hero: add depth + technical grid so the dark area is not flat */
+.hero{background:linear-gradient(120deg,#132E4E 0%,#183D61 45%,#0F2440 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:
+  radial-gradient(circle at 86% 2%,rgba(43,191,165,.13),transparent 52%),
+  linear-gradient(rgba(255,255,255,.032) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px);
+  background-size:auto,96px 96px,96px 96px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.95),rgba(0,0,0,.30))}
+.hero .wrap{z-index:2}
+.hero h1{letter-spacing:-.012em}
+/* pathway cards: pill inside the card, buttons no longer full width */
+.path .tag{position:static;display:inline-block;margin-bottom:14px}
+.path .btn{width:auto;align-self:flex-start;padding:12px 26px;font-size:14px}
+/* parallax: solid navy fallback so text survives if the image fails */
+.parallax{background-color:var(--navy)}
+.parallax .lead{color:#D9E4ED}
+.parallax .pillar p{color:#CFDBE5}
+/* tables: closed border + radius */
+.table-wrap{border:1px solid var(--line);border-radius:14px;background:#fff;overflow-x:auto;box-shadow:0 2px 10px rgba(15,36,64,.05)}
+.mtable{border-radius:0;box-shadow:none;margin-top:0}
+.mtable tbody tr:last-child td{border-bottom:none}
+/* faq centered, blog cards equal height */
+.faq{margin-left:auto;margin-right:auto}
+.post{display:flex;flex-direction:column}
+.post .meta{margin-top:auto;padding-top:8px}
+
+/* ===== mobile polish ===== */
+.announce .btn-contact{white-space:nowrap}
+@media(max-width:560px){
+  .announce .wrap{height:auto;min-height:34px;padding:7px 16px;gap:10px}
+  .announce .txt{font-size:10px;line-height:1.4;flex:1;min-width:0}
+  .announce .btn-contact{flex:0 0 auto;padding:5px 12px;font-size:11px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{width:100%}
+  .pcard-img{height:86px}
+  .pcard h3{min-height:0;padding:16px 16px 4px}
+  .pcard .count{margin:10px 16px 16px}
+  .section{padding:56px 0}
+  .section h2{font-size:26px}
+  .section .lead{font-size:15.5px}
+  .hero h1.h-page{font-size:26px}
+}
+@media(max-width:1020px){
+  .hero h1.h-page{font-size:31px}
+}
+
+</style>
+</head>
+<body>
+<!-- announcement bar -->
+<div class="announce">
+  <div class="wrap">
+    <span class="txt">For research use only · Not for human therapeutic use · NDA available on request</span>
+    <a class="btn-contact" href="inquiry.html">Contact us</a>
+  </div>
+</div>
+
+<!-- header -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="PepVeri — China Peptide Supply"></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-acc">
+        <a href="custom-synthesis.html" class="cur">Custom Synthesis <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H12l-4.6 3.6v-3.6H4z"/><path d="M8.6 11.2l2.4 2.4 4.5-4.6"/></svg></span>Custom Peptide Types</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Linear Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Disulfide-Bridged Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Head-to-Tail Cyclic Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Sidechain-Cyclized Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">TBMB Bicyclic Peptides</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Stapled-Helix Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Branched / MAP Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Retro-Inverso Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Glycopeptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Lipidated / PEGylated Peptides</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Other type? Ask our chemists →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><path d="M9.3 3h5.4M10.4 3v6L5.7 17.6A2.4 2.4 0 0 0 7.8 21h8.4a2.4 2.4 0 0 0 2.1-3.4L13.6 9V3"/><path d="M8 15.4h8"/></svg></span>Modifications &amp; Labels</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">N-Terminal Acetylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">C-Terminal Amidation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Phosphorylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Biotin Labeling</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">Fluorophore Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Isotope Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Fluorogenic Substrates</a></li>
+                  <li><a href="custom-synthesis.html#mods">Carrier Protein Conjugation</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Custom modifications welcome →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>Have a sequence ready?</b>
+              <span>Feasibility review and a firm quote within 1 business day — NDA available before you share anything sensitive.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+              <a class="ghost" href="custom-synthesis.html#process">How ordering works →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="has-acc">
+        <a href="products.html">Products <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="2.6" y="8.6" width="18.8" height="6.8" rx="3.4"/><path d="M12 8.6v6.8"/></g></svg></span>Pharmaceutical &amp; GMP</h4>
+              <ul>
+                <li><a href="products.html?sub=pre-gmp-cgmp-api-peptides#gmp">Pre-GMP / cGMP API Peptides</a></li>
+                <li><a href="products.html?sub=adc-linker-peptides#research">ADC Linker Peptides</a></li>
+                <li><a href="products.html?sub=glp-1-endocrine-metabolic-peptides#research">GLP-1 / Metabolic Peptides</a></li>
+                <li><a href="products.html?sub=impurity-reference-peptides#gmp">Impurity Reference Standards</a></li>
+              </ul>
+              <a class="gmore" href="products.html#gmp">View line · ~40 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><circle cx="5.6" cy="6.4" r="2.6"/><circle cx="18.4" cy="6.4" r="2.6"/><circle cx="12" cy="18" r="2.6"/><path d="M8.1 7.4 10.7 15.8M15.9 7.4 13.3 15.8M8.2 6.4h7.6"/></svg></span>Catalog Research Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=ion-channel-toxin-peptides#research">Ion Channel Toxin Peptides</a></li>
+                <li><a href="products.html?sub=bioactive-research-peptides#research">Bioactive Research Peptides</a></li>
+                <li><a href="products.html?sub=antimicrobial-peptides-amp#research">Antimicrobial Peptides (AMP)</a></li>
+                <li><a href="products.html?sub=amyloid-tau-neurodegeneration-peptides#research">Amyloid &amp; Tau Peptides</a></li>
+                <li><a href="products.html?sub=tag-epitope-peptides#research">Tag &amp; Epitope Peptides</a></li>
+              </ul>
+              <a class="gmore" href="products.html#research">All 10 families →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><path d="M12 3.2c3.4 4 5.9 7.1 5.9 9.9a5.9 5.9 0 1 1-11.8 0c0-2.8 2.5-5.9 5.9-9.9z"/><path d="M9.7 13.7a2.6 2.6 0 0 0 2.3 2.5"/></svg></span>Cosmetic Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=signal-peptides-matrixyl-family#cosmetic">Signal Peptides (Matrixyl family)</a></li>
+                <li><a href="products.html?sub=melanin-enzyme-inhibitor-repair-peptides#cosmetic">Enzyme-Inhibitor &amp; Repair</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Carrier Peptides</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Copper Peptide (GHK-Cu)</a></li>
+              </ul>
+              <a class="gmore" href="products.html#cosmetic">View line · ~20 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi navy"><svg viewBox="0 0 24 24"><path d="M20 4C11 4.4 4.6 9 4.6 15.4A4.6 4.6 0 0 0 9.2 20C15.4 20 20 13.4 20 4z"/><path d="M5.2 19.8c2.6-4.6 6-7.6 10.4-9.6"/></svg></span>Oral Nutraceutical</h4>
+              <ul>
+                <li><a href="products.html?sub=bioactive-food-peptides#nutra">Bioactive Food Peptides</a></li>
+                <li><a href="products.html?sub=collagen-oligopeptides#nutra">Collagen Oligopeptides</a></li>
+                <li><a href="products.html?sub=synthetic-bioactive-oral-peptides#nutra">Synthetic Oral Bioactives</a></li>
+              </ul>
+              <a class="gmore" href="products.html#nutra">View line · ~15 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><circle cx="6.8" cy="9.2" r="2"/><circle cx="12" cy="7.2" r="2"/><circle cx="17.2" cy="9.2" r="2"/><path d="M12 11.8c-2.9 0-4.9 2.2-4.9 4.5A3.4 3.4 0 0 0 10.5 19.7h3a3.4 3.4 0 0 0 3.4-3.4c0-2.3-2-4.5-4.9-4.5z"/></svg></span>Veterinary &amp; Pet Health</h4>
+              <ul>
+                <li><a href="products.html?sub=feed-additive-antimicrobial-peptides#vet">Feed-Additive AMPs</a></li>
+                <li><a href="products.html?sub=pet-skincare-wound-care-peptides#vet">Pet Skincare &amp; Wound Care</a></li>
+                <li><a href="products.html#vet">Pet Joint &amp; Mobility</a></li>
+              </ul>
+              <a class="gmore" href="products.html#vet">View line · ~15 SKUs →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>300+ SKUs across five product lines</b>
+              <span>Every catalog item ships with HPLC &amp; MS data and a batch CoA — RUO compliant, export-screened, cold-chain delivered.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="products.html">View All Products</a>
+              <a class="ghost" href="inquiry.html">Request bulk pricing →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" id="lang">
+        <button id="langBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:15px;height:15px;flex:none"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6"/><path d="M12 3c2.5 2.4 3.9 5.6 3.9 9s-1.4 6.6-3.9 9c-2.5-2.4-3.9-5.6-3.9-9s1.4-6.6 3.9-9z"/></svg> EN <span style="font-size:9px;color:#98A6B3">▾</span></button>
+        <div class="lang-drop">
+          <a href="#" style="color:var(--teal-dark);font-weight:600">English</a>
+          <a href="#" style="color:#98A6B3;cursor:default">中文（coming soon）</a>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-nav" href="inquiry.html">Submit Inquiry</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- page hero -->
+<section class="hero" style="min-height:auto">
+  <div class="hero-overlay"></div>
+  <div class="wrap" style="padding-top:76px;padding-bottom:76px">
+    <span class="kicker" style="color:var(--teal)">Custom synthesis</span>
+    <h1 class="h-page">From a sequence in an email to a batch you can <em>document</em>.</h1>
+    <p class="sub">Complex architectures, non-standard modifications, milligram to multi-gram scale — synthesised at audited partner facilities, reviewed and released by our own QC team.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+      <a class="btn btn-outline" href="#process" style="border-color:var(--teal);color:var(--teal)">See the 6-step process</a>
+    </div>
+  </div>
+</section>
+
+<!-- trust strip -->
+<div class="strip">
+  <div class="wrap">
+    <span class="item"><span class="dot"></span>Feasibility + quote in <b>1 business day</b></span>
+    <span class="item"><span class="dot"></span><b>10</b> peptide architectures</span>
+    <span class="item"><span class="dot"></span><b>8</b> modification &amp; label classes</span>
+    <span class="item"><span class="dot"></span><b>HPLC + MS</b> on every batch</span>
+  </div>
+</div>
+
+<!-- process -->
+<section class="section alt" id="process">
+  <div class="wrap">
+    <span class="kicker">How a custom peptide gets made</span>
+    <h2>Six steps from inquiry to cold-chain delivery</h2>
+    <p class="lead">No black box and no silence between stages. Every step has an owner, a deliverable and a date you were given up front.</p>
+
+    <div class="flow">
+      <div class="fstep">
+        <span class="fnum">1</span>
+        <div class="fbody">
+          <div class="fhead"><h3>Inquiry &amp; NDA</h3><span class="fwhen">Day 0</span></div>
+          <p>Send the sequence, the target, or just a paragraph describing what you need. If the project is sensitive, say so and we sign an NDA before you send anything else — our template or yours.</p>
+          <div class="fget"><b>You get:</b><span>Signed NDA and a project record with a reference number.</span></div>
+        </div>
+      </div>
+
+      <div class="fstep">
+        <span class="fnum">2</span>
+        <div class="fbody">
+          <div class="fhead"><h3>Feasibility review</h3><span class="fwhen">≤ 1 business day</span></div>
+          <p>A chemist checks length, hydrophobicity, aggregation risk, cysteine pairing and modification compatibility, then proposes the synthesis and purification route — including the parts that are likely to be difficult.</p>
+          <div class="fget"><b>You get:</b><span>Feasibility note, expected purity and a firm quote with lead time.</span></div>
+        </div>
+      </div>
+
+      <div class="fstep">
+        <span class="fnum">3</span>
+        <div class="fbody">
+          <div class="fhead"><h3>Route confirmation</h3><span class="fwhen">Day 1 – 2</span></div>
+          <p>We agree scale, purity target, format and delivery date in writing. Nothing starts before your approval, and changes after approval are quoted separately — never absorbed silently into the timeline.</p>
+          <div class="fget"><b>You get:</b><span>Approved specification sheet and purchase order acknowledgement.</span></div>
+        </div>
+      </div>
+
+      <div class="fstep">
+        <span class="fnum">4</span>
+        <div class="fbody">
+          <div class="fhead"><h3>Synthesis</h3><span class="fwhen">Week 1 – 2</span></div>
+          <p>Stepwise SPPS on automated platforms. Microwave assistance and double coupling where the sequence demands it, capping at every step to suppress truncation products, and in-process checks on coupling efficiency.</p>
+          <div class="fget"><b>You get:</b><span>Batch record with in-process checkpoints, shared on request.</span></div>
+        </div>
+      </div>
+
+      <div class="fstep">
+        <span class="fnum">5</span>
+        <div class="fbody">
+          <div class="fhead"><h3>Cleavage &amp; purification</h3><span class="fwhen">Week 2 – 3</span></div>
+          <p>Cleavage, precipitation and preparative RP-HPLC. Disulfide-bridged peptides are refolded and re-analysed; fractions are pooled only against the purity spec we agreed, not against what happens to be convenient.</p>
+          <div class="fget"><b>You get:</b><span>Analytical HPLC of the pooled product before release.</span></div>
+        </div>
+      </div>
+
+      <div class="fstep">
+        <span class="fnum">6</span>
+        <div class="fbody">
+          <div class="fhead"><h3>QC, release &amp; dispatch</h3><span class="fwhen">Week 3 – 4</span></div>
+          <p>Identity by LC-MS and purity by HPLC, then lyophilisation, aliquotting and packing. CoA, MSDS and batch record travel with the shipment; cold-chain packing and tracking are included.</p>
+          <div class="fget"><b>You get:</b><span>CoA + MSDS + mass spectrum, and tracking on the day it ships.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flow-note">
+      <span class="ni"><svg viewBox="0 0 24 24"><path d="M12 3.2a6 6 0 0 0-3.5 10.9c.5.4.8 1 .8 1.6v.8h5.4v-.8c0-.6.3-1.2.8-1.6A6 6 0 0 0 12 3.2z"/><path d="M9.9 19.2h4.2M10.6 21h2.8"/></svg></span>
+      <p><b>Not sure the sequence is even makeable?</b> Send it anyway. A written feasibility opinion costs nothing, usually comes back the same working day, and tells you what route we would take before you commit to anything.</p>
+    </div>
+  </div>
+</section>
+
+<!-- architectures & modifications -->
+<section class="section" id="types">
+  <div class="wrap">
+    <span class="kicker">Architectures &amp; modifications</span>
+    <h2>Ten architectures, eight label classes — on one order</h2>
+    <p class="lead">Complex sequences usually need more than one supplier's worth of capability. Ours sits inside a single project, so your probe, your cyclised analogue and your labelled standard arrive with the same documentation.</p>
+
+    <div class="cap2">
+      <div class="capbox">
+        <h3>Peptide architectures</h3>
+        <p class="hint">From linear to polycyclic — all available at research and custom scale.</p>
+        <ul class="arch">
+          <li>Linear peptides</li>
+          <li>Disulfide-bridged (1–4 bridges)</li>
+          <li>Head-to-tail cyclic</li>
+          <li>Sidechain-cyclised (lactam / thioether)</li>
+          <li>TBMB bicyclic</li>
+          <li>Stapled helix (i, i+4 / i, i+7)</li>
+          <li>Branched / MAP</li>
+          <li>Retro-inverso</li>
+          <li>Glycopeptides</li>
+          <li>Lipidated / PEGylated</li>
+        </ul>
+      </div>
+      <div class="capbox" id="mods">
+        <h3>Modifications &amp; labels</h3>
+        <p class="hint">Write them inline in your sequence or describe them in plain language — we will confirm the chemistry at feasibility.</p>
+        <div class="modtags">
+          <span>N-terminal acetylation</span>
+          <span>C-terminal amidation</span>
+          <span>Phosphorylation</span>
+          <span>Biotin (N-term / Lys)</span>
+          <span>FAM / FITC / Cy5</span>
+          <span>Isotope labelling (¹³C, ¹⁵N, D)</span>
+          <span>Fluorogenic substrates</span>
+          <span>Carrier conjugation (BSA, KLH)</span>
+          <span class="more">Something else? Ask our chemists</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- partner facilities -->
+<section class="section alt" id="facility">
+  <div class="wrap">
+    <span class="kicker">Manufacturing partners</span>
+    <h2>The equipment your batch actually runs on</h2>
+    <p class="lead">Custom projects are produced at GMP-oriented partner sites we have audited ourselves — not at a trading desk. These photographs come from that network, and site names are disclosed under NDA during project evaluation.</p>
+
+    <figure class="fac-frame">
+      <img src="assets/facility/partner-facilities.jpg" alt="Cleanroom production suites, synthesis and purification equipment at a PepVeri audited partner site" loading="lazy">
+    </figure>
+    <p class="img-note">Facility imagery comes from our audited partner network.</p>
+  </div>
+</section>
+
+<!-- partner audit -->
+<section class="section" id="compliance">
+  <div class="wrap">
+    <span class="kicker">Compliance</span>
+    <h2>What we check before a partner runs your batch</h2>
+    <p class="lead">Outsourcing is only as good as the audit behind it. No partner site receives a project until these six items are documented and on file.</p>
+
+    <div class="audit">
+      <div class="audit-box">
+        <h3>Partner qualification checklist</h3>
+        <ul>
+          <li>Manufacturing licence and GMP scope match the product class being made</li>
+          <li>Equipment qualification records (IQ/OQ) for synthesisers, HPLC and lyophilisers</li>
+          <li>Resin, amino-acid and solvent traceability with incoming CoA review</li>
+          <li>Deviation, change-control and out-of-specification handling procedures</li>
+          <li>Batch record reviewed by their QA — and again by our QC before release</li>
+          <li>Confidentiality and non-subcontracting clauses that cover your sequence</li>
+        </ul>
+      </div>
+      <div class="audit-note">
+        <h3>Documentation you can hand to a reviewer</h3>
+        <p>Every custom batch ships with a CoA carrying the HPLC trace and MS spectrum, an MSDS, and a batch-record summary. Impurity profiling and stability data are available on request — and we will sign your NDA instead of ours if that is easier for your institution.</p>
+        <a class="btn btn-primary" href="inquiry.html">Request a sample CoA</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Send the sequence. We will tell you what is possible — <em>and what it costs.</em></h2>
+      <p>Feasibility opinion and firm quote within one business day. NDA first, if you prefer.</p>
+    </div>
+    <a class="btn btn-primary" href="inquiry.html" style="padding:17px 40px;font-size:17px">Submit Inquiry</a>
+  </div>
+</section>
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/logo-white.png" alt="PepVeri">
+        <p>Complex custom peptide synthesis and catalog research peptide supply from China — documented QC, default confidentiality, compliant RUO export.</p>
+      </div>
+      <div>
+        <h4>Custom Synthesis</h4>
+        <ul>
+          <li><a href="custom-synthesis.html#types">Peptide Types</a></li>
+          <li><a href="custom-synthesis.html#mods">Modifications &amp; Labels</a></li>
+          <li><a href="custom-synthesis.html#process">How to Order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html#gmp">Pharmaceutical &amp; GMP</a></li>
+          <li><a href="products.html#research">Catalog Peptides</a></li>
+          <li><a href="products.html#cosmetic">Cosmetic Peptides</a></li>
+          <li><a href="products.html#nutra">Oral Nutraceutical</a></li>
+          <li><a href="products.html#vet">Veterinary &amp; Pet</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html#faq">FAQ</a></li>
+          <li><a href="inquiry.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ruo">All products are sold for research use only (RUO) and are not intended for human therapeutic or diagnostic use. © 2026 PepVeri. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- mobile sticky CTA -->
+<div class="sticky-cta"><a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a></div>
+
+<script>
+const langBtn=document.getElementById('langBtn'),lang=document.getElementById('lang');
+langBtn.addEventListener('click',e=>{e.stopPropagation();lang.classList.toggle('open')});
+document.addEventListener('click',()=>lang.classList.remove('open'));
+const ham=document.getElementById('hamburger'),menu=document.getElementById('menu');
+ham.addEventListener('click',()=>menu.classList.toggle('open'));
+document.querySelectorAll('.menu>li.has-acc>a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    if(window.innerWidth<=1020){e.preventDefault();const li=a.parentElement;li.classList.toggle('acc-open');}
+  });
+});
+</script>
+</body>
+</html>

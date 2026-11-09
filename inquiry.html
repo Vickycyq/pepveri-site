@@ -3,344 +3,729 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Submit a Product Inquiry | Pepveri</title>
+<title>Submit Inquiry | PepVeri — Custom Peptide Quote in 1 Business Day</title>
+<meta name="description" content="Request a custom peptide quote from PepVeri: send your sequence or describe the project — firm quote within 1 business day, NDA available before you share anything sensitive.">
 <style>
-  :root {
-    --primary: #081F5C;
-    --primary-dark: #05163f;
-    --primary-light: #143577;
-    --accent: #3D6DEB;
-    --text: #1a2333;
-    --text-muted: #5b6474;
-    --bg-light: #f5f7fb;
-    --border: #e3e8f2;
-    --radius: 14px;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  a { text-decoration: none; color: inherit; }
-  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+:root{
+  --navy:#0F2440; --blue:#0D6DA8; --teal:#2BBFA5;
+  --teal-dark:#0E8A78; --blue-deep:#0A3B5C; --navy-soft:#33475C;
+  --teal-tint:#E3F6F1; --blue-tint:#E6F1F9; --line:#D8E0E8; --bg:#F5F4F2;
+  --grad-primary:linear-gradient(90deg,#2BBFA5 0%,#0D6DA8 100%);
+  --grad-dark:linear-gradient(90deg,#0F2440 0%,#0D6DA8 100%);
+  --grad-hover:linear-gradient(90deg,#0E8A78 0%,#0A5588 100%);
+  --hero-overlay:rgba(15,36,64,0.90);
+  --font:-apple-system,"Helvetica Neue",Arial,"PingFang SC",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--navy-soft);background:#fff;line-height:1.6}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{color:var(--navy);font-weight:600;line-height:1.25}
+.section{padding:72px 0}
+.section.alt{background:var(--bg)}
+.kicker{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:12px}
+.section h2{font-size:32px;margin-bottom:14px}
+.section .lead{max-width:760px;font-size:17px;color:var(--navy-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap}
+.btn-primary{background:var(--grad-primary);color:#fff}
+.btn-primary:hover{background:var(--grad-hover);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn-outline:hover{background:var(--teal-tint)}
+.btn-dark{background:var(--grad-dark);color:#fff}
+.btn-dark:hover{background:var(--grad-hover)}
 
-  .topbar { background: var(--primary-dark); color: #cbd6f2; font-size: 13px; padding: 8px 0; }
-  .topbar .container { display: flex; justify-content: space-between; align-items: center; }
-  .topbar a { color: #cbd6f2; }
-  .topbar-links { display: flex; gap: 20px; }
+/* ===== announcement ===== */
+.announce{background:var(--navy);color:#C3D2DE;font-size:13px}
+.announce .wrap{display:flex;align-items:center;justify-content:space-between;height:38px}
+.announce .btn-contact{background:var(--grad-primary);color:#fff;padding:5px 16px;border-radius:99px;font-size:12px;font-weight:600}
+.announce .btn-contact:hover{background:var(--grad-hover)}
 
-  header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-  .logo { display: flex; align-items: center; gap: 12px; }
-  .logo-img { height: 42px; width: auto; display: block; }
-  .logo-mark { width: 42px; height: 42px; border-radius: 10px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; }
-  .logo-text .name { font-weight: 700; font-size: 18px; color: var(--primary); line-height: 1.2; }
-  .logo-text .tag { font-size: 10.5px; color: var(--text-muted); letter-spacing: 2.2px; text-transform: uppercase; }
-  nav ul { display: flex; list-style: none; gap: 26px; }
-  nav a { font-size: 14.5px; font-weight: 500; color: var(--text); padding: 6px 0; border-bottom: 2px solid transparent; transition: .2s; }
-  nav a:hover { color: var(--primary); border-bottom-color: var(--primary); }
-  .btn { display: inline-block; padding: 11px 24px; border-radius: 8px; font-size: 14.5px; font-weight: 600; transition: .2s; cursor: pointer; border: none; }
-  .btn-primary { background: var(--primary); color: #fff; }
-  .btn-primary:hover { background: var(--primary-light); }
+/* ===== header / nav ===== */
+.header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;height:64px;gap:28px}
+.logo img{height:42px;display:block}
+.menu{display:flex;gap:26px;flex:1}
+.menu>li{position:relative}
+.menu>li>a{display:flex;align-items:center;gap:5px;padding:20px 0;font-size:14.5px;font-weight:500;color:var(--navy-soft);border-bottom:2px solid transparent}
+.menu>li>a:hover{color:var(--blue)}
+.menu>li>a .caret{font-size:10px;color:#98A6B3}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang{position:relative}
+.lang>button{display:flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;font-family:var(--font)}
+.lang-drop{display:none;position:absolute;top:110%;right:0;background:#fff;border:1px solid var(--line);border-radius:8px;min-width:150px;box-shadow:0 8px 24px rgba(15,36,64,.12);overflow:hidden}
+.lang.open .lang-drop{display:block}
+.lang-drop a{display:block;padding:10px 14px;font-size:13px}
+.lang-drop a:hover{background:var(--teal-tint)}
+.btn-nav{padding:10px 18px;font-size:13.5px}
 
-  .hero { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, #0b2a75 100%); color: #fff; padding: 56px 0; }
-  .hero-eyebrow { display: inline-block; font-size: 12.5px; letter-spacing: 3px; text-transform: uppercase; color: #a9c0f5; border: 1px solid rgba(169,192,245,.4); border-radius: 999px; padding: 6px 16px; margin-bottom: 20px; }
-  .hero h1 { font-size: clamp(28px, 3.6vw, 42px); font-weight: 700; margin-bottom: 14px; }
-  .hero p { font-size: 16.5px; color: #c8d4ef; max-width: 720px; }
+/* ===== dropdowns (mega v2) ===== */
+.nav{position:relative}
+.menu>li{position:static}
+.drop{position:absolute;top:100%;left:0;right:0;transform:none;background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 16px 16px;box-shadow:0 32px 64px -20px rgba(15,36,64,.28);display:none;overflow:hidden}
+.menu>li:hover .drop{display:block}
+.drop::before{content:"";display:block;height:3px;background:var(--grad-primary)}
+.drop-body{display:flex;align-items:stretch;padding:26px 26px 20px}
+.dgroup{flex:1 1 0;min-width:0;padding-right:22px;display:flex;flex-direction:column}
+.dgroup+.dgroup{border-left:1px solid var(--line);padding-left:22px}
+.dgroup h4{display:flex;align-items:flex-start;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin:0 0 10px;line-height:1.35;min-height:40px}
+.gi{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;flex:none;background:var(--grad-primary)}
+.gi.blue{background:linear-gradient(135deg,#0D6DA8,#0A3B5C)}
+.gi.teal{background:linear-gradient(135deg,#2BBFA5,#0E8A78)}
+.gi.navy{background:linear-gradient(135deg,#33475C,#0F2440)}
+.gi svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block}
+.subcols{display:grid;grid-template-columns:1fr 1fr;column-gap:20px}
+.drop ul{min-width:0}
+.drop ul li a{display:block;font-size:13px;line-height:1.4;padding:5px 0;color:#5A6B7C;transition:color .15s}
+.drop ul li a:hover{color:var(--blue)}
+.gmore{align-self:flex-start;margin-top:auto;padding-top:10px;font-size:12px;font-weight:600;color:var(--teal-dark);white-space:nowrap}
+.gmore:hover{color:var(--teal)}
+.drop-foot{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(100deg,#0F2440 0%,#0A3B5C 70%,#0D6DA8 160%);color:#fff;padding:16px 24px}
+.drop-foot b{display:block;font-size:13.5px;color:#fff;font-weight:600}
+.drop-foot span{display:block;font-size:12px;color:#AFC4D4;margin-top:2px;max-width:660px}
+.drop-foot .df-acts{display:flex;align-items:center;gap:16px;flex:none}
+.drop-foot .btn{padding:9px 18px;font-size:12.5px}
+.drop-foot .ghost{font-size:12.5px;font-weight:600;color:#7FD6C6;white-space:nowrap}
+.drop-foot .ghost:hover{color:#fff}
+.menu>li>a .caret{transition:transform .2s}
+.menu>li:hover>a .caret{transform:rotate(180deg)}
+.menu>li>a.cur{color:var(--blue);border-bottom:2px solid var(--teal)}
+.hamburger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:18px;cursor:pointer;color:var(--navy)}
 
-  section { padding: 64px 0; }
-  .inquiry-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 36px; align-items: start; }
+/* ===== hero ===== */
+.hero{position:relative;color:#fff;background:linear-gradient(120deg,#41586B 0%,#5B6E7E 40%,#3C4F60 70%,#586C7B 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 600px 300px at 80% 20%,rgba(255,255,255,.10),transparent 60%),
+  radial-gradient(ellipse 500px 400px at 15% 90%,rgba(255,255,255,.06),transparent 60%)}
+.hero-overlay{position:absolute;inset:0;background:var(--hero-overlay)}
+.hero .wrap{position:relative;padding:82px 24px 74px;max-width:1180px}
+.hero h1{font-size:46px;color:#fff;max-width:640px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.sub{margin:22px 0 34px;font-size:17px;color:#C9D6E0;max-width:620px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta .btn{padding:15px 32px;font-size:16px}
+.hero-card{position:absolute;right:24px;top:90px;background:rgba(10,59,92,.92);border:1px solid rgba(43,191,165,.25);border-radius:14px;padding:26px;width:320px}
+.hero-card h3{color:var(--teal);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.hero-card li{font-size:14px;color:#E4EDF3;padding:6px 0 6px 22px;position:relative}
+.hero-card li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:2px;background:var(--teal)}
 
-  .form-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
-  .form-card h2 { font-size: 22px; color: var(--primary); margin-bottom: 6px; }
-  .form-card .sub { font-size: 14px; color: var(--text-muted); margin-bottom: 26px; }
-  .field { margin-bottom: 18px; }
-  .field label { display: block; font-size: 13.5px; font-weight: 600; color: var(--primary); margin-bottom: 7px; }
-  .field label .req { color: #d64545; }
-  .field input, .field select, .field textarea {
-    width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 9px;
-    font-size: 14.5px; font-family: inherit; color: var(--text); background: #fff; transition: .2s;
-  }
-  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(61,109,235,.12); }
-  .field textarea { min-height: 110px; resize: vertical; }
-  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .submit-btn { width: 100%; padding: 14px; font-size: 15.5px; margin-top: 8px; }
-  .form-note { font-size: 12.5px; color: var(--text-muted); text-align: center; margin-top: 12px; }
+/* ===== trust strip ===== */
+.strip{background:var(--navy);padding:26px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.strip .item{color:#fff;font-size:14.5px;display:flex;align-items:center;gap:10px}
+.strip .item b{color:var(--teal)}
+.strip .dot{width:9px;height:9px;border-radius:3px;background:var(--teal)}
 
-  .success-panel { display: none; text-align: center; padding: 30px 10px; }
-  .success-panel.show { display: block; }
-  .success-panel .tick { width: 64px; height: 64px; border-radius: 50%; background: #e7f6ec; color: #2e9e5b; font-size: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
-  .success-panel h2 { color: var(--primary); margin-bottom: 10px; }
-  .success-panel p { color: var(--text-muted); font-size: 14.5px; margin-bottom: 22px; }
+/* ===== pathways ===== */
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.path{border:1px solid var(--line);border-radius:16px;padding:34px;position:relative;transition:all .2s}
+.path:hover{border-color:var(--teal);box-shadow:0 12px 32px rgba(15,36,64,.08)}
+.path .tag{position:absolute;top:-13px;left:30px;background:var(--grad-primary);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:5px 14px;border-radius:99px}
+.path h3{font-size:22px;margin-bottom:10px}
+.path p{font-size:14.5px;margin-bottom:18px}
+.path ul{margin-bottom:24px}
+.path ul li{font-size:14px;padding:5px 0 5px 24px;position:relative}
+.path ul li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.path .btn{width:100%}
 
-  .side-card { background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; margin-bottom: 18px; }
-  .side-card h3 { font-size: 16px; color: var(--primary); margin-bottom: 12px; }
-  .side-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--text-muted); }
-  .side-card li { display: flex; gap: 10px; }
-  .side-card .ic { flex: none; color: var(--accent); }
+.process-block{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.process-title{font-size:24px;margin-bottom:8px}
+.process-sub{font-size:15px;color:var(--navy-soft);max-width:720px;margin-bottom:6px}
 
-  footer { background: var(--primary-dark); color: #aebde4; padding: 56px 0 0; margin-top: 40px; }
-  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 44px; }
-  .footer-grid h4 { color: #fff; font-size: 15px; margin-bottom: 18px; }
-  .footer-grid ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .footer-grid a { font-size: 14px; color: #aebde4; }
-  .footer-grid a:hover { color: #fff; }
-  .footer-about p { font-size: 14px; margin: 14px 0 18px; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; color: #8fa2cf; }
+/* custom synthesis stepper */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.step{position:relative}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--grad-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;margin-bottom:18px;position:relative;z-index:1}
+.step:not(:last-child)::after{content:"";position:absolute;top:22px;left:56px;right:-12px;height:2px;background:repeating-linear-gradient(90deg,#C9D6E0 0 6px,transparent 6px 12px)}
+.step h3{font-size:15px;margin-bottom:7px}
+.step p{font-size:13px;color:#68788A}
+.steps-cta{display:flex;align-items:center;gap:16px;margin-top:44px;flex-wrap:wrap}
 
-  @media (max-width: 900px) {
-    .inquiry-layout { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 640px) {
-    nav ul { display: none; }
-    .footer-grid { grid-template-columns: 1fr; }
-    .field-row { grid-template-columns: 1fr; }
-    section { padding: 50px 0; }
-  }
+/* parallax band: fixed background, content scrolls */
+.parallax{
+  background:linear-gradient(rgba(15,36,64,.82),rgba(15,36,64,.82)),url("data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice"%3E%0A  %3Cdefs%3E%0A    %3ClinearGradient id="bg" x1="0" y1="0" x2="1" y2="1"%3E%0A      %3Cstop offset="0" stop-color="%230F2440"/%3E%0A      %3Cstop offset="0.55" stop-color="%23123a5e"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8"/%3E%0A    %3C/linearGradient%3E%0A    %3CradialGradient id="glow" cx="0.72" cy="0.3" r="0.6"%3E%0A      %3Cstop offset="0" stop-color="%232BBFA5" stop-opacity="0.35"/%3E%0A      %3Cstop offset="1" stop-color="%232BBFA5" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3CradialGradient id="glow2" cx="0.2" cy="0.8" r="0.55"%3E%0A      %3Cstop offset="0" stop-color="%230D6DA8" stop-opacity="0.5"/%3E%0A      %3Cstop offset="1" stop-color="%230D6DA8" stop-opacity="0"/%3E%0A    %3C/radialGradient%3E%0A    %3Cpattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse"%3E%0A      %3Cpath d="M80 0H0v80" fill="none" stroke="%237FA8C9" stroke-opacity="0.12" stroke-width="1"/%3E%0A    %3C/pattern%3E%0A  %3C/defs%3E%0A  %3Crect width="1920" height="1080" fill="url(%23bg)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23grid)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow)"/%3E%0A  %3Crect width="1920" height="1080" fill="url(%23glow2)"/%3E%0A  %3C!-- molecular network --%3E%0A  %3Cg stroke="%237FD6C6" stroke-opacity="0.35" stroke-width="2" fill="none"%3E%0A    %3Cpath d="M1560 220 L1700 320 L1840 260"/%3E%0A    %3Cpath d="M1700 320 L1760 470"/%3E%0A    %3Cpath d="M300 840 L440 760 L560 850 L700 770"/%3E%0A    %3Cpath d="M440 760 L420 620"/%3E%0A    %3Cpath d="M1240 900 L1380 830 L1500 910"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%232BBFA5" fill-opacity="0.8"%3E%0A    %3Ccircle cx="1560" cy="220" r="9"/%3E%0A    %3Ccircle cx="1700" cy="320" r="13"/%3E%0A    %3Ccircle cx="1840" cy="260" r="7"/%3E%0A    %3Ccircle cx="1760" cy="470" r="9"/%3E%0A    %3Ccircle cx="300" cy="840" r="9"/%3E%0A    %3Ccircle cx="440" cy="760" r="13"/%3E%0A    %3Ccircle cx="560" cy="850" r="8"/%3E%0A    %3Ccircle cx="700" cy="770" r="10"/%3E%0A    %3Ccircle cx="420" cy="620" r="7"/%3E%0A    %3Ccircle cx="1240" cy="900" r="9"/%3E%0A    %3Ccircle cx="1380" cy="830" r="12"/%3E%0A    %3Ccircle cx="1500" cy="910" r="7"/%3E%0A  %3C/g%3E%0A  %3Cg fill="%23FFFFFF" fill-opacity="0.14"%3E%0A    %3Ccircle cx="900" cy="180" r="5"/%3E%0A    %3Ccircle cx="1120" cy="260" r="4"/%3E%0A    %3Ccircle cx="760" cy="420" r="4"/%3E%0A    %3Ccircle cx="1020" cy="560" r="5"/%3E%0A    %3Ccircle cx="620" cy="300" r="3"/%3E%0A    %3Ccircle cx="1300" cy="520" r="4"/%3E%0A    %3Ccircle cx="860" cy="720" r="4"/%3E%0A    %3Ccircle cx="1620" cy="640" r="5"/%3E%0A  %3C/g%3E%0A%3C/svg%3E%0A") center/cover no-repeat;
+  background-attachment:fixed;
+}
+.parallax .kicker{color:var(--teal)}
+.parallax h2{color:#fff}
+.parallax .lead{color:#C3D2DE}
+.parallax .pillar{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+.parallax .pillar h3{color:#fff}
+.parallax .pillar p{color:#C3D2DE}
+
+/* supply chain visual cards */
+.flow4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 22px;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.fcard:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.fcard .fig{background:linear-gradient(160deg,#F7FAFC 0%,#EAF3F7 100%);border-radius:10px;height:130px;overflow:hidden}
+.fcard .fig svg{width:100%;height:100%}
+.fcard h3{font-size:15.5px}
+.fcard p{font-size:12.5px;color:#68788A;flex:1}
+.flow-arrow{display:none}
+
+/* ===== grids ===== */
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.pcard{border-radius:14px;padding:0;overflow:hidden;background:var(--grad-primary);color:#fff;transition:all .2s;display:flex;flex-direction:column}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(13,109,168,.32)}
+.pcard-img{display:flex;align-items:center;justify-content:center;font-size:44px;height:120px;background:rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.18)}
+.pcard h3{font-size:16px;color:#fff;padding:18px 18px 6px}
+.pcard p{font-size:13px;color:rgba(255,255,255,.88);padding:0 18px;flex:1}
+.pcard .count{align-self:flex-start;margin:14px 18px 18px;font-size:12px;font-weight:700;color:#fff;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:4px 12px}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-white:hover{background:var(--teal-tint);transform:translateY(-1px)}
+.grid-types{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:44px}
+.tcard{border:1px solid var(--line);border-radius:14px;padding:20px;background:#fff;transition:all .2s;display:flex;flex-direction:column;gap:8px}
+.tcard:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,36,64,.08)}
+.tcard .ic{width:38px;height:38px;border-radius:10px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center;font-size:17px}
+.tcard h3{font-size:15px}
+.tcard p{font-size:12.5px;color:#68788A;flex:1}
+.tcard .link{font-size:13px;font-weight:600;color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.chip{border:1px solid var(--line);border-radius:99px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--navy-soft);background:#fff;transition:all .2s}
+.chip:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--teal-tint)}
+
+/* ===== why / pillars ===== */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
+.pillar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px}
+.pillar .num{font-size:13px;font-weight:700;color:var(--teal);margin-bottom:10px}
+.pillar h3{font-size:19px;margin-bottom:10px}
+.pillar p{font-size:14px}
+
+/* ===== QC ===== */
+.qc{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.qc-visual{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.qc-visual .chart{height:210px;border-radius:8px;background:linear-gradient(180deg,#FDFEFE,#F2F6F8);position:relative;overflow:hidden}
+.qc-visual .chart svg{position:absolute;inset:0;width:100%;height:100%}
+.qc-visual .cap{display:flex;justify-content:space-between;font-size:11.5px;color:#8895A1;margin-top:10px}
+.qc ul li{padding:9px 0 9px 30px;position:relative;font-size:15px}
+.qc ul li::before{content:"✓";position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;background:var(--teal-tint);color:var(--teal-dark);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ===== FAQ ===== */
+.faq details{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+.faq summary{padding:18px 22px;font-weight:600;color:var(--navy);cursor:pointer;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"+";font-size:20px;color:var(--teal);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 22px 18px;font-size:14.5px}
+
+/* ===== CTA band ===== */
+.cta-band{background:linear-gradient(100deg,var(--navy) 0%,var(--blue) 130%);color:#fff;padding:72px 0}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-band h2{color:#fff;font-size:30px;max-width:560px}
+.cta-band h2 em{font-style:normal;color:var(--teal)}
+.cta-band p{color:#C9D6E0;margin-top:10px;max-width:520px}
+
+/* ===== footer ===== */
+footer{background:var(--navy);color:#9FB2C4;font-size:13.5px;padding:56px 0 90px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.foot-grid img{height:46px;margin-bottom:16px}
+.foot-grid h4{color:#fff;font-size:13.5px;margin-bottom:14px}
+.foot-grid li{margin-bottom:8px}
+.foot-grid a:hover{color:var(--teal)}
+.ruo{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12px;color:#6B8199}
+
+/* mobile sticky */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);z-index:99}
+.sticky-cta .btn{width:100%}
+
+/* ===== responsive ===== */
+@media(max-width:1020px){
+  .menu{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(15,36,64,.12);max-height:calc(100vh - 64px);overflow:auto}
+  .menu.open{display:flex}
+  .menu>li{border-bottom:1px solid var(--line)}
+  .menu>li:last-child{border-bottom:none}
+  .menu>li>a{padding:15px 0;width:100%}
+  .drop{position:static;transform:none;display:none!important;box-shadow:none;border:none;padding:0 0 14px;min-width:0;flex-direction:column}
+  .menu>li.acc-open .drop{display:flex!important}
+  .menu>li.has-acc>a::after{content:"▾";margin-left:auto;font-size:12px;color:#98A6B3}
+  .drop::before{display:none}
+  .drop-body{flex-direction:column;padding:12px 4px 4px}
+  .dgroup{padding:0}
+  .dgroup+.dgroup{border-left:none;border-top:1px solid var(--line);margin-top:14px;padding-top:14px;padding-left:0}
+  .dgroup h4{font-size:12px;min-height:0;margin-bottom:10px}
+  .drop ul li a{font-size:13.5px;padding:6px 0}
+  .subcols{grid-template-columns:1fr;column-gap:0}
+  .drop-foot{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin:10px 0 8px;border-radius:12px}
+  .drop-foot .df-acts{flex-wrap:wrap}
+  .hamburger{display:block}
+  .nav{gap:12px}
+  .btn-nav{display:none}
+  .grid-5,.grid-types{grid-template-columns:repeat(2,1fr)}
+  .flow4{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .step{padding:0 0 26px 66px}
+  .step .n{position:absolute;left:0;top:0;margin-bottom:0}
+  .step:not(:last-child)::after{top:50px;left:23px;right:auto;bottom:-4px;width:2px;height:auto;background:repeating-linear-gradient(180deg,#C9D6E0 0 6px,transparent 6px 12px)}
+  .pillars{grid-template-columns:1fr}
+  .paths{grid-template-columns:1fr}
+  .qc{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .hero h1{font-size:34px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .sticky-cta{display:block}
+  footer{padding-bottom:120px}
+  .announce .txt{font-size:11px}
+}
+@media(max-width:560px){
+  .grid-5,.grid-types{grid-template-columns:1fr}
+  .flow4{grid-template-columns:1fr}
+  .hero .wrap{padding:64px 24px 80px}
+  .hero h1{font-size:29px}
+  .foot-grid{grid-template-columns:1fr}
+}
+/* iOS Safari doesn't support fixed attachment — fall back to scrolling bg */
+@media(max-width:1020px){
+  .parallax{background-attachment:scroll}
+}
+
+/* ===== inquiry page ===== */
+.rfq-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:36px;align-items:start}
+.rfq-form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px;box-shadow:0 2px 10px rgba(15,36,64,.05)}
+.rfq-form h2{font-size:22px;margin-bottom:24px}
+.rfq-form label{display:block;font-size:13.5px;font-weight:600;color:var(--navy);margin-bottom:18px}
+.rfq-form input[type=text],.rfq-form input[type=email],.rfq-form select,.rfq-form textarea{
+  display:block;width:100%;margin-top:7px;padding:12px 14px;border:1px solid var(--line);border-radius:9px;
+  font-size:14px;font-family:inherit;color:var(--navy);background:#fff}
+.rfq-form input:focus,.rfq-form select:focus,.rfq-form textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(43,191,165,.15)}
+.rfq-form input[type=date]{display:block;width:100%;margin-top:7px;padding:11px 14px;border:1px solid var(--line);border-radius:9px;font-size:14px;font-family:inherit;color:var(--navy);background:#fff;-webkit-appearance:none;appearance:none}
+.rfq-form input[type=date]::-webkit-calendar-picker-indicator{opacity:.45;cursor:pointer}
+.filepick{display:flex;align-items:center;gap:12px;margin-top:7px;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff}
+.filepick input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.fil-btn{flex:none;padding:8px 16px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--navy);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.filepick:hover .fil-btn{background:var(--teal-tint);border-color:var(--teal)}
+.fil-name{font-size:13px;font-weight:400;color:#8895A1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rfq-form textarea{resize:vertical}
+.frow.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fhint{display:block;font-size:12px;font-weight:400;color:#8895A1;margin-top:6px}
+.rfq-form label.check{display:flex;align-items:flex-start;gap:10px;font-weight:400;font-size:13.5px;color:var(--navy-soft);margin-bottom:12px;line-height:1.5;cursor:pointer}
+.rfq-form label.check input{margin-top:2px;width:16px;height:16px;flex:none;accent-color:var(--teal)}
+.rfq-side{display:flex;flex-direction:column;gap:20px;position:sticky;top:96px}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px}
+.side-card.dark{background:var(--navy);border-color:var(--navy)}
+.side-card.dark h3,.side-card.dark p{color:#fff}
+.side-card.dark p{color:#C3D2DE}
+.side-card h3{font-size:16px;margin-bottom:14px}
+.side-card p{font-size:13.5px;color:#68788A}
+.side-card ol{padding-left:18px}
+.side-card li{font-size:13.5px;color:var(--navy-soft);margin-bottom:10px;line-height:1.6}
+.contact-list a{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.contact-list a:last-child{border-bottom:none;padding-bottom:0}
+.contact-list a:hover em{color:var(--teal)}
+.cl-ico{width:34px;height:34px;border-radius:10px;background:rgba(43,191,165,.18);border:1px solid rgba(43,191,165,.38);display:flex;align-items:center;justify-content:center;flex:none;color:#7FD6C6}
+.cl-ico svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.contact-list b{display:block;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8FA9BE}
+.contact-list em{font-style:normal;font-size:13.5px;color:#fff;word-break:break-word;transition:color .15s}
+@media(max-width:1020px){.rfq-grid{grid-template-columns:1fr}.rfq-side{position:static}}
+@media(max-width:560px){.frow.two{grid-template-columns:1fr}.rfq-form{padding:24px}}
+
+/* ===== polish pass ===== */
+.ico{display:flex;align-items:center;justify-content:center}
+.ico svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block}
+.btn{border-radius:10px}
+/* hero: add depth + technical grid so the dark area is not flat */
+.hero{background:linear-gradient(120deg,#132E4E 0%,#183D61 45%,#0F2440 100%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:
+  radial-gradient(circle at 86% 2%,rgba(43,191,165,.13),transparent 52%),
+  linear-gradient(rgba(255,255,255,.032) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px);
+  background-size:auto,96px 96px,96px 96px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.95),rgba(0,0,0,.30))}
+.hero .wrap{z-index:2}
+.hero h1{letter-spacing:-.012em}
+/* pathway cards: pill inside the card, buttons no longer full width */
+.path .tag{position:static;display:inline-block;margin-bottom:14px}
+.path .btn{width:auto;align-self:flex-start;padding:12px 26px;font-size:14px}
+/* parallax: solid navy fallback so text survives if the image fails */
+.parallax{background-color:var(--navy)}
+.parallax .lead{color:#D9E4ED}
+.parallax .pillar p{color:#CFDBE5}
+/* tables: closed border + radius */
+.table-wrap{border:1px solid var(--line);border-radius:14px;background:#fff;overflow-x:auto;box-shadow:0 2px 10px rgba(15,36,64,.05)}
+.mtable{border-radius:0;box-shadow:none;margin-top:0}
+.mtable tbody tr:last-child td{border-bottom:none}
+/* faq centered, blog cards equal height */
+.faq{margin-left:auto;margin-right:auto}
+.post{display:flex;flex-direction:column}
+.post .meta{margin-top:auto;padding-top:8px}
+
+/* ===== mobile polish ===== */
+.announce .btn-contact{white-space:nowrap}
+@media(max-width:560px){
+  .announce .wrap{height:auto;min-height:34px;padding:7px 16px;gap:10px}
+  .announce .txt{font-size:10px;line-height:1.4;flex:1;min-width:0}
+  .announce .btn-contact{flex:0 0 auto;padding:5px 12px;font-size:11px}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{width:100%}
+  .pcard-img{height:86px}
+  .pcard h3{min-height:0;padding:16px 16px 4px}
+  .pcard .count{margin:10px 16px 16px}
+  .section{padding:56px 0}
+  .section h2{font-size:26px}
+  .section .lead{font-size:15.5px}
+  .hero h1.h-page{font-size:26px}
+}
+@media(max-width:1020px){
+  .hero h1.h-page{font-size:31px}
+}
 </style>
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container">
-    <span>Wholesale peptide &amp; bulk supply from China</span>
-    <div class="topbar-links">
-      <a href="products.html">Products</a>
-      <a href="inquiry.html">Contact</a>
-    </div>
+<!-- announcement bar -->
+<div class="announce">
+  <div class="wrap">
+    <span class="txt">For research use only · Not for human therapeutic use · NDA available on request</span>
+    <a class="btn-contact" href="#rfq">Contact us</a>
   </div>
 </div>
 
-<header>
-  <div class="container header-inner">
-    <a class="logo" href="index.html">
-      <img class="logo-img" src="assets/img/pepveri-logo.png" alt="Pepveri">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="nav-item-mega"><a href="products.html">Products</a><div class="mega"></div></li>
-        <li><a href="index.html#quality">Quality</a></li>
-        <li><a href="index.html#custom">Custom Synthesis</a></li>
-        <li><a href="index.html#insights">Insights</a></li>
-        <li><a href="index.html#about">About</a></li>
-      </ul>
-    </nav>
-    <a class="btn btn-primary header-cta" href="products.html">Browse Products</a>
+<!-- header -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="PepVeri — China Peptide Supply"></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-acc">
+        <a href="custom-synthesis.html">Custom Synthesis <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H12l-4.6 3.6v-3.6H4z"/><path d="M8.6 11.2l2.4 2.4 4.5-4.6"/></svg></span>Custom Peptide Types</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Linear Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Disulfide-Bridged Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Head-to-Tail Cyclic Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Sidechain-Cyclized Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">TBMB Bicyclic Peptides</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#types">Stapled-Helix Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Branched / MAP Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Retro-Inverso Peptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Glycopeptides</a></li>
+                  <li><a href="custom-synthesis.html#types">Lipidated / PEGylated Peptides</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Other type? Ask our chemists →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><path d="M9.3 3h5.4M10.4 3v6L5.7 17.6A2.4 2.4 0 0 0 7.8 21h8.4a2.4 2.4 0 0 0 2.1-3.4L13.6 9V3"/><path d="M8 15.4h8"/></svg></span>Modifications &amp; Labels</h4>
+              <div class="subcols">
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">N-Terminal Acetylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">C-Terminal Amidation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Phosphorylation</a></li>
+                  <li><a href="custom-synthesis.html#mods">Biotin Labeling</a></li>
+                </ul>
+                <ul>
+                  <li><a href="custom-synthesis.html#mods">Fluorophore Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Isotope Labeling</a></li>
+                  <li><a href="custom-synthesis.html#mods">Fluorogenic Substrates</a></li>
+                  <li><a href="custom-synthesis.html#mods">Carrier Protein Conjugation</a></li>
+                </ul>
+              </div>
+              <a class="gmore" href="inquiry.html">Custom modifications welcome →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>Have a sequence ready?</b>
+              <span>Feasibility review and a firm quote within 1 business day — NDA available before you share anything sensitive.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="inquiry.html">Submit Inquiry</a>
+              <a class="ghost" href="custom-synthesis.html#process">How ordering works →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="has-acc">
+        <a href="products.html">Products <span class="caret">▾</span></a>
+        <div class="drop">
+          <div class="drop-body">
+            <div class="dgroup">
+              <h4><span class="gi"><svg viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><rect x="2.6" y="8.6" width="18.8" height="6.8" rx="3.4"/><path d="M12 8.6v6.8"/></g></svg></span>Pharmaceutical &amp; GMP</h4>
+              <ul>
+                <li><a href="products.html?sub=pre-gmp-cgmp-api-peptides#gmp">Pre-GMP / cGMP API Peptides</a></li>
+                <li><a href="products.html?sub=adc-linker-peptides#research">ADC Linker Peptides</a></li>
+                <li><a href="products.html?sub=glp-1-endocrine-metabolic-peptides#research">GLP-1 / Metabolic Peptides</a></li>
+                <li><a href="products.html?sub=impurity-reference-peptides#gmp">Impurity Reference Standards</a></li>
+              </ul>
+              <a class="gmore" href="products.html#gmp">View line · ~40 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi blue"><svg viewBox="0 0 24 24"><circle cx="5.6" cy="6.4" r="2.6"/><circle cx="18.4" cy="6.4" r="2.6"/><circle cx="12" cy="18" r="2.6"/><path d="M8.1 7.4 10.7 15.8M15.9 7.4 13.3 15.8M8.2 6.4h7.6"/></svg></span>Catalog Research Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=ion-channel-toxin-peptides#research">Ion Channel Toxin Peptides</a></li>
+                <li><a href="products.html?sub=bioactive-research-peptides#research">Bioactive Research Peptides</a></li>
+                <li><a href="products.html?sub=antimicrobial-peptides-amp#research">Antimicrobial Peptides (AMP)</a></li>
+                <li><a href="products.html?sub=amyloid-tau-neurodegeneration-peptides#research">Amyloid &amp; Tau Peptides</a></li>
+                <li><a href="products.html?sub=tag-epitope-peptides#research">Tag &amp; Epitope Peptides</a></li>
+              </ul>
+              <a class="gmore" href="products.html#research">All 10 families →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><path d="M12 3.2c3.4 4 5.9 7.1 5.9 9.9a5.9 5.9 0 1 1-11.8 0c0-2.8 2.5-5.9 5.9-9.9z"/><path d="M9.7 13.7a2.6 2.6 0 0 0 2.3 2.5"/></svg></span>Cosmetic Peptides</h4>
+              <ul>
+                <li><a href="products.html?sub=signal-peptides-matrixyl-family#cosmetic">Signal Peptides (Matrixyl family)</a></li>
+                <li><a href="products.html?sub=melanin-enzyme-inhibitor-repair-peptides#cosmetic">Enzyme-Inhibitor &amp; Repair</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Carrier Peptides</a></li>
+                <li><a href="products.html?sub=carrier-peptides#cosmetic">Copper Peptide (GHK-Cu)</a></li>
+              </ul>
+              <a class="gmore" href="products.html#cosmetic">View line · ~20 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi navy"><svg viewBox="0 0 24 24"><path d="M20 4C11 4.4 4.6 9 4.6 15.4A4.6 4.6 0 0 0 9.2 20C15.4 20 20 13.4 20 4z"/><path d="M5.2 19.8c2.6-4.6 6-7.6 10.4-9.6"/></svg></span>Oral Nutraceutical</h4>
+              <ul>
+                <li><a href="products.html?sub=bioactive-food-peptides#nutra">Bioactive Food Peptides</a></li>
+                <li><a href="products.html?sub=collagen-oligopeptides#nutra">Collagen Oligopeptides</a></li>
+                <li><a href="products.html?sub=synthetic-bioactive-oral-peptides#nutra">Synthetic Oral Bioactives</a></li>
+              </ul>
+              <a class="gmore" href="products.html#nutra">View line · ~15 SKUs →</a>
+            </div>
+            <div class="dgroup">
+              <h4><span class="gi teal"><svg viewBox="0 0 24 24"><circle cx="6.8" cy="9.2" r="2"/><circle cx="12" cy="7.2" r="2"/><circle cx="17.2" cy="9.2" r="2"/><path d="M12 11.8c-2.9 0-4.9 2.2-4.9 4.5A3.4 3.4 0 0 0 10.5 19.7h3a3.4 3.4 0 0 0 3.4-3.4c0-2.3-2-4.5-4.9-4.5z"/></svg></span>Veterinary &amp; Pet Health</h4>
+              <ul>
+                <li><a href="products.html?sub=feed-additive-antimicrobial-peptides#vet">Feed-Additive AMPs</a></li>
+                <li><a href="products.html?sub=pet-skincare-wound-care-peptides#vet">Pet Skincare &amp; Wound Care</a></li>
+                <li><a href="products.html#vet">Pet Joint &amp; Mobility</a></li>
+              </ul>
+              <a class="gmore" href="products.html#vet">View line · ~15 SKUs →</a>
+            </div>
+          </div>
+          <div class="drop-foot">
+            <div>
+              <b>300+ SKUs across five product lines</b>
+              <span>Every catalog item ships with HPLC &amp; MS data and a batch CoA — RUO compliant, export-screened, cold-chain delivered.</span>
+            </div>
+            <div class="df-acts">
+              <a class="btn btn-primary" href="products.html">View All Products</a>
+              <a class="ghost" href="inquiry.html">Request bulk pricing →</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" id="lang">
+        <button id="langBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:15px;height:15px;flex:none"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6"/><path d="M12 3c2.5 2.4 3.9 5.6 3.9 9s-1.4 6.6-3.9 9c-2.5-2.4-3.9-5.6-3.9-9s1.4-6.6 3.9-9z"/></svg> EN <span style="font-size:9px;color:#98A6B3">▾</span></button>
+        <div class="lang-drop">
+          <a href="#" style="color:var(--teal-dark);font-weight:600">English</a>
+          <a href="#" style="color:#98A6B3;cursor:default">中文（coming soon）</a>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-nav" href="#rfq">Submit Inquiry</a>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <span class="hero-eyebrow">B2B Inquiry</span>
-    <h1>Submit a Product Inquiry</h1>
-    <p>Tell us your product, quantity, specification and destination requirements. Our B2B project team will reply with specifications, documentation and a quotation — within half an hour during working hours.</p>
+<!-- page hero -->
+<section class="hero" style="min-height:auto">
+  <div class="hero-overlay"></div>
+  <div class="wrap" style="padding-top:64px;padding-bottom:64px">
+    <span class="kicker" style="color:var(--teal)">Request a quote</span>
+    <h1 class="h-page">Tell us your peptide. Get a firm quote in <em>1 business day.</em></h1>
+    <p class="sub">Paste a sequence or just describe the project — either is enough to start. NDA available before you share anything sensitive.</p>
   </div>
 </section>
 
-<section style="padding-top:56px;">
-  <div class="container inquiry-layout">
-    <div class="form-card">
-      <form id="inquiryForm" novalidate>
-        <div class="field-row">
-          <div class="field">
-            <label>Full Name <span class="req">*</span></label>
-            <input type="text" id="fName" required placeholder="Your name">
-          </div>
-          <div class="field">
-            <label>Company <span class="req">*</span></label>
-            <input type="text" id="fCompany" required placeholder="Company name">
-          </div>
+<!-- inquiry form -->
+<section class="section" id="rfq">
+  <div class="wrap">
+    <div class="rfq-grid">
+      <form class="rfq-form" action="#" method="post">
+        <h2>Project details</h2>
+        <div class="frow two">
+          <label>Full name *
+            <input type="text" name="name" placeholder="Dr. Jane Smith" required>
+          </label>
+          <label>Institution / Company
+            <input type="text" name="org" placeholder="University lab, biotech, AI-peptide team">
+          </label>
         </div>
-        <div class="field-row">
-          <div class="field">
-            <label>Business Email <span class="req">*</span></label>
-            <input type="email" id="fEmail" required placeholder="name@company.com">
-          </div>
-          <div class="field">
-            <label>Country / Region <span class="req">*</span></label>
-            <input type="text" id="fCountry" required placeholder="Destination country">
-          </div>
+        <div class="frow two">
+          <label>Work email *
+            <input type="email" name="email" placeholder="you@institution.edu" required>
+          </label>
+          <label>Country / Region *
+            <input type="text" name="country" placeholder="United States" required>
+          </label>
         </div>
-        <div class="field">
-          <label>Phone / WhatsApp <span class="req">*</span></label>
-          <input type="text" id="fPhone" required placeholder="e.g. +1 234 567 8900 (WhatsApp preferred)">
-        </div>
-        <div class="field-row">
-          <div class="field">
-            <label>Product of Interest</label>
-            <input type="text" id="fProduct" placeholder="e.g. Retatrutide, Semaglutide, BPC-157...">
-          </div>
-          <div class="field">
-            <label>Quantity &amp; Specification</label>
-            <input type="text" id="fQty" placeholder="e.g. 100 g raw material / 5 kits of 10 mg vials">
-          </div>
-        </div>
-        <div class="field">
-          <label>Intended Business Use</label>
-          <select id="fUse">
-            <option value="">— Select —</option>
-            <option>Pharmaceutical company</option>
-            <option>CRO / CDMO</option>
-            <option>Research institution</option>
-            <option>Distributor / reseller</option>
-            <option>Other B2B use</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>Message</label>
-          <textarea id="fMsg" placeholder="Additional requirements: purity, packaging format, documents needed (COA / HPLC / LC-MS), delivery destination, etc."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary submit-btn">Submit Inquiry</button>
-        <div class="form-note">We reply within 1–2 business days. All inquiries are kept strictly confidential.</div>
+        <label>Message *
+          <textarea name="message" rows="6" required placeholder="Tell us what you need: the peptide or target, quantity and purity, any modification, and when you need it. Paste a sequence or FASTA if you already have one — a plain description works too."></textarea>
+          <span class="fhint">Single-letter code, FASTA or plain description. Modifications can be written inline (Ac-, -NH2, (Biotin), etc.).</span>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="nda"> Please send an NDA before we discuss details
+        </label>
+        <label class="check">
+          <input type="checkbox" name="consent" required> I agree that my data is processed to answer this inquiry, as described in the Privacy Policy. *
+        </label>
+        <button class="btn btn-primary" type="submit" id="rfqSubmit" style="padding:15px 44px;font-size:16px;margin-top:8px">Submit Inquiry</button>
+        <p id="rfqStatus" style="display:none;margin-top:14px;font-size:13.5px;border-radius:9px;padding:12px 16px;line-height:1.55"></p>
       </form>
 
-      <div class="success-panel" id="successPanel">
-        <div class="tick">✓</div>
-        <h2>Inquiry Submitted</h2>
-        <p>Thank you — your inquiry has been recorded. Our B2B project team will reply to your email within 1–2 business days with specifications, documentation and a quotation.</p>
-        <a class="btn btn-primary" href="index.html">Back to homepage</a>
-      </div>
-    </div>
-
-    <div>
-      <div class="side-card">
-        <h3>What to include</h3>
-        <ul>
-          <li><span class="ic">✓</span>Product name and CAS number</li>
-          <li><span class="ic">✓</span>Quantity (raw material or vials)</li>
-          <li><span class="ic">✓</span>Specification and purity requirements</li>
-          <li><span class="ic">✓</span>Destination country and business use</li>
-          <li><span class="ic">✓</span>Documents needed (COA / HPLC / LC-MS)</li>
-        </ul>
-      </div>
-      <div class="side-card">
-        <h3>Response process</h3>
-        <ul>
-          <li><span class="ic">1</span>Confirm available specifications &amp; packaging</li>
-          <li><span class="ic">2</span>Provide quotation and batch documentation</li>
-          <li><span class="ic">3</span>Arrange sample confirmation if needed</li>
-          <li><span class="ic">4</span>Coordinate packaging and shipment</li>
-        </ul>
-      </div>
-      <div class="side-card">
-        <h3>Working hours</h3>
-        <ul>
-          <li><span class="ic">🕘</span>Mon–Sat, replies within half an hour during working hours</li>
-          <li><span class="ic">🌐</span>Coordinating supply for North America, Europe, Asia, Latin America, Middle East and Africa</li>
-        </ul>
-      </div>
+      <aside class="rfq-side">
+        <div class="side-card">
+          <h3>What happens next</h3>
+          <ol>
+            <li><b>Within 1 business day</b> — a technical review and a firm quote, lead time included.</li>
+            <li><b>NDA first</b> — if requested, we sign before any sequence discussion.</li>
+            <li><b>Synthesis starts</b> — after your written approval, with checkpoints you can see.</li>
+            <li><b>Documented delivery</b> — CoA, MSDS and cold-chain shipment worldwide.</li>
+          </ol>
+        </div>
+        <div class="side-card dark">
+          <h3>Contact us directly</h3>
+          <div class="contact-list">
+            <a href="mailto:business@pepveri.com">
+              <span class="cl-ico"><svg viewBox="0 0 24 24"><rect x="2.8" y="5.2" width="18.4" height="13.6" rx="2.4"/><path d="M3.4 6.6 12 13l8.6-6.4"/></svg></span>
+              <span><b>Email</b><em>business@pepveri.com</em></span>
+            </a>
+            <a href="https://wa.me/85298744510" target="_blank" rel="noopener">
+              <span class="cl-ico"><svg viewBox="0 0 24 24"><path d="M20.4 11.6a8.4 8.4 0 0 1-12.3 7.4L3.6 20.4l1.4-4.4A8.4 8.4 0 1 1 20.4 11.6z"/><path d="M9.2 8.6c-.3.5-.5 1.1-.2 1.8.6 1.5 1.9 2.8 3.4 3.4.7.3 1.3.1 1.8-.2l.6-.6-1.4-1.2-.8.5c-.7-.3-1.5-1.1-1.8-1.8l.5-.8L10 8.3z"/></svg></span>
+              <span><b>WhatsApp</b><em>+852 98744510</em></span>
+            </a>
+          </div>
+        </div>
+        <div class="side-card">
+          <h3>Your data stays yours</h3>
+          <p>Sequences and project details are confidential by default, never reused or shared, and purged on request.</p>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
 
+
+<!-- footer -->
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-about">
-        <a class="logo" href="index.html">
-          <img class="logo-img" src="assets/img/pepveri-logo-white.png" alt="Pepveri">
-        </a>
-        <p>Pepveri supplies peptide raw materials and vialed products from China for qualified B2B buyers worldwide.</p>
-        <a class="btn btn-primary" href="products.html">Browse Products</a>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/logo-white.png" alt="PepVeri">
+        <p>Complex custom peptide synthesis and catalog research peptide supply from China — documented QC, default confidentiality, compliant RUO export.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Custom Synthesis</h4>
         <ul>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="index.html#quality">Quality</a></li>
-          <li><a href="index.html#custom">Custom Synthesis</a></li>
-          <li><a href="index.html#insights">Insights</a></li>
-          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="custom-synthesis.html#types">Peptide Types</a></li>
+          <li><a href="custom-synthesis.html#mods">Modifications &amp; Labels</a></li>
+          <li><a href="custom-synthesis.html#process">How to Order</a></li>
         </ul>
       </div>
       <div>
         <h4>Products</h4>
-        <ul id="footerProducts"></ul>
+        <ul>
+          <li><a href="products.html#gmp">Pharmaceutical &amp; GMP</a></li>
+          <li><a href="products.html#research">Catalog Peptides</a></li>
+          <li><a href="products.html#cosmetic">Cosmetic Peptides</a></li>
+          <li><a href="products.html#nutra">Oral Nutraceutical</a></li>
+          <li><a href="products.html#vet">Veterinary &amp; Pet</a></li>
+        </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4>Company</h4>
         <ul>
-          <li>📍 Guangdong, China</li>
-          <li>✉️ <a href="mailto:business@pepveri.com">business@pepveri.com</a></li>
-          <li>📱 <a href="https://wa.me/85298744510" target="_blank" rel="noopener">WhatsApp: +852 98744510</a></li>
-          <li>🕘 Response within 1–2 business days</li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html#faq">FAQ</a></li>
+          <li><a href="#rfq">Contact</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Pepveri. All rights reserved.</span>
-      <span>Wholesale Peptide Supplier | Bulk &amp; Vials</span>
-    </div>
+    <div class="ruo">All products are sold for research use only (RUO) and are not intended for human therapeutic or diagnostic use. © 2026 PepVeri. All rights reserved.</div>
   </div>
 </footer>
 
-<script src="js/products-data.js"></script>
-<script src="js/mega-menu.js"></script>
+<!-- mobile sticky CTA -->
+<div class="sticky-cta"><a class="btn btn-primary" href="#rfq">Submit Inquiry</a></div>
+
 <script>
-// Prefill product from ?product= or ?cas=
-const params = new URLSearchParams(location.search);
-const input = document.getElementById("fProduct");
-const preset = params.get("product") || params.get("cas") || "";
-if (preset) input.value = preset;
-
-document.getElementById("footerProducts").innerHTML =
-  '<li><a href="product.html?id=retatrutide">Retatrutide</a></li>' +
-  '<li><a href="product.html?id=tirzepatide">Tirzepatide</a></li>' +
-  '<li><a href="product.html?id=semaglutide">Semaglutide</a></li>' +
-  '<li><a href="product.html?id=bpc-157">BPC-157</a></li>' +
-  '<li><a href="products.html">View all products →</a></li>';
-
-// Form submit: POST to Cloudflare Pages Function /api/inquiry (Resend -> business@pepveri.com)
-document.getElementById("inquiryForm").addEventListener("submit", async function (e) {
-  e.preventDefault();
-  const form = this;
-  if (!form.checkValidity()) { form.reportValidity(); return; }
-
-  const btn = form.querySelector(".submit-btn");
-  const val = id => (document.getElementById(id).value || "").trim();
-  const msgParts = [];
-  if (val("fCountry")) msgParts.push("Country/Region: " + val("fCountry"));
-  if (val("fUse")) msgParts.push("Intended business use: " + val("fUse"));
-  if (val("fMsg")) msgParts.push(val("fMsg"));
-
-  const payload = {
-    name: val("fName"),
-    email: val("fEmail"),
-    phone: val("fPhone"),
-    company: val("fCompany"),
-    product: val("fProduct"),
-    quantity: val("fQty"),
-    message: msgParts.join("\n"),
-  };
-
-  btn.disabled = true;
-  btn.textContent = "Submitting...";
-
-  try {
-    const res = await fetch("/api/inquiry", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok || !data.ok) {
-      const detail = data.hint ? " — " + data.hint : (data.error ? " — " + data.error : "");
-      throw new Error(detail);
-    }
-    form.style.display = "none";
-    document.getElementById("successPanel").classList.add("show");
-  } catch (err) {
-    btn.disabled = false;
-    btn.textContent = "Submit Inquiry";
-    let box = document.getElementById("formError");
-    if (!box) {
-      box = document.createElement("div");
-      box.id = "formError";
-      box.style.cssText = "margin-top:12px;padding:10px 14px;border-radius:8px;background:#fdecec;color:#b42318;font-size:13.5px;";
-      form.appendChild(box);
-    }
-    box.textContent = "Submission failed" + ((err && err.message && err.message.trim() && err.message.trim() !== "undefined") ? err.message : "") + ". Please try again, or email us directly at business@pepveri.com.";
-  }
+const langBtn=document.getElementById('langBtn'),lang=document.getElementById('lang');
+langBtn.addEventListener('click',e=>{e.stopPropagation();lang.classList.toggle('open')});
+document.addEventListener('click',()=>lang.classList.remove('open'));
+const fi=document.getElementById('fileInput'),fn=document.getElementById('fileName');
+if(fi){fi.addEventListener('change',()=>{fn.textContent=fi.files&&fi.files.length?fi.files[0].name:'No file selected'})}
+const ham=document.getElementById('hamburger'),menu=document.getElementById('menu');
+ham.addEventListener('click',()=>menu.classList.toggle('open'));
+document.querySelectorAll('.menu>li.has-acc>a').forEach(a=>{
+  a.addEventListener('click',e=>{
+    if(window.innerWidth<=1020){e.preventDefault();const li=a.parentElement;li.classList.toggle('acc-open');}
+  });
 });
+</script>
+
+<script>
+(function(){
+  var q = new URLSearchParams(location.search);
+  var name = q.get('n'), ref = q.get('p');
+  var ta = document.querySelector('textarea[name="message"]');
+  if (!ta || !name) return;
+  var intro = (q.get('doc') ? 'Please send the CoA for: ' : 'Product: ') + name + (ref ? ' (' + ref + ')' : '');
+  ta.value = intro + '\nPack size: \nQuantity: \nDestination country: \n\n';
+  ta.focus();
+  ta.setSelectionRange(ta.value.length, ta.value.length);
+})();
+</script>
+
+<script>
+// RFQ form → Cloudflare Pages Function (/api/inquiry) → Resend → business@pepveri.com
+(function(){
+  var form = document.querySelector('form.rfq-form');
+  var btn = document.getElementById('rfqSubmit');
+  var status = document.getElementById('rfqStatus');
+  if (!form || !btn || !status) return;
+
+  function show(ok, text){
+    status.style.display = 'block';
+    status.style.background = ok ? 'var(--teal-tint)' : '#FDECEA';
+    status.style.color = ok ? 'var(--teal-dark)' : '#B3261E';
+    status.textContent = text;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var payload = {
+      name: form.elements.name.value,
+      org: form.elements.org.value,
+      email: form.elements.email.value,
+      country: form.elements.country.value,
+      message: form.elements.message.value,
+      nda: form.elements.nda.checked
+    };
+    btn.disabled = true;
+    btn.style.opacity = .65;
+    btn.textContent = 'Sending…';
+    show(true, 'Sending your inquiry…');
+
+    fetch('/api/inquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json().then(function(d){ return { ok: r.ok, d: d }; }); })
+    .then(function(res){
+      if (res.ok && res.d.ok) {
+        form.reset();
+        show(true, 'Thank you — your inquiry is on its way. We reply with a technical review and firm quote within 1 business day. Prefer email? Write to business@pepveri.com.');
+      } else {
+        show(false, 'Something went wrong sending the form (' + (res.d && res.d.error || 'network error') + '). Please email us directly at business@pepveri.com — your message will reach the same team.');
+      }
+    })
+    .catch(function(){
+      show(false, 'The form could not be sent. Please email us directly at business@pepveri.com.');
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.style.opacity = 1;
+      btn.textContent = 'Submit Inquiry';
+    });
+  });
+})();
 </script>
 </body>
 </html>
