@@ -182,7 +182,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-001",
    "cas": "910463-68-2",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": ""
   },
   {
    "name": "Tirzepatide (API Grade)",
@@ -191,7 +192,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-002",
    "cas": "2023788-19-2",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": ""
   },
   {
    "name": "Exenatide (API Grade)",
@@ -199,8 +201,9 @@ window.CATALOG = {
    "sub": "Pre-GMP / cGMP API Peptides",
    "line": "gmp",
    "ref": "PV-GM-003",
-   "cas": "141732-76-5",
-   "purity": "≥99%"
+   "cas": "141758-74-9",
+   "purity": "≥99%",
+   "seq": "HGEGTFTSDLSKQMEEEAVRLFIEWLKNGGPSSGAPPPS-NH2"
   },
   {
    "name": "Liraglutide (API Grade)",
@@ -209,7 +212,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-004",
    "cas": "204656-20-2",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": ""
   },
   {
    "name": "Dulaglutide fragment (API Grade)",
@@ -218,7 +222,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-005",
    "cas": "",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": ""
   },
   {
    "name": "Octreotide (API Grade)",
@@ -227,7 +232,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-006",
    "cas": "83150-76-9",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "D-Phe-Cys-Phe-D-Trp-Lys-Thr-Cys-Thr-ol (Cys2-Cys7 disulfide)"
   },
   {
    "name": "Lanreotide (API Grade)",
@@ -236,7 +242,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-007",
    "cas": "108736-35-2",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "D-Nal-Cys-Tyr-D-Trp-Lys-Val-Cys-Thr-NH2 (Cys2-Cys7 disulfide)"
   },
   {
    "name": "Vapreotide (API Grade)",
@@ -245,7 +252,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-008",
    "cas": "103222-11-3",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "D-Phe-Cys-Tyr-D-Trp-Lys-Val-Cys-Trp-NH2 (Cys2-Cys7 disulfide)"
   },
   {
    "name": "Buserelin (API Grade)",
@@ -254,7 +262,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-009",
    "cas": "57982-77-1",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Pyr-His-Trp-Ser-Tyr-D-Ser(tBu)-Leu-Arg-Pro-NHEt"
   },
   {
    "name": "Leuprorelin / Leuprolide (API Grade)",
@@ -263,7 +272,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-010",
    "cas": "53714-56-0",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Pyr-His-Trp-Ser-Tyr-D-Leu-Leu-Arg-Pro-NHEt"
   },
   {
    "name": "Goserelin (API Grade)",
@@ -272,7 +282,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-011",
    "cas": "65807-02-5",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Pyr-His-Trp-Ser-Tyr-D-Ser(tBu)-Leu-Arg-Pro-AzGly-NH2"
   },
   {
    "name": "Triptorelin (API Grade)",
@@ -281,7 +292,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-012",
    "cas": "57773-63-4",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Pyr-His-Trp-Ser-Tyr-D-Trp-Leu-Arg-Pro-Gly-NH2"
   },
   {
    "name": "Nafarelin (API Grade)",
@@ -290,7 +302,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-013",
    "cas": "76932-56-4",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Pyr-His-Trp-Ser-Tyr-D-Nal(2)-Leu-Arg-Pro-Gly-NH2"
   },
   {
    "name": "Cetrorelix (API Grade)",
@@ -299,7 +312,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-014",
    "cas": "120287-85-6",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Ac-D-Nal-D-Cpa-D-Pal-Ser-Tyr-D-Cit-Leu-Arg-Pro-D-Ala-NH2"
   },
   {
    "name": "Ganirelix (API Grade)",
@@ -308,7 +322,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-015",
    "cas": "124904-93-4",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Ac-D-Nal-D-Cpa-D-Pal-Ser-Tyr-D-hArg(Et)2-Leu-hArg(Et)2-Pro-D-Ala-NH2"
   },
   {
    "name": "Oxytocin (API Grade)",
@@ -317,7 +332,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-016",
    "cas": "50-56-6",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Cys-Tyr-Ile-Gln-Asn-Cys-Pro-Leu-Gly-NH2 (Cys1-Cys6 disulfide)"
   },
   {
    "name": "Vasopressin (AVP, API Grade)",
@@ -326,7 +342,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-017",
    "cas": "113-79-1",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Cys-Tyr-Phe-Gln-Asn-Cys-Pro-Arg-Gly-NH2 (Cys1-Cys6 disulfide)"
   },
   {
    "name": "Desmopressin (API Grade)",
@@ -335,7 +352,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-018",
    "cas": "16679-58-6",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "Mpa-Tyr-Phe-Gln-Asn-Cys-Pro-D-Arg-Gly-NH2"
   },
   {
    "name": "Calcitonin (Salmon, API Grade)",
@@ -344,7 +362,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-019",
    "cas": "47931-85-1",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "CSNLSTCVLGKLSQELHKLQTYPRTNTGSGTP-NH2 (Cys1-Cys7 disulfide)"
   },
   {
    "name": "Teriparatide (PTH 1-34, API Grade)",
@@ -353,7 +372,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-020",
    "cas": "52232-67-4",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "SVSEIQLMHNLGKHLNSMERVEWLRKKLQDVHNF"
   },
   {
    "name": "Romosozumab fragment",
@@ -362,7 +382,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-021",
    "cas": "",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": ""
   },
   {
    "name": "Ziconotide (API Grade, ω-Conotoxin MVIIA)",
@@ -371,7 +392,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-022",
    "cas": "107452-89-1",
-   "purity": "≥99%"
+   "purity": "≥99%",
+   "seq": "CKGKGAKCSRLMYDCCTGSCRSGKC-NH2"
   },
   {
    "name": "API Truncated Fragment Impurities",
@@ -380,7 +402,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-023",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": ""
   },
   {
    "name": "Oxidized Peptide Impurity (Met Sulfoxide)",
@@ -389,7 +412,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-024",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": ""
   },
   {
    "name": "D-amino Acid Epimer Impurity",
@@ -398,7 +422,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-025",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": ""
   },
   {
    "name": "Deamidated Impurity (Asn/Gln)",
@@ -407,7 +432,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-026",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": ""
   },
   {
    "name": "Aggregation / Dimer Reference Peptide",
@@ -416,7 +442,8 @@ window.CATALOG = {
    "line": "gmp",
    "ref": "PV-GM-027",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": ""
   },
   {
    "name": "ProTx-II",
@@ -424,8 +451,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-001",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "484598-36-9",
+   "purity": "≥95%",
+   "seq": "YCQKWMWTCDSERKCCEGMVCRLWCKKKLW-NH2"
   },
   {
    "name": "ω-Conotoxin GVIA",
@@ -433,8 +461,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-002",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "106375-28-4",
+   "purity": "≥95%",
+   "seq": "CKS(Hyp)GSSCS(Hyp)TSYNCCRSCN(Hyp)YTKRCY-NH2"
   },
   {
    "name": "ω-Conotoxin MVIIA (Ziconotide)",
@@ -442,8 +471,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-003",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "107452-89-1",
+   "purity": "≥95%",
+   "seq": "CKGKGAKCSRLMYDCCTGSCRSGKC-NH2"
   },
   {
    "name": "μ-Conotoxin GIIIA",
@@ -451,8 +481,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-004",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "129129-65-3",
+   "purity": "≥95%",
+   "seq": "RDCCT(Hyp)(Hyp)KKCKDRQCK(Hyp)QRCCA-NH2"
   },
   {
    "name": "Huwentoxin-IV (HwTx-IV)",
@@ -460,8 +491,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-005",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "526224-73-7",
+   "purity": "≥95%",
+   "seq": "ACKGVFDACTPGKNECCPNVSSKCKDKWKWCKQ-NH₂"
   },
   {
    "name": "Margatoxin (MgTx)",
@@ -469,8 +501,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-006",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "145808-47-5",
+   "purity": "≥95%",
+   "seq": "TIINVKCTSPKQCLPPCKAQFGQSAGAKCMNGKCKCYPH"
   },
   {
    "name": "Charybdotoxin (ChTx)",
@@ -478,8 +511,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-007",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "95751-30-7",
+   "purity": "≥95%",
+   "seq": "Glp-FTNVSC TTSKEC WSV CQRLHNTSRGKCMNKKCRCYS-OH"
   },
   {
    "name": "Iberiotoxin",
@@ -487,8 +521,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-008",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "129203-60-7",
+   "purity": "≥95%",
+   "seq": "Glp-FTDVDCSVSKECWSVCKDLFGVDRGKCMGKKCRCYQ-OH"
   },
   {
    "name": "Slotoxin",
@@ -496,8 +531,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-009",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "401470-29-9",
+   "purity": "≥95%",
+   "seq": "TFIDVDCTVSKECWAPCKAAFGVDRGKCMGKKCKCYV"
   },
   {
    "name": "Agitoxin-2",
@@ -505,8 +541,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-010",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "168147-41-9",
+   "purity": "≥95%",
+   "seq": "GVPINVSCTGSPQCIKPCKDAGMRFGKCMNRKCHCTPK-OH"
   },
   {
    "name": "Agitoxin-3",
@@ -514,8 +551,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-011",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "155646-23-4",
+   "purity": "≥95%",
+   "seq": "GVPINVPCTGSPQCIKPCKDAGMRFGKCMNRKCHCTPK-NH2"
   },
   {
    "name": "Kaliotoxin",
@@ -523,8 +561,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-012",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "145199-73-1",
+   "purity": "≥95%",
+   "seq": "GVEINVKCSGSPQCLKPCKDAGMRFGKCMNRKCHCTPK-OH"
   },
   {
    "name": "Noxiustoxin",
@@ -532,8 +571,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-013",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "85205-49-8",
+   "purity": "≥95%",
+   "seq": "TIINVKCTSPKQCSKPCKELYGSSAGAKCMNGKCKCYNN"
   },
   {
    "name": "Pandinotoxin",
@@ -542,7 +582,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-014",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "VKDCSGSFKECWAPCKAAFGVDRGKCMGKKCKCYV"
   },
   {
    "name": "TsTX-Kα",
@@ -550,8 +591,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-015",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "209005-05-0",
+   "purity": "≥95%",
+   "seq": "VFINAKCRGSPECLPKCKEAIGKAAGKCMNGKCKCYP"
   },
   {
    "name": "α-Conotoxin GI",
@@ -559,8 +601,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-016",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "76862-65-2",
+   "purity": "≥95%",
+   "seq": "ECCNPACGRHYSC‑NH₂"
   },
   {
    "name": "α-Conotoxin MI",
@@ -569,7 +612,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-017",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "GCCNPACGRHYSC-NH2"
   },
   {
    "name": "α-Conotoxin PnIA",
@@ -577,8 +621,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-018",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "705300-84-1",
+   "purity": "≥95%",
+   "seq": "GCCSLPPCAANNPDY(SO3H)C-NH2"
   },
   {
    "name": "α-Conotoxin PnIB",
@@ -587,7 +632,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-019",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "GCCSLPPCALSNPDY(SO3H)C-NH2"
   },
   {
    "name": "α-Conotoxin AuIB",
@@ -595,8 +641,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-020",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "216299-21-7",
+   "purity": "≥95%",
+   "seq": "GCCSYPPCTHPVNC-NH2"
   },
   {
    "name": "κ-Conotoxin PVIIA",
@@ -605,7 +652,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-021",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "CRIONKQKPKRCTLPKTMKYCWSLKCT-NH2"
   },
   {
    "name": "Tityustoxin Kα",
@@ -613,8 +661,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-022",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "209005-05-0",
+   "purity": "≥95%",
+   "seq": "VFINAKCRGSPECLPKCKEAIGKAAGKCMNGKCKCYP"
   },
   {
    "name": "Heteropodatoxin-2",
@@ -623,7 +672,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-023",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "DSCLGFMRKCIPDNDKCCRPNLVCSRTHKWC-NH2"
   },
   {
    "name": "Heteropodatoxin-3",
@@ -632,7 +682,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-024",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "DSCLGFMRKCIPDNDKCCRPNLVCSRTYKWG-NH2"
   },
   {
    "name": "Phrixotoxin-1",
@@ -640,8 +691,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-025",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "221872-97-5",
+   "purity": "≥95%",
+   "seq": "YCQKWMWTCDSARKCCEGLVCRLWCKKII-NH2"
   },
   {
    "name": "Phrixotoxin-2",
@@ -650,7 +702,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-026",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "YCQKWMWTCDSARKCCEGLVCRLWCKKIIINM-NH2"
   },
   {
    "name": "GsMTx-4",
@@ -659,7 +712,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-027",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "GCLEFWWKCNPNDDKCCRPKLKCSKLFKLCNFSF-NH2"
   },
   {
    "name": "Scylla toxin",
@@ -668,7 +722,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-028",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "AFGVDCRKQCAYVACPRRYGCKDNKCSC-NH2"
   },
   {
    "name": "Crotamine",
@@ -676,8 +731,9 @@ window.CATALOG = {
    "sub": "Ion Channel Toxin Peptides",
    "line": "research",
    "ref": "PV-RE-029",
-   "cas": "",
-   "purity": "≥95%"
+   "cas": "58740-15-1",
+   "purity": "≥95%",
+   "seq": "YKQCHKKGGHCFPKEKICLPPSSDFGKMDCRWRWKCCKKGSG"
   },
   {
    "name": "Dendrotoxin-I",
@@ -686,7 +742,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-030",
    "cas": "",
-   "purity": "≥95%"
+   "purity": "≥95%",
+   "seq": "QPLRKLCILHRNPGRCYQKIPAFYYNQKKKQCEGFTWSGCGGNSNRFKTIEECRRTCIRK"
   },
   {
    "name": "BPC-157",
@@ -695,7 +752,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-031",
    "cas": "137525-51-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GEPPPGKPADDAGLV"
   },
   {
    "name": "TB-500",
@@ -703,8 +761,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-032",
-   "cas": "77591-33-4",
-   "purity": "≥98%"
+   "cas": "885340-08-9",
+   "purity": "≥98%",
+   "seq": "Ac-LKKTETQ"
   },
   {
    "name": "GHK",
@@ -712,8 +771,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-033",
-   "cas": "72957-37-0",
-   "purity": "≥98%"
+   "cas": "49557-75-7",
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys (GHK)"
   },
   {
    "name": "GHK-Cu",
@@ -722,7 +782,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-034",
    "cas": "89030-95-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys : Cu(II) (1:1 complex)"
   },
   {
    "name": "KPV",
@@ -730,8 +791,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-035",
-   "cas": "67727-97-3",
-   "purity": "≥98%"
+   "cas": "88768-11-0",
+   "purity": "≥98%",
+   "seq": "Lys-Pro-Val"
   },
   {
    "name": "Epithalon (Epitalon)",
@@ -740,7 +802,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-036",
    "cas": "307297-39-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ala-Glu-Asp-Gly (AEDG)"
   },
   {
    "name": "Selank",
@@ -749,7 +812,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-037",
    "cas": "129954-34-3",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Thr-Lys-Pro-Arg-Pro-Gly-Pro"
   },
   {
    "name": "Semax",
@@ -758,7 +822,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-038",
    "cas": "80714-61-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Met-Glu-His-Phe-Pro-Gly-Pro"
   },
   {
    "name": "MOTS-c",
@@ -766,8 +831,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-039",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "1627580-64-6",
+   "purity": "≥98%",
+   "seq": "MRWQEMGYIFYPRKLR"
   },
   {
    "name": "Thymopentin (TP5)",
@@ -776,7 +842,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-040",
    "cas": "69558-55-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Lys-Asp-Val-Tyr"
   },
   {
    "name": "Thymosin α1",
@@ -785,7 +852,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-041",
    "cas": "62304-98-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-SDAAVDTSSEITTKDLKEKKEVVEEAEN"
   },
   {
    "name": "Thymosin β4",
@@ -793,8 +861,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-042",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "77591-33-4",
+   "purity": "≥98%",
+   "seq": "Ac-SDKPDMAEIEKFDKSKLKKTETQEKNPLPSKETIEQEKQAGES"
   },
   {
    "name": "DSIP (Delta Sleep Inducing Peptide)",
@@ -803,7 +872,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-043",
    "cas": "62568-57-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu"
   },
   {
    "name": "Melanotan II",
@@ -812,7 +882,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-044",
    "cas": "121062-08-6",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-Nle-cyclo[Asp-His-D-Phe-Arg-Trp-Lys]-NH2"
   },
   {
    "name": "α-MSH",
@@ -821,7 +892,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-045",
    "cas": "581-05-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-Ser-Tyr-Ser-Met-Glu-His-Phe-Arg-Trp-Gly-Lys-Pro-Val-NH2"
   },
   {
    "name": "γ-MSH",
@@ -830,7 +902,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-046",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Val-Met-Gly-His-Phe-Arg-Trp-Asp-Arg-Phe-Gly"
   },
   {
    "name": "β-MSH",
@@ -838,8 +911,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-047",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "9034-42-8",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Orexin A",
@@ -847,8 +921,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-048",
-   "cas": "205640-90-0",
-   "purity": "≥98%"
+   "cas": "205599-75-3",
+   "purity": "≥98%",
+   "seq": "pyroGlu-PLPDCCRQKTCSCRLYELLHGAGNHAAGILTL-NH2 (2 disulfides)"
   },
   {
    "name": "Orexin B",
@@ -856,8 +931,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-049",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "205599-76-4",
+   "purity": "≥98%",
+   "seq": "pyroGlu-RSGPPGLQGRLQRLLQANGNHAAGILTM-NH2"
   },
   {
    "name": "Ghrelin",
@@ -865,8 +941,9 @@ window.CATALOG = {
    "sub": "Bioactive Research Peptides",
    "line": "research",
    "ref": "PV-RE-050",
-   "cas": "258279-04-8",
-   "purity": "≥98%"
+   "cas": "304853-26-7",
+   "purity": "≥98%",
+   "seq": "GSSFLSPEHQRVQQRKESKKPPAKLQPR (Ser3 octanoylated)"
   },
   {
    "name": "Ipamorelin",
@@ -875,7 +952,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-051",
    "cas": "170851-70-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Aib-His-D-2-Nal-D-Phe-Lys-NH2"
   },
   {
    "name": "GHRP-2",
@@ -884,7 +962,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-052",
    "cas": "158861-67-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "D-Ala-D-2-Nal-Ala-Trp-D-Phe-Lys-NH2"
   },
   {
    "name": "GHRP-6",
@@ -893,7 +972,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-053",
    "cas": "87616-84-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "His-D-Trp-Ala-Trp-D-Phe-Lys-NH2"
   },
   {
    "name": "Hexarelin",
@@ -902,7 +982,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-054",
    "cas": "140703-51-1",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "His-D-2-Me-Trp-Ala-Trp-D-Phe-Lys-NH2"
   },
   {
    "name": "CJC-1295 (without DAC)",
@@ -911,7 +992,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-055",
    "cas": "863288-34-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "YADAIFTNSYRKVLGQLSARKLLQDIMSR-NH2"
   },
   {
    "name": "AOD9604",
@@ -920,7 +1002,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-056",
    "cas": "221231-10-3",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "YLRIVQCRSVEGSCGF (Cys7-Cys14 disulfide)"
   },
   {
    "name": "LL-37 Human",
@@ -929,7 +1012,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-057",
    "cas": "154947-66-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES"
   },
   {
    "name": "LL-37 Scrambled",
@@ -938,7 +1022,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-058",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Magainin 1",
@@ -946,8 +1031,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-059",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "108433-99-4",
+   "purity": "≥98%",
+   "seq": "GIGKFLHSAGKFGKAFVGEIMKS"
   },
   {
    "name": "Magainin 2",
@@ -955,8 +1041,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-060",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "108433-95-0",
+   "purity": "≥98%",
+   "seq": "GIGKFLHSAKKFGKAFVGEIMNS"
   },
   {
    "name": "Melittin",
@@ -964,8 +1051,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-061",
-   "cas": "20449-79-0",
-   "purity": "≥98%"
+   "cas": "37231-28-0",
+   "purity": "≥98%",
+   "seq": "GIGAVLKVLTTGLPALISWIKRKRQQ-NH2"
   },
   {
    "name": "Mastoparan",
@@ -973,8 +1061,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-062",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "72093-21-1",
+   "purity": "≥98%",
+   "seq": "INLKALAALAKKIL-NH2"
   },
   {
    "name": "Mastoparan-7",
@@ -982,8 +1071,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-063",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "145854-59-7",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Tachyplesin I",
@@ -991,8 +1081,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-064",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "118231-04-2",
+   "purity": "≥98%",
+   "seq": "KWCFRVCYRGICYRRCR-NH2"
   },
   {
    "name": "Tachyplesin III",
@@ -1000,8 +1091,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-065",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "129557-13-7",
+   "purity": "≥98%",
+   "seq": "KWCFRVCYRGICYRKCR-NH2"
   },
   {
    "name": "Lactoferricin B (17-41)",
@@ -1009,8 +1101,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-066",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "170867-20-6",
+   "purity": "≥98%",
+   "seq": "FKCRRWQWRMKKLGAPSITCVRRAF"
   },
   {
    "name": "Indolicidin",
@@ -1018,8 +1111,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-067",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "140896-21-5",
+   "purity": "≥98%",
+   "seq": "ILPWKWPWWPWRR-NH2"
   },
   {
    "name": "Ovispirin-1",
@@ -1027,8 +1121,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-068",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "326855-45-2",
+   "purity": "≥98%",
+   "seq": "KNLRRIIRKIIHIIKKYG-NH2"
   },
   {
    "name": "Temporin L",
@@ -1036,8 +1131,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-069",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "188713-81-7",
+   "purity": "≥98%",
+   "seq": "FVQWFSKFLGRIL-NH2"
   },
   {
    "name": "Dermaseptin S4",
@@ -1045,8 +1141,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-070",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "151896-15-0",
+   "purity": "≥98%",
+   "seq": "ALWMTLLKKVLKAAAKAALNAVLVGANA"
   },
   {
    "name": "Aurein 1.2",
@@ -1054,8 +1151,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-071",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "302343-01-7",
+   "purity": "≥98%",
+   "seq": "GLFDIIKKIAESF-NH2"
   },
   {
    "name": "Citropin 1.1",
@@ -1064,7 +1162,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-072",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GLFDVIKKVASVIGGL-NH2"
   },
   {
    "name": "Protegrin-1",
@@ -1072,8 +1171,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-073",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "168831-77-4",
+   "purity": "≥98%",
+   "seq": "RGGRLCYCRRRFCVCVGR-NH2"
   },
   {
    "name": "Gramicidin A",
@@ -1081,8 +1181,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-074",
-   "cas": "1405-97-6",
-   "purity": "≥98%"
+   "cas": "11029-61-1",
+   "purity": "≥98%",
+   "seq": "formyl-VGALAVVVWLWLWLW-ethanolamide"
   },
   {
    "name": "Gramicidin S",
@@ -1091,7 +1192,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-075",
    "cas": "113-73-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "cyclo(-Val-Orn-Leu-D-Phe-Pro-)2"
   },
   {
    "name": "Bombinin H2",
@@ -1099,8 +1201,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-076",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "152846-09-8",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Maximin 1",
@@ -1109,7 +1212,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-077",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Pexiganan",
@@ -1118,7 +1222,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-078",
    "cas": "147664-63-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GIGKFLKKAKKFGKAFVKILKK-NH2"
   },
   {
    "name": "KLK peptide (KLK5)",
@@ -1127,7 +1232,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-079",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Histatin 5",
@@ -1135,8 +1241,9 @@ window.CATALOG = {
    "sub": "Antimicrobial Peptides (AMP)",
    "line": "research",
    "ref": "PV-RE-080",
-   "cas": "115966-23-7",
-   "purity": "≥98%"
+   "cas": "104339-66-4",
+   "purity": "≥98%",
+   "seq": "DSHAKRHHGYKRKFHEKHHSHRGY"
   },
   {
    "name": "β-Amyloid (1-40) Human",
@@ -1145,7 +1252,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-081",
    "cas": "131438-79-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVV"
   },
   {
    "name": "β-Amyloid (1-42) Human",
@@ -1154,7 +1262,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-082",
    "cas": "107761-42-2",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "DAEFRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA"
   },
   {
    "name": "β-Amyloid (1-42) Scrambled",
@@ -1163,7 +1272,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-083",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Scrambled sequence: composition identical to Aβ(1-42), residue order randomised (exact order per specification)"
   },
   {
    "name": "β-Amyloid (1-16)",
@@ -1171,8 +1281,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-084",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "131580-10-4",
+   "purity": "≥98%",
+   "seq": "DAEFRHDSGYEVHHQK"
   },
   {
    "name": "β-Amyloid (25-35)",
@@ -1181,7 +1292,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-085",
    "cas": "131602-53-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GSNKGAIIGLM"
   },
   {
    "name": "β-Amyloid (17-21)",
@@ -1190,7 +1302,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-086",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "LVFFA"
   },
   {
    "name": "Aβ (pE3-42)",
@@ -1198,8 +1311,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-087",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "183449-57-2",
+   "purity": "≥98%",
+   "seq": "pyroGlu-FRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIA"
   },
   {
    "name": "Tau (1-20)",
@@ -1208,7 +1322,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-088",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MAEPRQEFEVMEDHAGTYGL"
   },
   {
    "name": "Tau (273-284)",
@@ -1217,7 +1332,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-089",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "THVPGGGNKKIE"
   },
   {
    "name": "Tau (306-311) PHF6",
@@ -1225,8 +1341,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-090",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "329897-62-3",
+   "purity": "≥98%",
+   "seq": "VQIVYK"
   },
   {
    "name": "Tau (332-342) PHF6*",
@@ -1235,7 +1352,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-091",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GKVQIINKKLDL"
   },
   {
    "name": "α-Synuclein (1-40)",
@@ -1244,7 +1362,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-092",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYV"
   },
   {
    "name": "α-Synuclein (61-95)",
@@ -1253,7 +1372,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-093",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFV"
   },
   {
    "name": "PrP (106-126)",
@@ -1262,7 +1382,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-094",
    "cas": "148439-49-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "KTNMKHMAGAAAAGAVVGGLG"
   },
   {
    "name": "PrP (118-135)",
@@ -1270,8 +1391,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-095",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "202121-03-7",
+   "purity": "≥98%",
+   "seq": "AGAVVGGLGGYMLGSAMS"
   },
   {
    "name": "VIP",
@@ -1280,7 +1402,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-096",
    "cas": "37221-79-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "HSDAVFTDNYTRLRKQMAVKKYLNSILN-NH2"
   },
   {
    "name": "PACAP-27",
@@ -1289,7 +1412,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-097",
    "cas": "127317-03-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "HSDGIFTDSYSRYRKQMAVKKYLAAVL-NH2"
   },
   {
    "name": "PACAP-38",
@@ -1298,7 +1422,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-098",
    "cas": "137061-48-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "HSDGIFTDSYSRYRKQMAVKKYLAAVLGKRYKQRVKNK-NH2"
   },
   {
    "name": "Somatostatin-14",
@@ -1307,7 +1432,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-099",
    "cas": "38916-34-6",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "AGCKNFFWKTFTSC (Cys3-Cys14 disulfide)"
   },
   {
    "name": "Somatostatin-28",
@@ -1316,7 +1442,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-100",
    "cas": "73032-94-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "SANSNPAMAPRERKAGCKNFFWKTFTSC (Cys17-Cys28 disulfide)"
   },
   {
    "name": "Galanin",
@@ -1324,8 +1451,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-101",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "119418-04-1",
+   "purity": "≥98%",
+   "seq": "GWTLNSAGYLLGPHAVGNHRSFSDKNGLTS"
   },
   {
    "name": "Galanin (1-15)",
@@ -1333,8 +1461,9 @@ window.CATALOG = {
    "sub": "Amyloid & Tau / Neurodegeneration Peptides",
    "line": "research",
    "ref": "PV-RE-102",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "112747-70-3",
+   "purity": "≥98%",
+   "seq": "GWTLNSAGYLLGPHA-NH2"
   },
   {
    "name": "FLAG Peptide (DYKDDDDK)",
@@ -1342,8 +1471,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-103",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "98849-88-8",
+   "purity": "≥98%",
+   "seq": "DYKDDDDK"
   },
   {
    "name": "3×FLAG Peptide",
@@ -1351,8 +1481,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-104",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "402750-12-3",
+   "purity": "≥98%",
+   "seq": "DYKDHDGDYKDHDIDYKDDDDK"
   },
   {
    "name": "HA Tag Peptide",
@@ -1360,8 +1491,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-105",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "92000-76-5",
+   "purity": "≥98%",
+   "seq": "YPYDVPDYA"
   },
   {
    "name": "Myc Tag Peptide",
@@ -1370,7 +1502,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-106",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "EQKLISEEDL"
   },
   {
    "name": "6×His Tag Peptide",
@@ -1378,8 +1511,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-107",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "64134-30-1",
+   "purity": "≥98%",
+   "seq": "HHHHHH"
   },
   {
    "name": "V5 Tag Peptide",
@@ -1388,7 +1522,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-108",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GKPIPNPLLGLDST"
   },
   {
    "name": "T7 Tag Peptide",
@@ -1396,8 +1531,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-109",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "245445-88-9",
+   "purity": "≥98%",
+   "seq": "MASMTGGQQMG"
   },
   {
    "name": "GST Epitope Peptide",
@@ -1406,7 +1542,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-110",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "MBP Epitope Peptide",
@@ -1415,7 +1552,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-111",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "S Tag Peptide",
@@ -1423,8 +1561,9 @@ window.CATALOG = {
    "sub": "Tag & Epitope Peptides",
    "line": "research",
    "ref": "PV-RE-112",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "7429-70-1",
+   "purity": "≥98%",
+   "seq": "KETAAAKFERQHMDS"
   },
   {
    "name": "Strep-tag II",
@@ -1433,7 +1572,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-113",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "WSHPQFEK"
   },
   {
    "name": "AU1 Epitope",
@@ -1442,7 +1582,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-114",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "DTYRYI"
   },
   {
    "name": "AU5 Epitope",
@@ -1451,7 +1592,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-115",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "TDFYLK"
   },
   {
    "name": "E Tag Peptide",
@@ -1460,7 +1602,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-116",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GAPVPYPDPLEPR"
   },
   {
    "name": "HSV Tag",
@@ -1469,7 +1612,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-117",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "SQPELAPEDPED"
   },
   {
    "name": "KT3 Epitope",
@@ -1478,7 +1622,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-118",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "KPPTPPPEPET"
   },
   {
    "name": "PK Epitope",
@@ -1487,7 +1632,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-119",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "OmpA signal peptide",
@@ -1496,7 +1642,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-120",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MKKTAIAIAVALAGFATVAQA"
   },
   {
    "name": "NLS Peptide (SV40)",
@@ -1505,7 +1652,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-121",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "PKKKRKV"
   },
   {
    "name": "NES Peptide",
@@ -1514,7 +1662,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-122",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "LPPLERLTL"
   },
   {
    "name": "Ubiquitin (1-76) fragment peptide",
@@ -1523,7 +1672,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-123",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
   },
   {
    "name": "Ub C-terminal Gly-Gly peptide",
@@ -1532,7 +1682,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-124",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "H-Gly-Gly-OH"
   },
   {
    "name": "Ubiquitin (42-72)",
@@ -1541,7 +1692,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-125",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "RLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
   },
   {
    "name": "SUMO-1 C-terminal peptide",
@@ -1550,7 +1702,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-126",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "SUMO-2 C-terminal peptide",
@@ -1559,7 +1712,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-127",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "SUMO-3 C-terminal peptide",
@@ -1568,7 +1722,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-128",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "NEDD8 C-terminal peptide",
@@ -1577,7 +1732,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-129",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "ISG15 C-terminal peptide",
@@ -1586,7 +1742,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-130",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K48 linkage peptide",
@@ -1595,7 +1752,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-131",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K63 linkage peptide",
@@ -1604,7 +1762,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-132",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K6 linkage peptide",
@@ -1613,7 +1772,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-133",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K11 linkage peptide",
@@ -1622,7 +1782,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-134",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K27 linkage peptide",
@@ -1631,7 +1792,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-135",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K29 linkage peptide",
@@ -1640,7 +1802,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-136",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K33 linkage peptide",
@@ -1649,7 +1812,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-137",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Ubiquitin K0 control peptide",
@@ -1658,7 +1822,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-138",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "UCHL1 substrate peptide",
@@ -1667,7 +1832,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-139",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Z-Arg-Leu-Arg-Gly-Gly-AMC"
   },
   {
    "name": "USP7 substrate peptide",
@@ -1676,7 +1842,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-140",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "RGD",
@@ -1685,7 +1852,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-141",
    "cas": "99896-85-2",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Gly-Asp (RGD)"
   },
   {
    "name": "Cyclo(-RGDfK-)",
@@ -1694,7 +1862,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-142",
    "cas": "161552-03-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "cyclo(-Arg-Gly-Asp-D-Phe-Lys-)"
   },
   {
    "name": "RAD (negative control of RGD)",
@@ -1703,7 +1872,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-143",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Ala-Asp (RAD)"
   },
   {
    "name": "GRGDS",
@@ -1712,7 +1882,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-144",
    "cas": "96426-21-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-Arg-Gly-Asp-Ser"
   },
   {
    "name": "GRGDSP",
@@ -1720,8 +1891,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-145",
-   "cas": "91037-65-9",
-   "purity": "≥98%"
+   "cas": "91037-75-1",
+   "purity": "≥98%",
+   "seq": "Gly-Arg-Gly-Asp-Ser-Pro"
   },
   {
    "name": "RGES (control)",
@@ -1729,8 +1901,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-146",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "93674-97-6",
+   "purity": "≥98%",
+   "seq": "Arg-Gly-Glu-Ser"
   },
   {
    "name": "IKVAV",
@@ -1738,8 +1911,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-147",
-   "cas": "131599-91-4",
-   "purity": "≥98%"
+   "cas": "131167-89-0",
+   "purity": "≥98%",
+   "seq": "Ile-Lys-Val-Ala-Val"
   },
   {
    "name": "YIGSR",
@@ -1747,8 +1921,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-148",
-   "cas": "110590-25-2",
-   "purity": "≥98%"
+   "cas": "110590-64-2",
+   "purity": "≥98%",
+   "seq": "Tyr-Ile-Gly-Ser-Arg"
   },
   {
    "name": "LDV",
@@ -1757,7 +1932,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-149",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Leu-Asp-Val"
   },
   {
    "name": "REDV",
@@ -1765,8 +1941,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-150",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "107978-83-6",
+   "purity": "≥98%",
+   "seq": "Arg-Glu-Asp-Val"
   },
   {
    "name": "DGEA",
@@ -1774,8 +1951,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-151",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "134580-64-6",
+   "purity": "≥98%",
+   "seq": "Asp-Gly-Glu-Ala"
   },
   {
    "name": "PHSRN",
@@ -1784,7 +1962,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-152",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Pro-His-Ser-Arg-Asn"
   },
   {
    "name": "GFOGER",
@@ -1792,8 +1971,9 @@ window.CATALOG = {
    "sub": "Integrin / RGD & Cell Adhesion Peptides",
    "line": "research",
    "ref": "PV-RE-153",
-   "cas": "150347-59-4",
-   "purity": "≥98%"
+   "cas": "245120-10-9",
+   "purity": "≥98%",
+   "seq": "Gly-Phe-Hyp-Gly-Glu-Arg"
   },
   {
    "name": "HAVDI",
@@ -1802,7 +1982,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-154",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "His-Ala-Val-Asp-Ile"
   },
   {
    "name": "GLP-1 (7-36) amide Human",
@@ -1811,7 +1992,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-155",
    "cas": "107444-51-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "HAEGTFTSDVSSYLEGQAAKEFIAWLVKGR-NH2"
   },
   {
    "name": "GLP-1 (1-37)",
@@ -1819,8 +2001,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-156",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "87805-34-3",
+   "purity": "≥98%",
+   "seq": "HDEFERHAEGTFTSDVSSYLEGQAAKEFIAWLVKGRG"
   },
   {
    "name": "Exendin-4",
@@ -1828,8 +2011,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-157",
-   "cas": "141732-76-5",
-   "purity": "≥98%"
+   "cas": "141758-74-9",
+   "purity": "≥98%",
+   "seq": "HGEGTFTSDLSKQMEEEAVRLFIEWLKNGGPSSGAPPPS-NH2"
   },
   {
    "name": "Exendin (9-39)",
@@ -1838,7 +2022,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-158",
    "cas": "133514-43-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "DLSKQMEEEAVRLFIEWLKNGGPSSGAPPPS-NH2"
   },
   {
    "name": "Glucagon",
@@ -1846,8 +2031,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-159",
-   "cas": "16941-32-5",
-   "purity": "≥98%"
+   "cas": "9007-92-5",
+   "purity": "≥98%",
+   "seq": "HSQGTFTSDYSKYLDSRRAQDFVQWLMNT"
   },
   {
    "name": "Glucagon-like peptide-2 GLP-2",
@@ -1856,7 +2042,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-160",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "HADGSFSDEMNTILDNLAARDFINWLIQTKITD"
   },
   {
    "name": "Secretin",
@@ -1864,8 +2051,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-161",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "1393-25-5",
+   "purity": "≥98%",
+   "seq": "HSDGTFTSELSRLREGARLQRLLQGLV-NH2"
   },
   {
    "name": "GIP",
@@ -1874,7 +2062,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-162",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "YAEGTFISDYSIAMDKIHQQDFVNWLLAQKGKKNDWKHNITQ"
   },
   {
    "name": "Cholecystokinin CCK-8",
@@ -1883,7 +2072,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-163",
    "cas": "25126-32-3",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Asp-Tyr(SO3H)-Met-Gly-Trp-Met-Asp-Phe-NH2"
   },
   {
    "name": "CCK-4",
@@ -1891,8 +2081,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-164",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "35144-91-3",
+   "purity": "≥98%",
+   "seq": "Trp-Met-Asp-Phe-NH2"
   },
   {
    "name": "Neuropeptide Y (NPY)",
@@ -1900,8 +2091,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-165",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "82785-45-3",
+   "purity": "≥98%",
+   "seq": "YPSKPDNPGEDAPAEDMARYYSALRHYINLITRQRY-NH2"
   },
   {
    "name": "PYY (3-36)",
@@ -1909,8 +2101,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-166",
-   "cas": "123583-37-9",
-   "purity": "≥98%"
+   "cas": "106388-42-5",
+   "purity": "≥98%",
+   "seq": "IKPEAPGEDASPEELNRYYASLRHYLNLVTRQRY-NH2"
   },
   {
    "name": "Kisspeptin-10",
@@ -1919,7 +2112,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-167",
    "cas": "374675-21-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Asn-Trp-Asn-Ser-Phe-Gly-Leu-Arg-Phe-NH2"
   },
   {
    "name": "Kisspeptin-54",
@@ -1927,8 +2121,9 @@ window.CATALOG = {
    "sub": "GLP-1 / Endocrine & Metabolic Peptides",
    "line": "research",
    "ref": "PV-RE-168",
-   "cas": "374675-21-5",
-   "purity": "≥98%"
+   "cas": "388138-21-4",
+   "purity": "≥98%",
+   "seq": "GTSLSPPPESSGSPQQPGLSAPHSRQIPAPQGAVLVQREKDLPNYNWNSFGLRF-NH2"
   },
   {
    "name": "Caspase-3 Substrate (DEVD)",
@@ -1936,8 +2131,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-169",
-   "cas": "169332-61-0",
-   "purity": "≥98%"
+   "cas": "958001-92-8",
+   "purity": "≥98%",
+   "seq": "Ac-Asp-Glu-Val-Asp-AMC"
   },
   {
    "name": "Caspase-8 Substrate (IETD)",
@@ -1945,8 +2141,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-170",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "348079-17-4",
+   "purity": "≥98%",
+   "seq": "Ac-Ile-Glu-Thr-Asp-AMC"
   },
   {
    "name": "Caspase-9 Substrate (LEHD)",
@@ -1954,8 +2151,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-171",
-   "cas": "189109-90-8",
-   "purity": "≥98%"
+   "cas": "210345-03-2",
+   "purity": "≥98%",
+   "seq": "Ac-Leu-Glu-His-Asp-AFC"
   },
   {
    "name": "Caspase-1 Substrate (YVAD)",
@@ -1963,8 +2161,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-172",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "149231-65-2",
+   "purity": "≥98%",
+   "seq": "Ac-Tyr-Val-Ala-Asp-AMC"
   },
   {
    "name": "Cathepsin B Substrate",
@@ -1973,7 +2172,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-173",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Z-Arg-Arg-AMC"
   },
   {
    "name": "Cathepsin D Substrate",
@@ -1982,7 +2182,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-174",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Thrombin Substrate",
@@ -1991,7 +2192,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-175",
    "cas": "13123-23-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tos-Gly-Pro-Arg-AMC"
   },
   {
    "name": "Trypsin Substrate",
@@ -2000,7 +2202,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-176",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Boc-Gln-Ala-Arg-AMC"
   },
   {
    "name": "Chymotrypsin Substrate",
@@ -2008,8 +2211,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-177",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "82564-18-9",
+   "purity": "≥98%",
+   "seq": "Suc-Ala-Ala-Pro-Phe-pNA"
   },
   {
    "name": "MMP-2 Substrate",
@@ -2018,7 +2222,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-178",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MCA-Pro-Leu-Ala-Nva-Dpa-Ala-Arg-NH2"
   },
   {
    "name": "MMP-9 Substrate",
@@ -2027,7 +2232,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-179",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "MCA-Pro-Leu-Gly-Leu-Dpa-Ala-Arg-NH2"
   },
   {
    "name": "Calpain Substrate",
@@ -2035,8 +2241,9 @@ window.CATALOG = {
    "sub": "Protease Substrate / Fluorogenic Substrates",
    "line": "research",
    "ref": "PV-RE-180",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "728005-83-2",
+   "purity": "≥98%",
+   "seq": "Suc-Leu-Leu-Val-Tyr-AMC"
   },
   {
    "name": "TAT (48-60) HIV",
@@ -2044,8 +2251,9 @@ window.CATALOG = {
    "sub": "Cell Penetrating Peptides (CPP)",
    "line": "research",
    "ref": "PV-RE-181",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "220408-24-2",
+   "purity": "≥98%",
+   "seq": "GRKKRRQRRRPPQ"
   },
   {
    "name": "Penetratin (Antp 43-58)",
@@ -2053,8 +2261,9 @@ window.CATALOG = {
    "sub": "Cell Penetrating Peptides (CPP)",
    "line": "research",
    "ref": "PV-RE-182",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "188842-14-0",
+   "purity": "≥98%",
+   "seq": "RQIKIWFQNRRMKWKK"
   },
   {
    "name": "Octaarginine R8",
@@ -2063,7 +2272,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-183",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Arg-Arg-Arg-Arg-Arg-Arg-Arg (R8)"
   },
   {
    "name": "Nonapeptide R9",
@@ -2072,7 +2282,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-184",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Arg-Arg-Arg-Arg-Arg-Arg-Arg-Arg (R9)"
   },
   {
    "name": "Transportan",
@@ -2081,7 +2292,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-185",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GWTLNSAGYLLGKINLKALAALAKKIL-NH2"
   },
   {
    "name": "Transportan 10",
@@ -2090,7 +2302,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-186",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "AGYLLGKINLKALAALAKKIL-NH2"
   },
   {
    "name": "TP10",
@@ -2099,7 +2312,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-187",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "AGYLLGKINLKALAALAKKIL-NH2"
   },
   {
    "name": "MAP peptide",
@@ -2108,7 +2322,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-188",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "KLALKLALKALKAALKLA-NH2"
   },
   {
    "name": "pVEC",
@@ -2117,7 +2332,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-189",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "LLIILRRRIRKQAHAHSK"
   },
   {
    "name": "CADY peptide",
@@ -2126,7 +2342,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-190",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Dynorphin A (1-13)",
@@ -2135,7 +2352,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-191",
    "cas": "72957-38-1",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Gly-Gly-Phe-Leu-Arg-Arg-Ile-Arg-Pro-Lys-Leu-Lys"
   },
   {
    "name": "Dynorphin A (1-17)",
@@ -2144,7 +2362,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-192",
    "cas": "80448-90-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Gly-Gly-Phe-Leu-Arg-Arg-Ile-Arg-Pro-Lys-Leu-Lys-Trp-Asp-Asn-Gln"
   },
   {
    "name": "Leu-Enkephalin",
@@ -2153,7 +2372,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-193",
    "cas": "58822-25-6",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Gly-Gly-Phe-Leu"
   },
   {
    "name": "Met-Enkephalin",
@@ -2162,7 +2382,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-194",
    "cas": "58569-55-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Gly-Gly-Phe-Met"
   },
   {
    "name": "β-Endorphin",
@@ -2171,7 +2392,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-195",
    "cas": "60617-12-1",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Gly-Gly-Phe-Met-Thr-Ser-Glu-Lys-Ser-Gln-Thr-Pro-Leu-Val-Thr-Leu-Phe-Lys-Asn-Ala-Ile-Ile-Lys-Asn-Ala-Tyr-Lys-Lys-Gly-Glu"
   },
   {
    "name": "Endomorphin-1",
@@ -2180,7 +2402,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-196",
    "cas": "189388-22-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Pro-Trp-Phe-NH2"
   },
   {
    "name": "Endomorphin-2",
@@ -2189,7 +2412,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-197",
    "cas": "141801-26-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-Pro-Phe-Phe-NH2"
   },
   {
    "name": "Dermorphin",
@@ -2198,7 +2422,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-198",
    "cas": "77614-16-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-D-Ala-Phe-Gly-Tyr-Pro-Ser-NH2"
   },
   {
    "name": "Deltorphin I",
@@ -2207,7 +2432,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-199",
    "cas": "122752-15-2",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-D-Ala-Phe-Asp-Val-Val-Gly-NH2"
   },
   {
    "name": "Deltorphin II",
@@ -2216,7 +2442,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-200",
    "cas": "122752-16-3",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-D-Ala-Phe-Glu-Val-Val-Gly-NH2"
   },
   {
    "name": "Val-Cit (VC) Linker Peptide",
@@ -2224,8 +2451,9 @@ window.CATALOG = {
    "sub": "ADC Linker Peptides",
    "line": "research",
    "ref": "PV-RE-201",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "159858-33-0",
+   "purity": "≥98%",
+   "seq": "H-Val-Cit-OH"
   },
   {
    "name": "Val-Ala (VA) Linker Peptide",
@@ -2233,8 +2461,9 @@ window.CATALOG = {
    "sub": "ADC Linker Peptides",
    "line": "research",
    "ref": "PV-RE-202",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "27493-61-4",
+   "purity": "≥98%",
+   "seq": "H-Val-Ala-OH"
   },
   {
    "name": "Phe-Lys (FK) Linker Peptide",
@@ -2242,8 +2471,9 @@ window.CATALOG = {
    "sub": "ADC Linker Peptides",
    "line": "research",
    "ref": "PV-RE-203",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "6456-72-0",
+   "purity": "≥98%",
+   "seq": "H-Phe-Lys-OH"
   },
   {
    "name": "Ala-Ala-Asn (AAN) Linker Peptide",
@@ -2252,7 +2482,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-204",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "H-Ala-Ala-Asn-OH"
   },
   {
    "name": "Gly-Gly-Phe-Leu (GGFL) Linker Peptide",
@@ -2260,8 +2491,9 @@ window.CATALOG = {
    "sub": "ADC Linker Peptides",
    "line": "research",
    "ref": "PV-RE-205",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "60254-83-3",
+   "purity": "≥98%",
+   "seq": "H-Gly-Gly-Phe-Leu-OH"
   },
   {
    "name": "Lys-Val-Cit Linker Peptide",
@@ -2270,7 +2502,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-206",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "H-Lys-Val-Cit-OH"
   },
   {
    "name": "β-Ala-Val-Cit Linker Peptide",
@@ -2279,7 +2512,8 @@ window.CATALOG = {
    "line": "research",
    "ref": "PV-RE-207",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "H-β-Ala-Val-Cit-OH"
   },
   {
    "name": "Palmitoyl Pentapeptide-4 (Matrixyl)",
@@ -2288,7 +2522,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-001",
    "cas": "214047-00-4",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Pal-Lys-Thr-Thr-Lys-Ser"
   },
   {
    "name": "Palmitoyl Tripeptide-1 (Pal-GHK)",
@@ -2297,7 +2532,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-002",
    "cas": "147732-56-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Pal-Gly-His-Lys"
   },
   {
    "name": "Palmitoyl Tetrapeptide-7",
@@ -2306,7 +2542,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-003",
    "cas": "221227-05-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Pal-Gly-Gln-Pro-Arg"
   },
   {
    "name": "Matrixyl 3000 (Palmitoyl Tripeptide-1 + Palmitoyl Tetrapeptide-7)",
@@ -2315,7 +2552,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-004",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Palmitoyl Tripeptide-38 (Matrixyl Synthe'6)",
@@ -2324,7 +2562,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-005",
    "cas": "1447824-23-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Palmitoyl Hexapeptide-14",
@@ -2332,8 +2571,9 @@ window.CATALOG = {
    "sub": "Signal Peptides (Matrixyl Family)",
    "line": "cosmetic",
    "ref": "PV-CO-006",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "891498-01-4",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Hexapeptide-9 (Collaxyl)",
@@ -2341,8 +2581,9 @@ window.CATALOG = {
    "sub": "Signal Peptides (Matrixyl Family)",
    "line": "cosmetic",
    "ref": "PV-CO-007",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "1228371-11-6",
+   "purity": "≥98%",
+   "seq": "Gly-Pro-Gln-Gly-Pro-Gln"
   },
   {
    "name": "Tripeptide-10 Citrulline (Decorinyl)",
@@ -2350,8 +2591,9 @@ window.CATALOG = {
    "sub": "Signal Peptides (Matrixyl Family)",
    "line": "cosmetic",
    "ref": "PV-CO-008",
-   "cas": "1190271-42-0",
-   "purity": "≥98%"
+   "cas": "960531-53-7",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Syn-Coll (Palmitoyl Tripeptide-5)",
@@ -2359,8 +2601,9 @@ window.CATALOG = {
    "sub": "Signal Peptides (Matrixyl Family)",
    "line": "cosmetic",
    "ref": "PV-CO-009",
-   "cas": "623172-56-5",
-   "purity": "≥98%"
+   "cas": "623172-55-4",
+   "purity": "≥98%",
+   "seq": "Pal-Lys-Val-Lys"
   },
   {
    "name": "Syn-Tacks (Palmitoyl Dipeptide-5 Complex)",
@@ -2368,8 +2611,9 @@ window.CATALOG = {
    "sub": "Signal Peptides (Matrixyl Family)",
    "line": "cosmetic",
    "ref": "PV-CO-010",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "883558-31-4",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Myristoyl Pentapeptide-17",
@@ -2378,7 +2622,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-011",
    "cas": "959610-30-1",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Myr-Lys-Leu-Ala-Lys-Lys"
   },
   {
    "name": "Acetyl Hexapeptide-8 (Argireline)",
@@ -2387,7 +2632,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-012",
    "cas": "616204-22-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-Glu-Glu-Met-Gln-Arg-Arg-NH2"
   },
   {
    "name": "Acetyl Octapeptide-3 (SNAP-8)",
@@ -2396,7 +2642,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-013",
    "cas": "868844-74-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-Glu-Glu-Met-Gln-Arg-Arg-Ala-Asp-NH2"
   },
   {
    "name": "Pentapeptide-18 (Leuphasyl)",
@@ -2405,7 +2652,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-014",
    "cas": "64963-01-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Tyr-D-Ala-Gly-Phe-Leu"
   },
   {
    "name": "Dipeptide Diaminobutyroyl Benzylamide Diacetate (Syn-Ake)",
@@ -2414,7 +2662,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-015",
    "cas": "823202-99-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "beta-Ala-Pro-Dab-NH-Bzl (diacetate salt)"
   },
   {
    "name": "Nonapeptide-1 (Melanostatine-5)",
@@ -2423,7 +2672,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-016",
    "cas": "158563-45-2",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Tetrapeptide-30",
@@ -2431,8 +2681,9 @@ window.CATALOG = {
    "sub": "Melanin / Enzyme Inhibitor & Repair Peptides",
    "line": "cosmetic",
    "ref": "PV-CO-017",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "1036207-61-0",
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Acetyl Tetrapeptide-5 (Eyeseryl)",
@@ -2441,7 +2692,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-018",
    "cas": "820959-17-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ac-beta-Ala-His-Ser-His"
   },
   {
    "name": "Tripeptide-29 (Gly-Pro-Hyp)",
@@ -2450,7 +2702,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-019",
    "cas": "2239-67-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-Pro-Hyp"
   },
   {
    "name": "Oligopeptide-1",
@@ -2459,7 +2712,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-020",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Oligopeptide-2",
@@ -2468,7 +2722,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-021",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Oligopeptide-34",
@@ -2477,7 +2732,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-022",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": ""
   },
   {
    "name": "Carnosine",
@@ -2486,7 +2742,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-023",
    "cas": "305-84-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "beta-Ala-His"
   },
   {
    "name": "Glutathione",
@@ -2495,7 +2752,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-024",
    "cas": "70-18-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "gamma-Glu-Cys-Gly"
   },
   {
    "name": "Copper Tripeptide-1 / GHK-Cu (Cosmetic Grade)",
@@ -2504,7 +2762,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-025",
    "cas": "89030-95-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys : Cu(II) (1:1 complex)"
   },
   {
    "name": "Tripeptide-1 (GHK, Cosmetic Grade)",
@@ -2512,8 +2771,9 @@ window.CATALOG = {
    "sub": "Carrier Peptides",
    "line": "cosmetic",
    "ref": "PV-CO-026",
-   "cas": "72957-37-0",
-   "purity": "≥98%"
+   "cas": "49557-75-7",
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys"
   },
   {
    "name": "Manganese Tripeptide-1 (Mn-GHK)",
@@ -2522,7 +2782,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-027",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys : Mn(II)"
   },
   {
    "name": "AHK-Cu (Ala-His-Lys, Copper Peptide)",
@@ -2531,7 +2792,8 @@ window.CATALOG = {
    "line": "cosmetic",
    "ref": "PV-CO-028",
    "cas": "1076208-21-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ala-His-Lys : Cu(II)"
   },
   {
    "name": "Whey Protein Hydrolysate Peptides",
@@ -2540,7 +2802,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-001",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Casein Phosphopeptides (CPP)",
@@ -2549,7 +2812,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-002",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Soy Oligopeptides",
@@ -2558,7 +2822,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-003",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Oyster Peptides",
@@ -2567,7 +2832,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-004",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Rice Peptides",
@@ -2576,7 +2842,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-005",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Squid Skin Peptides",
@@ -2585,7 +2852,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-006",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Sesame Peptides",
@@ -2594,7 +2862,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-007",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Marine Collagen Oligopeptides",
@@ -2603,7 +2872,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-008",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Bovine Collagen Oligopeptides",
@@ -2612,7 +2882,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-009",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Chicken Sternum Collagen Type II Peptides",
@@ -2621,7 +2892,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-010",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": ""
   },
   {
    "name": "Collagen Tripeptide (Gly-Pro-Hyp)",
@@ -2630,7 +2902,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-011",
    "cas": "",
-   "purity": "≥90%"
+   "purity": "≥90%",
+   "seq": "Gly-Pro-Hyp"
   },
   {
    "name": "L-Carnosine (Oral Grade)",
@@ -2639,7 +2912,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-012",
    "cas": "305-84-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "beta-Ala-His"
   },
   {
    "name": "Reduced Glutathione (GSH, Food Grade)",
@@ -2648,7 +2922,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-013",
    "cas": "70-18-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "gamma-Glu-Cys-Gly"
   },
   {
    "name": "S-Acetyl Glutathione (SAG)",
@@ -2656,8 +2931,9 @@ window.CATALOG = {
    "sub": "Synthetic Bioactive Oral Peptides",
    "line": "nutra",
    "ref": "PV-NU-014",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "3054-47-5",
+   "purity": "≥98%",
+   "seq": "S-acetyl-gamma-Glu-Cys-Gly"
   },
   {
    "name": "Tripeptide-1 (GHK, Oral Grade)",
@@ -2665,8 +2941,9 @@ window.CATALOG = {
    "sub": "Synthetic Bioactive Oral Peptides",
    "line": "nutra",
    "ref": "PV-NU-015",
-   "cas": "72957-37-0",
-   "purity": "≥98%"
+   "cas": "49557-75-7",
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys"
   },
   {
    "name": "Thymopentin (TP5, Oral Grade)",
@@ -2675,7 +2952,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-016",
    "cas": "69558-55-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Arg-Lys-Asp-Val-Tyr"
   },
   {
    "name": "Epitalon (Epithalon, Oral Grade)",
@@ -2684,7 +2962,8 @@ window.CATALOG = {
    "line": "nutra",
    "ref": "PV-NU-017",
    "cas": "307297-39-8",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Ala-Glu-Asp-Gly"
   },
   {
    "name": "KPV (Oral Grade)",
@@ -2692,8 +2971,9 @@ window.CATALOG = {
    "sub": "Synthetic Bioactive Oral Peptides",
    "line": "nutra",
    "ref": "PV-NU-018",
-   "cas": "67727-97-3",
-   "purity": "≥98%"
+   "cas": "88768-11-0",
+   "purity": "≥98%",
+   "seq": "Lys-Pro-Val"
   },
   {
    "name": "Pexiganan (Feed Grade)",
@@ -2702,7 +2982,8 @@ window.CATALOG = {
    "line": "vet",
    "ref": "PV-VE-001",
    "cas": "147664-63-9",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GIGKFLKKAKKFGKAFVKILKK-NH2"
   },
   {
    "name": "Protegrin-1 (Feed Grade)",
@@ -2710,8 +2991,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-002",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "168831-77-4",
+   "purity": "≥98%",
+   "seq": "RGGRLCYCRRRFCVCVGR-NH2"
   },
   {
    "name": "Tachyplesin I (Feed Grade)",
@@ -2719,8 +3001,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-003",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "118231-04-2",
+   "purity": "≥98%",
+   "seq": "KWCFRVCYRGICYRRCR-NH2"
   },
   {
    "name": "Tachyplesin III (Feed Grade)",
@@ -2728,8 +3011,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-004",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "129557-13-7",
+   "purity": "≥98%",
+   "seq": "KWCFRVCYRGICYRKCR-NH2"
   },
   {
    "name": "Magainin 2 (Feed Grade)",
@@ -2737,8 +3021,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-005",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "108433-95-0",
+   "purity": "≥98%",
+   "seq": "GIGKFLHSAKKFGKAFVGEIMNS"
   },
   {
    "name": "Aurein 1.2 (Feed Grade)",
@@ -2746,8 +3031,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-006",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "302343-01-7",
+   "purity": "≥98%",
+   "seq": "GLFDIIKKIAESF-NH2"
   },
   {
    "name": "Citropin 1.1 (Feed Grade)",
@@ -2756,7 +3042,8 @@ window.CATALOG = {
    "line": "vet",
    "ref": "PV-VE-007",
    "cas": "",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "GLFDVIKKVASVIGGL-NH2"
   },
   {
    "name": "Lactoferricin B (Feed Grade)",
@@ -2764,8 +3051,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-008",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "170867-20-6",
+   "purity": "≥98%",
+   "seq": "FKCRRWQWRMKKLGAPSITCVRRAF"
   },
   {
    "name": "Melittin (Feed Grade)",
@@ -2773,8 +3061,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-009",
-   "cas": "20449-79-0",
-   "purity": "≥98%"
+   "cas": "37231-28-0",
+   "purity": "≥98%",
+   "seq": "GIGAVLKVLTTGLPALISWIKRKRQQ-NH2"
   },
   {
    "name": "Mastoparan (Feed Grade)",
@@ -2782,8 +3071,9 @@ window.CATALOG = {
    "sub": "Feed Additive Antimicrobial Peptides",
    "line": "vet",
    "ref": "PV-VE-010",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "72093-21-1",
+   "purity": "≥98%",
+   "seq": "INLKALAALAKKIL-NH2"
   },
   {
    "name": "Copper Tripeptide-1 / GHK-Cu (Pet Grade)",
@@ -2792,7 +3082,8 @@ window.CATALOG = {
    "line": "vet",
    "ref": "PV-VE-011",
    "cas": "89030-95-5",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys : Cu(II) (1:1 complex)"
   },
   {
    "name": "Tripeptide-1 (GHK, Pet Grade)",
@@ -2800,8 +3091,9 @@ window.CATALOG = {
    "sub": "Pet Skincare & Wound Care Peptides",
    "line": "vet",
    "ref": "PV-VE-012",
-   "cas": "72957-37-0",
-   "purity": "≥98%"
+   "cas": "49557-75-7",
+   "purity": "≥98%",
+   "seq": "Gly-His-Lys"
   },
   {
    "name": "KPV (Pet Grade)",
@@ -2809,8 +3101,9 @@ window.CATALOG = {
    "sub": "Pet Skincare & Wound Care Peptides",
    "line": "vet",
    "ref": "PV-VE-013",
-   "cas": "67727-97-3",
-   "purity": "≥98%"
+   "cas": "88768-11-0",
+   "purity": "≥98%",
+   "seq": "Lys-Pro-Val"
   },
   {
    "name": "LL-37 (Pet Grade)",
@@ -2819,7 +3112,8 @@ window.CATALOG = {
    "line": "vet",
    "ref": "PV-VE-014",
    "cas": "154947-66-7",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "LLGDFFRKSKEKIGKEFKRIVQRIKDFLRNLVPRTES"
   },
   {
    "name": "Indolicidin (Pet Grade)",
@@ -2827,8 +3121,9 @@ window.CATALOG = {
    "sub": "Pet Skincare & Wound Care Peptides",
    "line": "vet",
    "ref": "PV-VE-015",
-   "cas": "",
-   "purity": "≥98%"
+   "cas": "140896-21-5",
+   "purity": "≥98%",
+   "seq": "ILPWKWPWWPWRR-NH2"
   },
   {
    "name": "Histatin 5 (Pet Grade)",
@@ -2836,8 +3131,9 @@ window.CATALOG = {
    "sub": "Pet Skincare & Wound Care Peptides",
    "line": "vet",
    "ref": "PV-VE-016",
-   "cas": "115966-23-7",
-   "purity": "≥98%"
+   "cas": "104339-66-4",
+   "purity": "≥98%",
+   "seq": "DSHAKRHHGYKRKFHEKHHSHRGY"
   },
   {
    "name": "Carnosine (Pet Grade)",
@@ -2846,7 +3142,8 @@ window.CATALOG = {
    "line": "vet",
    "ref": "PV-VE-017",
    "cas": "305-84-0",
-   "purity": "≥98%"
+   "purity": "≥98%",
+   "seq": "beta-Ala-His"
   }
  ]
 };
